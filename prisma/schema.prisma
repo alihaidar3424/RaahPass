@@ -1,0 +1,115 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Language {
+  en
+  ur
+}
+
+enum CorrectOption {
+  A
+  B
+  C
+  D
+}
+
+enum AttemptStatus {
+  PASS
+  FAIL
+}
+
+model Question {
+  id            String        @id @default(cuid())
+  questionEn    String
+  questionUr    String
+  imageUrl      String?
+  imageAltEn    String?
+  imageAltUr    String?
+  optionAEn     String
+  optionAUr     String
+  optionBEn     String
+  optionBUr     String
+  optionCEn     String
+  optionCUr     String
+  optionDEn     String        @default("")
+  optionDUr     String        @default("")
+  correctOption CorrectOption
+  explanationEn String        @default("")
+  explanationUr String        @default("")
+  category      String
+  isActive      Boolean       @default(true)
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+
+  attemptQuestions AttemptQuestion[]
+
+  @@index([isActive])
+  @@index([category])
+}
+
+model Attempt {
+  id              String          @id @default(cuid())
+  name            String
+  phone           String
+  language        Language
+  totalQuestions  Int             @default(20)
+  correctAnswers  Int?
+  wrongAnswers    Int?
+  percentage      Float?
+  status          AttemptStatus?
+  startedAt       DateTime        @default(now())
+  submittedAt     DateTime?
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+
+  attemptQuestions AttemptQuestion[]
+
+  @@index([phone])
+  @@index([submittedAt])
+}
+
+model AttemptQuestion {
+  id              String         @id @default(cuid())
+  attemptId       String
+  questionId      String
+  orderIndex      Int
+  selectedOption  CorrectOption?
+  isCorrect       Boolean?
+  createdAt       DateTime       @default(now())
+
+  attempt  Attempt  @relation(fields: [attemptId], references: [id], onDelete: Cascade)
+  question Question @relation(fields: [questionId], references: [id], onDelete: Restrict)
+
+  @@unique([attemptId, questionId])
+  @@index([attemptId])
+  @@index([questionId])
+}
+
+model Guideline {
+  id         String   @id @default(cuid())
+  slug       String   @unique
+  titleEn    String
+  titleUr    String
+  excerptEn  String?
+  excerptUr  String?
+  contentEn  String   @db.Text
+  contentUr  String   @db.Text
+  imageUrl   String?
+  imageAltEn String?
+  imageAltUr String?
+  category   String
+  sortOrder  Int      @default(0)
+  isActive   Boolean  @default(true)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@index([isActive])
+  @@index([category])
+  @@index([sortOrder])
+}

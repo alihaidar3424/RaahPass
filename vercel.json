@@ -1,0 +1,3 @@
+{
+  "buildCommand": "prisma generate && node scripts/generate-icons.mjs && prisma migrate deploy && next build"
+}
