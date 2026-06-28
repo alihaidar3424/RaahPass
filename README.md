@@ -50,7 +50,8 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ### Prisma 7 notes
 
-- **`DATABASE_URL`** lives in `.env` and is loaded via `prisma.config.ts` (not in `schema.prisma`).
+- **`DATABASE_URL`** lives in `.env` and is loaded at runtime via `lib/prisma.ts` (not in `schema.prisma`).
+- **`prisma.config.ts`** uses a **direct** Postgres URL for CLI commands (`migrate deploy`, `db push`, seed). For Neon, it auto-derives this from a `-pooler` `DATABASE_URL`, or you can set **`DIRECT_URL`** explicitly.
 - The client is generated to **`generated/prisma`** and imported from `@/generated/prisma/client`.
 - Runtime queries use the **`@prisma/adapter-pg`** driver adapter with the `pg` package (`lib/prisma.ts`).
 
@@ -121,7 +122,10 @@ In **Project → Settings → Environment Variables**, add:
 
 | Name | Value | Environments |
 |------|-------|--------------|
-| `DATABASE_URL` | `postgresql://...` from Neon/Supabase | Production, Preview, Development |
+| `DATABASE_URL` | Neon **pooled** connection string (`-pooler` host) | Production, Preview, Development |
+| `DIRECT_URL` | Optional Neon **direct** string (overrides auto-derivation) | Production, Preview, Development |
+
+For **Neon**, use the pooled URL for `DATABASE_URL`. Migrations derive a direct URL automatically; set `DIRECT_URL` only if deploy still fails on advisory locks.
 
 ### Step 5 — Deploy
 
@@ -182,7 +186,8 @@ postgresql://postgres.[ref]:[password]@aws-0-region.pooler.supabase.com:6543/pos
 
 | Variable | Required | Description |
 |----------|----------|-------------|
-| `DATABASE_URL` | Yes | PostgreSQL connection string |
+| `DATABASE_URL` | Yes | PostgreSQL connection string (Neon pooler URL in production) |
+| `DIRECT_URL` | No | Direct Postgres URL for Prisma CLI; optional if Neon pooler URL is in `DATABASE_URL` |
 
 See `.env.example` for local and production examples.
 
