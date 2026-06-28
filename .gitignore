@@ -49,3 +49,13 @@ next-env.d.ts
 
 # prisma v7 generated client
 /generated
+
+# android / bubblewrap
+/android.keystore
+/app-release-signed.apk
+/app-release-bundle.aab
+/app/build/
+/.gradle/
+/local.properties
+/manifest-checksum.txt
+/store_icon.png

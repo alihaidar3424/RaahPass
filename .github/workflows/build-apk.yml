@@ -1,0 +1,95 @@
+name: Build Android APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "twa-manifest.json"
+      - ".github/workflows/build-apk.yml"
+      - "app/manifest.ts"
+      - "public/**"
+
+jobs:
+  build-apk:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Setup Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: "temurin"
+          java-version: "17"
+
+      - name: Install Bubblewrap
+        run: npm install -g @bubblewrap/cli
+
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Configure Bubblewrap
+        run: |
+          mkdir -p "$HOME/.bubblewrap"
+          cat > "$HOME/.bubblewrap/config.json" << EOF
+          {
+            "jdkPath": "$JAVA_HOME",
+            "androidSdkPath": "$ANDROID_HOME"
+          }
+          EOF
+
+      - name: Create signing keystore
+        run: |
+          keytool -genkeypair -v \
+            -storetype PKCS12 \
+            -keystore android.keystore \
+            -alias raahpass \
+            -keyalg RSA \
+            -keysize 2048 \
+            -validity 10000 \
+            -storepass "$KEYSTORE_PASSWORD" \
+            -keypass "$KEY_PASSWORD" \
+            -dname "CN=RaahPass, OU=Mobile, O=RaahPass, L=Karachi, ST=Sindh, C=PK"
+        env:
+          KEYSTORE_PASSWORD: ${{ secrets.APK_KEYSTORE_PASSWORD || 'raahpass-release' }}
+          KEY_PASSWORD: ${{ secrets.APK_KEY_PASSWORD || 'raahpass-release' }}
+
+      - name: Print signing fingerprint (for assetlinks.json)
+        run: |
+          echo "Add this SHA-256 fingerprint to Vercel env ANDROID_TWA_SHA256:"
+          keytool -list -v \
+            -keystore android.keystore \
+            -alias raahpass \
+            -storepass "$KEYSTORE_PASSWORD" \
+            -keypass "$KEY_PASSWORD" | grep "SHA256:" || true
+        env:
+          KEYSTORE_PASSWORD: ${{ secrets.APK_KEYSTORE_PASSWORD || 'raahpass-release' }}
+          KEY_PASSWORD: ${{ secrets.APK_KEY_PASSWORD || 'raahpass-release' }}
+
+      - name: Generate Android project
+        run: bubblewrap update --skipVersionUpgrade
+        env:
+          BUBBLEWRAP_KEYSTORE_PASSWORD: ${{ secrets.APK_KEYSTORE_PASSWORD || 'raahpass-release' }}
+          BUBBLEWRAP_KEY_PASSWORD: ${{ secrets.APK_KEY_PASSWORD || 'raahpass-release' }}
+
+      - name: Build signed APK
+        run: bubblewrap build --skipPwaValidation
+        env:
+          BUBBLEWRAP_KEYSTORE_PASSWORD: ${{ secrets.APK_KEYSTORE_PASSWORD || 'raahpass-release' }}
+          BUBBLEWRAP_KEY_PASSWORD: ${{ secrets.APK_KEY_PASSWORD || 'raahpass-release' }}
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: raahpass-android-apk
+          path: |
+            app-release-signed.apk
+            app-release-bundle.aab
+          retention-days: 90

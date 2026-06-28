@@ -155,6 +155,17 @@ This loads **247 questions** and **19 guidelines**.
 
 Vercel → Project → **Settings → Domains** → add your domain and update DNS.
 
+### Android APK (install without Chrome PWA prompt)
+
+RaahPass can be packaged as an Android APK using [Bubblewrap](https://github.com/GoogleChromeLabs/bubblewrap) (Trusted Web Activity).
+
+1. Go to **GitHub → Actions → Build Android APK → Run workflow** (or push to `main`).
+2. When the job finishes, download the **`raahpass-android-apk`** artifact.
+3. Copy `app-release-signed.apk` to your phone and install (enable **Install unknown apps** for your file manager).
+4. Optional full-screen TWA: copy the **SHA-256 fingerprint** from the workflow log into Vercel env `ANDROID_TWA_SHA256`, then redeploy the site.
+
+The APK wraps [https://raah-pass.vercel.app/](https://raah-pass.vercel.app/) — it needs internet for quizzes and database.
+
 ---
 
 ## Free PostgreSQL providers (recommended)

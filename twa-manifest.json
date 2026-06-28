@@ -1,0 +1,48 @@
+{
+  "packageId": "app.raahpass.twa",
+  "host": "raah-pass.vercel.app",
+  "name": "RaahPass — Pass your driving test",
+  "launcherName": "RaahPass",
+  "display": "standalone",
+  "orientation": "portrait",
+  "themeColor": "#064E3B",
+  "themeColorDark": "#064E3B",
+  "navigationColor": "#064E3B",
+  "navigationColorDark": "#064E3B",
+  "backgroundColor": "#f8fafc",
+  "startUrl": "/?source=pwa",
+  "iconUrl": "https://raah-pass.vercel.app/icons/icon-512.png",
+  "maskableIconUrl": "https://raah-pass.vercel.app/icons/icon-512-maskable.png",
+  "monochromeIconUrl": "https://raah-pass.vercel.app/icons/icon-512.png",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": {
+    "path": "./android.keystore",
+    "alias": "raahpass"
+  },
+  "appVersionName": "1.0.0",
+  "appVersionCode": 1,
+  "shortcuts": [
+    {
+      "name": "Start Practice Test",
+      "short_name": "Start Test",
+      "url": "/start",
+      "chosenIconUrl": "https://raah-pass.vercel.app/icons/icon-192.png"
+    },
+    {
+      "name": "Driving Guidelines",
+      "short_name": "Guidelines",
+      "url": "/guidelines",
+      "chosenIconUrl": "https://raah-pass.vercel.app/icons/icon-192.png"
+    }
+  ],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "https://raah-pass.vercel.app/manifest.webmanifest",
+  "fallbackType": "customtabs",
+  "enableNotifications": false,
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "alphaDependencies": {
+    "enabled": false
+  },
+  "features": {}
+}
