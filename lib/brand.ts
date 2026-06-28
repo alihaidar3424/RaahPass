@@ -1,4 +1,4 @@
-/** User-facing brand — internal package/cookie names stay unchanged. */
+/** User-facing brand constants (RaahPass / راہ پاس). */
 export const BRAND = {
   nameEn: "RaahPass",
   nameUr: "راہ پاس",

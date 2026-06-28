@@ -1,4 +1,4 @@
-const CACHE = "driveprep-static-v1";
+const CACHE = "raahpass-static-v2";
 const OFFLINE_URL = "/offline";
 
 const PRECACHE = ["/", "/offline", "/manifest.webmanifest"];

@@ -1,9 +1,11 @@
-import { notFound } from "next/navigation";
+import { AttemptNotFound } from "@/components/quiz/AttemptNotFound";
 import { AppShell } from "@/components/layout/AppShell";
 import { LinkButton } from "@/components/ui/Button";
 import { PageContainer } from "@/components/ui/PageContainer";
 import { Card } from "@/components/ui/Card";
 import { getResult } from "@/lib/quiz";
+import { isQuizNotFound } from "@/lib/quiz-errors";
+import { resolveLanguage } from "@/lib/resolve-language";
 import { withLang } from "@/lib/language";
 import { dirForLanguage, t, tf } from "@/lib/translations";
 import { cn } from "@/lib/utils";
@@ -18,8 +20,12 @@ export default async function ResultPage({ params }: ResultPageProps) {
   let result;
   try {
     result = await getResult(attemptId);
-  } catch {
-    notFound();
+  } catch (error) {
+    if (isQuizNotFound(error)) {
+      const lang = await resolveLanguage(undefined);
+      return <AttemptNotFound lang={lang} />;
+    }
+    throw error;
   }
 
   const lang = result.language;

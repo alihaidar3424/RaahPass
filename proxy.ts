@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { LANG_COOKIE } from "@/lib/constants";
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const lang = request.nextUrl.searchParams.get("lang");
   if (lang !== "en" && lang !== "ur") {
     return NextResponse.next();

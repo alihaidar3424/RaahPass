@@ -5,6 +5,7 @@ import { AppShell } from "@/components/layout/AppShell";
 import { LinkButton } from "@/components/ui/Button";
 import { PageContainer } from "@/components/ui/PageContainer";
 import { mutedTextClassName } from "@/components/ui/Card";
+import { LANG_COOKIE } from "@/lib/constants";
 import { withLang } from "@/lib/language";
 import { dirForLanguage, t } from "@/lib/translations";
 import type { Language } from "@/lib/validations";
@@ -17,7 +18,7 @@ export default function Error({
   reset: () => void;
 }) {
   const lang: Language =
-    typeof document !== "undefined" && document.cookie.includes("driveprep-lang=ur")
+    typeof document !== "undefined" && document.cookie.includes(`${LANG_COOKIE}=ur`)
       ? "ur"
       : "en";
   const rtl = dirForLanguage(lang) === "rtl";

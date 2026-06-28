@@ -1,9 +1,11 @@
-import { notFound } from "next/navigation";
+import { AttemptNotFound } from "@/components/quiz/AttemptNotFound";
 import { AppShell } from "@/components/layout/AppShell";
 import { LinkButton } from "@/components/ui/Button";
 import { PageContainer } from "@/components/ui/PageContainer";
 import { Card, mutedTextClassName } from "@/components/ui/Card";
 import { getReview } from "@/lib/quiz";
+import { isQuizNotFound } from "@/lib/quiz-errors";
+import { resolveLanguage } from "@/lib/resolve-language";
 import { dirForLanguage, t, tf } from "@/lib/translations";
 
 type ReviewPageProps = {
@@ -16,8 +18,12 @@ export default async function ReviewPage({ params }: ReviewPageProps) {
   let review;
   try {
     review = await getReview(attemptId);
-  } catch {
-    notFound();
+  } catch (error) {
+    if (isQuizNotFound(error)) {
+      const lang = await resolveLanguage(undefined);
+      return <AttemptNotFound lang={lang} />;
+    }
+    throw error;
   }
 
   const lang = review.language;

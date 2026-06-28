@@ -1,10 +1,10 @@
+import "dotenv/config";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
-import { PrismaClient, CorrectOption } from "@prisma/client";
+import { CorrectOption } from "../generated/prisma/client";
 import { guidelines } from "../data/guidelines";
 import { buildSeedExplanation } from "../lib/explanations";
-
-const prisma = new PrismaClient();
+import { prisma } from "../lib/prisma";
 
 type RawQuestion = {
   id: number;

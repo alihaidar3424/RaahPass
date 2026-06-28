@@ -40,6 +40,7 @@ type TranslationKey =
   | "backToResult"
   | "loading"
   | "errorNotFound"
+  | "attemptNotFoundHint"
   | "errorAlreadySubmitted"
   | "errorInsufficientQuestions"
   | "installPrompt"
@@ -110,6 +111,8 @@ const en: Record<TranslationKey, string> = {
   backToResult: "Back to Result",
   loading: "Loading…",
   errorNotFound: "Test attempt not found.",
+  attemptNotFoundHint:
+    "This session is no longer available — it may have expired or the database was reset. Start a new practice test.",
   errorAlreadySubmitted: "This test has already been submitted.",
   errorInsufficientQuestions: "Not enough questions available. Please try again later.",
   installPrompt: "Install app for quick access",
@@ -181,6 +184,8 @@ const ur: Record<TranslationKey, string> = {
   backToResult: "نتیجے پر واپس",
   loading: "لوڈ ہو رہا ہے…",
   errorNotFound: "ٹیسٹ کا ریکارڈ نہیں ملا۔",
+  attemptNotFoundHint:
+    "یہ سیشن اب دستیاب نہیں — شاید ختم ہو گیا یا ڈیٹا ری سیٹ ہوا۔ نیا پریکٹس ٹیسٹ شروع کریں۔",
   errorAlreadySubmitted: "یہ ٹیسٹ پہلے ہی جمع ہو چکا ہے۔",
   errorInsufficientQuestions: "کافی سوالات دستیاب نہیں۔ بعد میں دوبارہ کوشش کریں۔",
   installPrompt: "فوری رسائی کے لیے ایپ انسٹال کریں",

@@ -1,7 +1,10 @@
-import { notFound, redirect } from "next/navigation";
+import { redirect } from "next/navigation";
 import { AppShell } from "@/components/layout/AppShell";
+import { AttemptNotFound } from "@/components/quiz/AttemptNotFound";
 import { QuizClient } from "@/components/quiz/QuizClient";
+import { resolveLanguage } from "@/lib/resolve-language";
 import { getQuizQuestions } from "@/lib/quiz";
+import { isQuizNotFound } from "@/lib/quiz-errors";
 import { dirForLanguage } from "@/lib/translations";
 
 type QuizPageProps = {
@@ -14,8 +17,12 @@ export default async function QuizPage({ params }: QuizPageProps) {
   let data;
   try {
     data = await getQuizQuestions(attemptId);
-  } catch {
-    notFound();
+  } catch (error) {
+    if (isQuizNotFound(error)) {
+      const lang = await resolveLanguage(undefined);
+      return <AttemptNotFound lang={lang} />;
+    }
+    throw error;
   }
 
   if (data.submitted) {

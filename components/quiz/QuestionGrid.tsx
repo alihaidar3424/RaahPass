@@ -1,6 +1,6 @@
 "use client";
 
-import { CorrectOption } from "@prisma/client";
+import { CorrectOption } from "@/generated/prisma/client";
 import { cn } from "@/lib/utils";
 
 type QuestionGridProps = {

@@ -2,7 +2,7 @@
   "version": "1.0",
   "phase": 1,
   "type": "text-only",
-  "description": "Bilingual text MCQs for DrivePrep Phase 1 — no images required",
+  "description": "Bilingual text MCQs for RaahPass Phase 1 — no images required",
   "totalQuestions": 247,
   "languages": [
     "en",

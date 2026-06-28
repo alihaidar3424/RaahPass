@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { Download, X } from "lucide-react";
 import type { Language } from "@/lib/validations";
+import { PWA_DISMISS_KEY } from "@/lib/constants";
 import { t } from "@/lib/translations";
 
 type InstallPromptProps = {
@@ -15,7 +16,7 @@ export function InstallPrompt({ lang }: InstallPromptProps) {
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-    if (localStorage.getItem("driveprep-pwa-dismissed") === "1") return;
+    if (localStorage.getItem(PWA_DISMISS_KEY) === "1") return;
     if (window.matchMedia("(display-mode: standalone)").matches) return;
 
     const handler = (event: Event) => {
@@ -29,7 +30,7 @@ export function InstallPrompt({ lang }: InstallPromptProps) {
   }, []);
 
   function dismiss() {
-    localStorage.setItem("driveprep-pwa-dismissed", "1");
+    localStorage.setItem(PWA_DISMISS_KEY, "1");
     setVisible(false);
   }
 

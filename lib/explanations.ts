@@ -1,4 +1,4 @@
-import type { CorrectOption } from "@prisma/client";
+import type { CorrectOption } from "@/generated/prisma/client";
 import type { Language } from "@/lib/validations";
 
 const OPTION_KEYS: CorrectOption[] = ["A", "B", "C", "D"];

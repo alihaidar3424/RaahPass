@@ -1,13 +1,14 @@
 "use client";
 
 import { useEffect, useMemo, useState, useTransition } from "react";
-import { CorrectOption } from "@prisma/client";
+import { CorrectOption } from "@/generated/prisma/client";
 import { OptionButton } from "@/components/quiz/OptionButton";
 import { ProgressBar } from "@/components/quiz/ProgressBar";
 import { QuestionGrid } from "@/components/quiz/QuestionGrid";
 import { PageContainer } from "@/components/ui/PageContainer";
 import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
+import { quizProgressKey } from "@/lib/constants";
 import { submitQuizAndRedirect, type QuizQuestionDto } from "@/lib/quiz";
 import { dirForLanguage, t, tf } from "@/lib/translations";
 import type { Language } from "@/lib/validations";
@@ -25,7 +26,7 @@ type SavedProgress = {
 };
 
 function storageKey(attemptId: string) {
-  return `driveprep-quiz-${attemptId}`;
+  return quizProgressKey(attemptId);
 }
 
 export function QuizClient({ attemptId, language, questions }: QuizClientProps) {

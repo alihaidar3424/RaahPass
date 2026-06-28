@@ -1,9 +1,10 @@
 "use server";
 
-import { CorrectOption, Language as PrismaLanguage } from "@prisma/client";
+import { CorrectOption, Language as PrismaLanguage } from "@/generated/prisma/client";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { prisma } from "@/lib/prisma";
+import { QUIZ_NOT_FOUND } from "@/lib/quiz-errors";
 import { calculateScore } from "@/lib/score";
 import { resolveExplanation } from "@/lib/explanations";
 import {
@@ -216,7 +217,7 @@ export async function getQuizQuestions(attemptId: string): Promise<{
   });
 
   if (!attempt) {
-    throw new Error("NOT_FOUND");
+    throw new Error(QUIZ_NOT_FOUND);
   }
 
   const language = attempt.language as Language;
@@ -247,7 +248,7 @@ export async function submitQuiz(input: {
   });
 
   if (!attempt) {
-    throw new Error("NOT_FOUND");
+    throw new Error(QUIZ_NOT_FOUND);
   }
 
   if (attempt.submittedAt) {
@@ -321,7 +322,7 @@ export async function getResult(attemptId: string) {
   });
 
   if (!attempt || !attempt.submittedAt) {
-    throw new Error("NOT_FOUND");
+    throw new Error(QUIZ_NOT_FOUND);
   }
 
   return {
@@ -352,7 +353,7 @@ export async function getReview(attemptId: string): Promise<{
   });
 
   if (!attempt || !attempt.submittedAt) {
-    throw new Error("NOT_FOUND");
+    throw new Error(QUIZ_NOT_FOUND);
   }
 
   const language = attempt.language as Language;

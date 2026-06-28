@@ -1,4 +1,4 @@
-# DrivePrep
+# RaahPass
 
 Bilingual driving test practice app for Pakistan. Learners take 20-question mock exams in **English** or **Urdu**, review answers, and read driving guidelines — no account required.
 
@@ -28,8 +28,8 @@ Bilingual driving test practice app for Pakistan. Learners take 20-question mock
 
 ```bash
 # 1. Clone and install
-git clone https://github.com/alihaidar3424/DrivePrep.git
-cd DrivePrep
+git clone https://github.com/alihaidar3424/RaahPass.git
+cd RaahPass
 npm install
 
 # 2. Environment
@@ -38,7 +38,7 @@ cp .env.example .env
 # 3. Start PostgreSQL (host port 5433 — avoids conflict with other Postgres on 5432)
 docker compose up -d
 
-# 4. Apply schema and seed (247 questions + 8 guidelines)
+# 4. Apply schema and seed (247 questions + 19 guidelines)
 npm run db:push
 npm run db:seed
 
@@ -97,12 +97,12 @@ Pick one provider below, create a project, and copy the **connection string** (m
 
 ### Step 2 — Push code to GitHub
 
-Ensure `main` is pushed to https://github.com/alihaidar3424/DrivePrep
+Ensure `main` is pushed to https://github.com/alihaidar3424/RaahPass
 
 ### Step 3 — Import on Vercel
 
 1. Go to [vercel.com/new](https://vercel.com/new)
-2. Import the **DrivePrep** repository
+2. Import the **RaahPass** repository
 3. Framework preset: **Next.js** (auto-detected)
 4. Root directory: `./` (default)
 
@@ -130,11 +130,11 @@ From your machine (or Vercel CLI):
 DATABASE_URL="your-production-connection-string" npm run db:seed
 ```
 
-This loads **247 questions** and **8 guidelines**.
+This loads **247 questions** and **19 guidelines**.
 
 ### Step 7 — Verify
 
-- Open your Vercel URL (e.g. `https://driveprep.vercel.app`)
+- Open your Vercel URL (e.g. `https://raahpass.vercel.app`)
 - Visit `/api/health` — should return `{ "status": "ok", "database": "connected" }`
 - Take a full practice test
 
@@ -155,12 +155,12 @@ Vercel → Project → **Settings → Domains** → add your domain and update D
 | **[ElephantSQL](https://www.elephantsql.com)** | Tiny free “Tiny Turtle” plan | Very small MVPs | 20 MB limit — too small for growth |
 | **[Aiven](https://aiven.io)** | Free tier available | EU/regional hosting | Good if you need specific regions |
 
-**Recommendation for DrivePrep:** Use **Neon** or **Vercel Postgres**. Both work well with Prisma on Vercel serverless.
+**Recommendation for RaahPass:** Use **Neon** or **Vercel Postgres**. Both work well with Prisma on Vercel serverless.
 
 **Neon connection string example:**
 
 ```text
-postgresql://user:password@ep-xxxx.region.aws.neon.tech/driveprep?sslmode=require
+postgresql://user:password@ep-xxxx.region.aws.neon.tech/raahpass?sslmode=require
 ```
 
 **Supabase pooler (for serverless):**
