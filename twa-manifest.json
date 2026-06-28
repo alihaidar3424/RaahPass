@@ -10,7 +10,7 @@
   "navigationColor": "#064E3B",
   "navigationColorDark": "#064E3B",
   "backgroundColor": "#f8fafc",
-  "startUrl": "/?source=pwa",
+  "startUrl": "/",
   "iconUrl": "https://raah-pass.vercel.app/icons/icon-512.png",
   "maskableIconUrl": "https://raah-pass.vercel.app/icons/icon-512-maskable.png",
   "monochromeIconUrl": "https://raah-pass.vercel.app/icons/icon-512.png",

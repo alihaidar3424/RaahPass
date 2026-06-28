@@ -5,7 +5,13 @@ import { Download, X } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import type { Language } from "@/lib/validations";
 import { PWA_DISMISS_KEY } from "@/lib/constants";
-import { isAndroid, isIos, isMobileInstallPlatform, isStandaloneDisplay } from "@/lib/pwa";
+import {
+  isAndroid,
+  isIos,
+  isMobileInstallPlatform,
+  isStandaloneDisplay,
+  waitForInstallReady,
+} from "@/lib/pwa";
 import { t } from "@/lib/translations";
 
 type InstallPromptProps = {
@@ -22,7 +28,11 @@ export function InstallPrompt({ lang }: InstallPromptProps) {
   const [deferredPrompt, setDeferredPrompt] = useState<BeforeInstallPromptEvent | null>(null);
   const [installing, setInstalling] = useState(false);
   const [manualOnly, setManualOnly] = useState(false);
+  const [installReady, setInstallReady] = useState(false);
+  const [installFailed, setInstallFailed] = useState(false);
   const hasNativePrompt = useRef(false);
+  const pendingPrompt = useRef<BeforeInstallPromptEvent | null>(null);
+  const installReadyRef = useRef(false);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -30,16 +40,39 @@ export function InstallPrompt({ lang }: InstallPromptProps) {
     if (isStandaloneDisplay()) return;
 
     let showTimer: ReturnType<typeof setTimeout> | undefined;
+    let cancelled = false;
+
+    void waitForInstallReady().then((ready) => {
+      if (cancelled) return;
+      installReadyRef.current = ready;
+      setInstallReady(ready);
+      if (ready && pendingPrompt.current) {
+        setDeferredPrompt(pendingPrompt.current);
+        setManualOnly(false);
+        setVisible(true);
+      }
+    });
 
     const handler = (event: Event) => {
       event.preventDefault();
       hasNativePrompt.current = true;
-      setDeferredPrompt(event as BeforeInstallPromptEvent);
-      setManualOnly(false);
-      setVisible(true);
+      pendingPrompt.current = event as BeforeInstallPromptEvent;
+      setInstallFailed(false);
+      if (installReadyRef.current) {
+        setDeferredPrompt(event as BeforeInstallPromptEvent);
+        setManualOnly(false);
+        setVisible(true);
+      }
+    };
+
+    const onInstalled = () => {
+      setInstalling(false);
+      setVisible(false);
+      setInstallFailed(false);
     };
 
     window.addEventListener("beforeinstallprompt", handler);
+    window.addEventListener("appinstalled", onInstalled);
 
     if (isMobileInstallPlatform()) {
       showTimer = setTimeout(() => {
@@ -50,7 +83,9 @@ export function InstallPrompt({ lang }: InstallPromptProps) {
     }
 
     return () => {
+      cancelled = true;
       window.removeEventListener("beforeinstallprompt", handler);
+      window.removeEventListener("appinstalled", onInstalled);
       if (showTimer) clearTimeout(showTimer);
     };
   }, []);
@@ -63,26 +98,58 @@ export function InstallPrompt({ lang }: InstallPromptProps) {
   async function install() {
     if (!deferredPrompt || installing) return;
 
+    const ready = await waitForInstallReady();
+    if (!ready) {
+      setInstallFailed(true);
+      setManualOnly(true);
+      return;
+    }
+
     setInstalling(true);
+    setInstallFailed(false);
     try {
       await deferredPrompt.prompt();
       const { outcome } = await deferredPrompt.userChoice;
       if (outcome === "accepted") {
-        setVisible(false);
+        await new Promise<void>((resolve) => {
+          const timeout = setTimeout(resolve, 4000);
+          window.addEventListener(
+            "appinstalled",
+            () => {
+              clearTimeout(timeout);
+              resolve();
+            },
+            { once: true },
+          );
+        });
+        if (!isStandaloneDisplay()) {
+          setInstallFailed(true);
+          setManualOnly(true);
+        } else {
+          setVisible(false);
+        }
       }
+    } catch {
+      setInstallFailed(true);
+      setManualOnly(true);
     } finally {
       setDeferredPrompt(null);
+      pendingPrompt.current = null;
       setInstalling(false);
     }
   }
 
   if (!visible) return null;
 
-  const hint = isAndroid()
-    ? t(lang, "installHintAndroid")
-    : isIos()
-      ? t(lang, "installHintIos")
-      : t(lang, "installHintDesktop");
+  const hint = installFailed
+    ? t(lang, "installFailedRetry")
+    : isAndroid()
+      ? t(lang, "installHintAndroid")
+      : isIos()
+        ? t(lang, "installHintIos")
+        : t(lang, "installHintDesktop");
+
+  const showNativeButton = Boolean(deferredPrompt) && installReady && !installFailed;
 
   return (
     <section
@@ -94,13 +161,13 @@ export function InstallPrompt({ lang }: InstallPromptProps) {
           <Download className="mt-0.5 h-5 w-5 shrink-0" aria-hidden />
           <div className="min-w-0 space-y-1">
             <p className="text-sm font-medium">{t(lang, "installPrompt")}</p>
-            {manualOnly || !deferredPrompt ? (
+            {manualOnly || !showNativeButton ? (
               <p className="text-xs leading-5 opacity-90">{hint}</p>
             ) : null}
           </div>
         </div>
         <div className="flex shrink-0 items-center gap-1">
-          {deferredPrompt ? (
+          {showNativeButton ? (
             <Button
               type="button"
               variant="ghost"

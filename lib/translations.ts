@@ -51,6 +51,7 @@ type TranslationKey =
   | "installHintAndroid"
   | "installHintIos"
   | "installHintDesktop"
+  | "installFailedRetry"
   | "close"
   | "navHome"
   | "back"
@@ -129,6 +130,8 @@ const en: Record<TranslationKey, string> = {
   installHintAndroid: "Tap ⋮ (menu) → Install app, or Add to Home screen.",
   installHintIos: "Tap Share → Add to Home Screen.",
   installHintDesktop: "Use your browser menu to install this app.",
+  installFailedRetry:
+    "Install did not finish. Clear site data for this page, reload, then use ⋮ → Install app.",
   close: "Close",
   navHome: "Home",
   back: "Back",
@@ -208,6 +211,8 @@ const ur: Record<TranslationKey, string> = {
   installHintAndroid: "⋮ (مینو) → Install app یا Add to Home screen پر ٹیپ کریں۔",
   installHintIos: "Share → Add to Home Screen پر ٹیپ کریں۔",
   installHintDesktop: "براؤزر مینو سے ایپ انسٹال کریں۔",
+  installFailedRetry:
+    "انسٹال مکمل نہیں ہوا۔ سائٹ ڈیٹا صاف کریں، صفحہ دوبارہ لوڈ کریں، پھر ⋮ → Install app استعمال کریں۔",
   close: "بند",
   navHome: "ہوم",
   back: "واپس",

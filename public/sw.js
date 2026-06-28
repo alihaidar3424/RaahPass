@@ -1,7 +1,7 @@
-const CACHE = "raahpass-static-v4";
-const OFFLINE_URL = "/offline";
+const CACHE = "raahpass-static-v5";
+const OFFLINE_URL = "/offline.html";
 
-/** Static assets only — do not precache HTML routes (SSR pages break addAll). */
+/** Static assets only — do not precache HTML routes (SSR pages break install). */
 const PRECACHE = [
   OFFLINE_URL,
   "/manifest.webmanifest",
@@ -17,7 +17,10 @@ async function precacheAssets(cacheName, urls) {
   await Promise.all(
     urls.map(async (url) => {
       try {
-        await cache.add(url);
+        const response = await fetch(url, { cache: "reload" });
+        if (response.ok) {
+          await cache.put(url, response);
+        }
       } catch {
         // One failed asset must not block service worker install.
       }
@@ -26,7 +29,9 @@ async function precacheAssets(cacheName, urls) {
 }
 
 self.addEventListener("install", (event) => {
-  event.waitUntil(precacheAssets(CACHE, PRECACHE).then(() => self.skipWaiting()));
+  event.waitUntil(
+    precacheAssets(CACHE, PRECACHE).then(() => self.skipWaiting()),
+  );
 });
 
 self.addEventListener("activate", (event) => {
@@ -69,7 +74,7 @@ self.addEventListener("fetch", (event) => {
       .catch(async () => {
         const cached = await caches.match(request);
         if (cached) return cached;
-        if (request.destination === "document") {
+        if (request.mode === "navigate" || request.destination === "document") {
           const offline = await caches.match(OFFLINE_URL);
           if (offline) return offline;
         }

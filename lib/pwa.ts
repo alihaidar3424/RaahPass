@@ -19,3 +19,22 @@ export function isIos(): boolean {
 export function isMobileInstallPlatform(): boolean {
   return isAndroid() || isIos();
 }
+
+/** Chrome needs an active service worker before WebAPK install can finish. */
+export async function waitForInstallReady(): Promise<boolean> {
+  if (typeof window === "undefined" || !("serviceWorker" in navigator)) {
+    return false;
+  }
+
+  try {
+    const registration = await navigator.serviceWorker.ready;
+    if (!registration.active) return false;
+    // claim() in sw.js should attach on first visit; reload once if still uncontrolled.
+    if (!navigator.serviceWorker.controller) {
+      await new Promise((resolve) => setTimeout(resolve, 500));
+    }
+    return Boolean(registration.active);
+  } catch {
+    return false;
+  }
+}

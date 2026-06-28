@@ -8,10 +8,10 @@ export default function manifest(): MetadataRoute.Manifest {
     name: `${BRAND.nameEn} — ${BRAND.taglineEn}`,
     short_name: BRAND.nameEn,
     description: BRAND.descriptionEn,
-    start_url: "/?source=pwa",
+    start_url: "/",
     scope: "/",
     display: "standalone",
-    display_override: ["standalone", "minimal-ui", "browser"],
+    display_override: ["standalone", "minimal-ui"],
     background_color: "#f8fafc",
     theme_color: "#064E3B",
     orientation: "portrait",
@@ -19,9 +19,6 @@ export default function manifest(): MetadataRoute.Manifest {
     dir: "auto",
     categories: ["education", "utilities"],
     prefer_related_applications: false,
-    launch_handler: {
-      client_mode: "navigate-existing",
-    },
     icons: [
       {
         src: "/icons/icon-192.png",
