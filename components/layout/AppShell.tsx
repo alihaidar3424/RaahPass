@@ -41,26 +41,22 @@ export function AppShell({
         style={{ backgroundColor: "var(--header)" }}
       >
         <div className="mx-auto flex h-16 max-w-lg items-center justify-between gap-2 px-4 sm:px-5">
-          <div className="flex min-w-0 flex-1 items-center">
+          <div className="flex min-w-0 flex-1 items-center gap-1">
             {backHref ? (
               <NavLink
                 href={backHref}
                 className={cn(
-                  "inline-flex min-h-11 min-w-0 max-w-[min(100%,14rem)] items-center gap-0.5 rounded-lg px-1 text-foreground transition-colors hover:bg-muted",
+                  "inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-lg text-foreground transition-colors hover:bg-muted",
                   rtl && "urdu-text",
                 )}
                 aria-label={backLabel ?? t(lang, "back")}
               >
-                <BackChevron className="h-5 w-5 shrink-0" aria-hidden />
-                <span className="truncate text-sm font-semibold">
-                  {backLabel ?? t(lang, "back")}
-                </span>
+                <BackChevron className="h-5 w-5" aria-hidden />
               </NavLink>
-            ) : (
-              <NavLink href={withLang("/", lang)} className="min-w-0">
-                <AppLogo lang={lang} size="sm" />
-              </NavLink>
-            )}
+            ) : null}
+            <NavLink href={withLang("/", lang)} className="min-w-0">
+              <AppLogo lang={lang} size="sm" />
+            </NavLink>
           </div>
           <div className="flex shrink-0 items-center gap-2">
             <ThemeToggle lang={lang} />
