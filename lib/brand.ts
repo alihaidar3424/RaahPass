@@ -6,6 +6,8 @@ export const BRAND = {
   taglineUr: "ڈرائیونگ ٹیسٹ پاس کریں",
   descriptionEn:
     "Bilingual driving test practice for Pakistan. Mock exams in English and Urdu.",
+  /** Stable PWA identity — do not change after users install the app. */
+  pwaId: "raahpass",
   colors: {
     emerald: "#065f46",
     teal: "#0d9488",

@@ -1,7 +1,14 @@
-const CACHE = "raahpass-static-v2";
+const CACHE = "raahpass-static-v3";
 const OFFLINE_URL = "/offline";
 
-const PRECACHE = ["/", "/offline", "/manifest.webmanifest"];
+const PRECACHE = [
+  "/",
+  "/offline",
+  "/manifest.webmanifest",
+  "/icons/icon-192.png",
+  "/icons/icon-512.png",
+  "/brand/logo-mark.svg",
+];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
@@ -27,8 +34,12 @@ self.addEventListener("fetch", (event) => {
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) return;
 
-  // Never cache server actions / dynamic API — network only
-  if (url.pathname.startsWith("/quiz/") || url.pathname.startsWith("/result/")) {
+  // Dynamic quiz/result routes — network only (answers live server-side until submit)
+  if (
+    url.pathname.startsWith("/quiz/") ||
+    url.pathname.startsWith("/result/") ||
+    url.pathname.startsWith("/review/")
+  ) {
     event.respondWith(fetch(request));
     return;
   }
