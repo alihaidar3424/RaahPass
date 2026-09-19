@@ -1,14 +1,15 @@
 "use client";
 
-import { CorrectOption } from "@/generated/prisma/client";
 import { cn } from "@/lib/utils";
 
+export type QuizOptionKey = "A" | "B" | "C" | "D";
+
 type OptionButtonProps = {
-  optionKey: CorrectOption;
+  optionKey: QuizOptionKey;
   label: string;
   selected: boolean;
   disabled?: boolean;
-  onSelect: (key: CorrectOption) => void;
+  onSelect: (key: QuizOptionKey) => void;
   rtl?: boolean;
 };
 

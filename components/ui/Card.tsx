@@ -10,7 +10,7 @@ export function Card({ children, className, accent = "none" }: CardProps) {
   return (
     <div
       className={cn(
-        "rounded-xl border border-border bg-card p-4 shadow-sm",
+        "rounded-xl border border-border bg-card p-4 shadow-[var(--shadow-card)] md:p-5",
         accent === "primary" && "border-l-4 border-l-primary",
         accent === "success" && "border-l-4 border-l-success",
         accent === "danger" && "border-l-4 border-l-destructive",

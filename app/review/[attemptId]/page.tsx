@@ -2,11 +2,13 @@ import { AttemptNotFound } from "@/components/quiz/AttemptNotFound";
 import { AppShell } from "@/components/layout/AppShell";
 import { LinkButton } from "@/components/ui/Button";
 import { PageContainer } from "@/components/ui/PageContainer";
-import { Card, mutedTextClassName } from "@/components/ui/Card";
+import { Card } from "@/components/ui/Card";
 import { getReview } from "@/lib/quiz";
 import { isQuizNotFound } from "@/lib/quiz-errors";
 import { resolveLanguage } from "@/lib/resolve-language";
+import { withLang } from "@/lib/language";
 import { dirForLanguage, t, tf } from "@/lib/translations";
+import Image from "next/image";
 
 type ReviewPageProps = {
   params: Promise<{ attemptId: string }>;
@@ -54,6 +56,17 @@ export default async function ReviewPage({ params }: ReviewPageProps) {
                     total: review.questions.length,
                   })}
                 </p>
+                {question.imageUrl ? (
+                  <div className="mb-3 flex h-32 items-center justify-center rounded-lg bg-muted/40">
+                    <Image
+                      src={question.imageUrl}
+                      alt={question.imageAlt ?? ""}
+                      width={140}
+                      height={140}
+                      className="max-h-28 w-auto object-contain"
+                    />
+                  </div>
+                ) : null}
                 <h2 className="text-base font-semibold leading-7 text-card-foreground">
                   {question.questionText}
                 </h2>
@@ -87,7 +100,7 @@ export default async function ReviewPage({ params }: ReviewPageProps) {
           })}
         </div>
 
-        <LinkButton href={`/result/${attemptId}`} fullWidth variant="secondary">
+        <LinkButton href={withLang(`/result/${attemptId}`, lang)} fullWidth variant="secondary">
           {t(lang, "backToResult")}
         </LinkButton>
       </PageContainer>

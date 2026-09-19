@@ -73,7 +73,7 @@ export default async function ResultPage({ params }: ResultPageProps) {
         </Card>
 
         <div className="section-stack">
-          <LinkButton href={`/review/${attemptId}`} fullWidth variant="secondary">
+          <LinkButton href={withLang(`/review/${attemptId}`, lang)} fullWidth variant="secondary">
             {t(lang, "viewReview")}
           </LinkButton>
           <LinkButton href={withLang("/start", lang)} fullWidth>

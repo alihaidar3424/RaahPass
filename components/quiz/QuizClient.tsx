@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState, useTransition } from "react";
+import Image from "next/image";
 import { CorrectOption } from "@/generated/prisma/client";
 import { OptionButton } from "@/components/quiz/OptionButton";
 import { ProgressBar } from "@/components/quiz/ProgressBar";
@@ -54,8 +55,9 @@ export function QuizClient({ attemptId, language, questions }: QuizClientProps) 
   const [remainingMs, setRemainingMs] = useState(QUIZ_DURATION_MS);
   const [hydrated, setHydrated] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [submitted, setSubmitted] = useState(false);
   const [isPending, startTransition] = useTransition();
-  const autoSubmittedRef = useRef(false);
+  const isLockedRef = useRef(false);
 
   const rtl = dirForLanguage(language) === "rtl";
   const current = questions[index];
@@ -64,29 +66,38 @@ export function QuizClient({ attemptId, language, questions }: QuizClientProps) 
     () => questions.map((question) => question.attemptQuestionId),
     [questions],
   );
-  const isLocked = isPending || autoSubmittedRef.current;
-  const isLockedRef = useRef(isLocked);
-  isLockedRef.current = isLocked;
+  const isLocked = isPending || submitted;
 
   useEffect(() => {
-    const raw = sessionStorage.getItem(storageKey(attemptId));
+    isLockedRef.current = isLocked;
+  }, [isLocked]);
+
+  useEffect(() => {
+    let cancelled = false;
     const now = Date.now();
 
-    if (raw) {
-      try {
-        const saved = JSON.parse(raw) as Partial<SavedProgress>;
-        setAnswers(saved.answers ?? {});
-        setIndex(saved.index ?? 0);
-        setStartedAt(saved.startedAt ?? now);
-      } catch {
-        sessionStorage.removeItem(storageKey(attemptId));
+    queueMicrotask(() => {
+      if (cancelled) return;
+      const raw = sessionStorage.getItem(storageKey(attemptId));
+      if (raw) {
+        try {
+          const saved = JSON.parse(raw) as Partial<SavedProgress>;
+          setAnswers(saved.answers ?? {});
+          setIndex(saved.index ?? 0);
+          setStartedAt(saved.startedAt ?? now);
+        } catch {
+          sessionStorage.removeItem(storageKey(attemptId));
+          setStartedAt(now);
+        }
+      } else {
         setStartedAt(now);
       }
-    } else {
-      setStartedAt(now);
-    }
+      setHydrated(true);
+    });
 
-    setHydrated(true);
+    return () => {
+      cancelled = true;
+    };
   }, [attemptId]);
 
   useEffect(() => {
@@ -111,7 +122,7 @@ export function QuizClient({ attemptId, language, questions }: QuizClientProps) 
 
   const submitTest = useCallback(
     (timedOut: boolean) => {
-      if (autoSubmittedRef.current || isPending) return;
+      if (submitted || isPending) return;
 
       if (!timedOut && answeredCount < QUIZ_SIZE) {
         const firstUnanswered = questions.findIndex((q) => !answers[q.attemptQuestionId]);
@@ -125,7 +136,7 @@ export function QuizClient({ attemptId, language, questions }: QuizClientProps) 
         return;
       }
 
-      autoSubmittedRef.current = true;
+      setSubmitted(true);
       setError(timedOut ? t(language, "timeUp") : null);
 
       startTransition(async () => {
@@ -137,17 +148,18 @@ export function QuizClient({ attemptId, language, questions }: QuizClientProps) 
           });
           sessionStorage.removeItem(storageKey(attemptId));
         } catch {
-          autoSubmittedRef.current = false;
+          setSubmitted(false);
           setError(t(language, "errorAlreadySubmitted"));
         }
       });
     },
-    [answeredCount, answers, attemptId, isPending, language, questions],
+    [answeredCount, answers, attemptId, isPending, language, questions, submitted],
   );
 
   useEffect(() => {
     if (!hydrated || startedAt === null || remainingMs > 0) return;
-    submitTest(true);
+    const timer = window.setTimeout(() => submitTest(true), 0);
+    return () => window.clearTimeout(timer);
   }, [hydrated, remainingMs, startedAt, submitTest]);
 
   const jumpToQuestion = useDebouncedCallback((nextIndex: number) => {
@@ -179,7 +191,7 @@ export function QuizClient({ attemptId, language, questions }: QuizClientProps) 
         </div>
       ) : null}
 
-      <PageContainer className={cn("section-stack", isPending && "pointer-events-none")}>
+      <PageContainer className={cn("section-stack", isPending && "pointer-events-none")} width="shell">
         <div className="flex items-center justify-between gap-3 text-sm text-muted-foreground">
           <span>{tf(language, "questionOf", { current: index + 1, total: QUIZ_SIZE })}</span>
           <QuizTimer remainingMs={remainingMs} language={language} />
@@ -198,7 +210,19 @@ export function QuizClient({ attemptId, language, questions }: QuizClientProps) 
           onJump={jumpToQuestion}
         />
 
-        <Card>
+        <Card className="flex flex-col gap-4">
+          {current.imageUrl ? (
+            <div className="relative flex h-44 w-full items-center justify-center rounded-lg bg-muted/40">
+              <Image
+                src={current.imageUrl}
+                alt={current.imageAlt ?? ""}
+                width={180}
+                height={180}
+                className="max-h-40 w-auto object-contain"
+                priority
+              />
+            </div>
+          ) : null}
           <h2 className="text-lg font-semibold leading-7 text-card-foreground">
             {current.questionText}
           </h2>

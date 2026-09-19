@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { cn } from "@/lib/utils";
@@ -12,12 +12,12 @@ type ThemeToggleProps = {
   lang: Language;
 };
 
+const emptySubscribe = () => () => {};
+
 export function ThemeToggle({ lang }: ThemeToggleProps) {
   const { theme, setTheme, resolvedTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
+  const mounted = useSyncExternalStore(emptySubscribe, () => true, () => false);
   const { busy, run } = useBusyLock(350);
-
-  useEffect(() => setMounted(true), []);
 
   if (!mounted) {
     return (

@@ -1,0 +1,1261 @@
+{
+  "version": "1.0",
+  "totalSigns": 110,
+  "categories": [
+    "regulatory",
+    "warning",
+    "informatory",
+    "markings",
+    "other"
+  ],
+  "signs": [
+    {
+      "slug": "pakistan-railroad-crossbuck",
+      "nameEn": "Railway crossing",
+      "nameUr": "ریلوے کراسنگ",
+      "category": "other",
+      "image": "/signs/pakistan-railroad-crossbuck.png",
+      "descriptionEn": "This traffic sign means: Railway crossing.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: ریلوے کراسنگ۔",
+      "questionIds": []
+    },
+    {
+      "slug": "pakistan-signals-out-of-order",
+      "nameEn": "Signals out of order",
+      "nameUr": "سگنل خراب",
+      "category": "other",
+      "image": "/signs/pakistan-signals-out-of-order.png",
+      "descriptionEn": "This traffic sign means: Signals out of order.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: سگنل خراب۔",
+      "questionIds": []
+    },
+    {
+      "slug": "quiz-sign-q004",
+      "nameEn": "No entry for vehicles exceeding 8 Ton on Axle",
+      "nameUr": "ایک ایکسل پر آٹھ ٹن سے زائد گاڑیوں کا داخلہ ممنوع ہے",
+      "category": "regulatory",
+      "image": "/signs/quiz/sign-q004.png",
+      "descriptionEn": "This traffic sign means: No entry for vehicles exceeding 8 Ton on Axle.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: ایک ایکسل پر آٹھ ٹن سے زائد گاڑیوں کا داخلہ ممنوع ہے۔",
+      "questionIds": [
+        "s-004"
+      ]
+    },
+    {
+      "slug": "quiz-sign-q006",
+      "nameEn": "No entry for vehicles exceeding 10 meter in length",
+      "nameUr": "دس میٹر سے زائد لمبی گاڑیوں کا داخلہ ممنوع ہے",
+      "category": "regulatory",
+      "image": "/signs/quiz/sign-q006.png",
+      "descriptionEn": "This traffic sign means: No entry for vehicles exceeding 10 meter in length.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: دس میٹر سے زائد لمبی گاڑیوں کا داخلہ ممنوع ہے۔",
+      "questionIds": [
+        "s-006"
+      ]
+    },
+    {
+      "slug": "quiz-sign-q008",
+      "nameEn": "Filling station",
+      "nameUr": "پیٹرول پمپ",
+      "category": "informatory",
+      "image": "/signs/quiz/sign-q008.png",
+      "descriptionEn": "This traffic sign means: Filling station.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: پیٹرول پمپ۔",
+      "questionIds": [
+        "s-008"
+      ]
+    },
+    {
+      "slug": "quiz-sign-q009",
+      "nameEn": "Telephone facility",
+      "nameUr": "ٹیلی فون",
+      "category": "informatory",
+      "image": "/signs/quiz/sign-q009.png",
+      "descriptionEn": "This traffic sign means: Telephone facility.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: ٹیلی فون۔",
+      "questionIds": [
+        "s-009"
+      ]
+    },
+    {
+      "slug": "quiz-sign-q011",
+      "nameEn": "First Aid Centre",
+      "nameUr": "طبی امداد",
+      "category": "informatory",
+      "image": "/signs/quiz/sign-q011.png",
+      "descriptionEn": "This traffic sign means: First Aid Centre.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: طبی امداد۔",
+      "questionIds": [
+        "s-011"
+      ]
+    },
+    {
+      "slug": "quiz-sign-q012",
+      "nameEn": "Bus stop",
+      "nameUr": "بس سٹاپ",
+      "category": "informatory",
+      "image": "/signs/quiz/sign-q012.png",
+      "descriptionEn": "This traffic sign means: Bus stop.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: بس سٹاپ۔",
+      "questionIds": [
+        "s-012"
+      ]
+    },
+    {
+      "slug": "quiz-sign-q016",
+      "nameEn": "No entry for animal drawn vehicle",
+      "nameUr": "جانوروں سے کھینچی جانے والی گاڑیوں کا داخلہ ممنوع ہے",
+      "category": "regulatory",
+      "image": "/signs/quiz/sign-q016.png",
+      "descriptionEn": "This traffic sign means: No entry for animal drawn vehicle.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: جانوروں سے کھینچی جانے والی گاڑیوں کا داخلہ ممنوع ہے۔",
+      "questionIds": [
+        "s-016"
+      ]
+    },
+    {
+      "slug": "quiz-sign-q017",
+      "nameEn": "No entry for agricultural vehicle",
+      "nameUr": "زرعی گاڑیوں کا داخلہ ممنوع ہے",
+      "category": "regulatory",
+      "image": "/signs/quiz/sign-q017.png",
+      "descriptionEn": "This traffic sign means: No entry for agricultural vehicle.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: زرعی گاڑیوں کا داخلہ ممنوع ہے۔",
+      "questionIds": [
+        "s-017"
+      ]
+    },
+    {
+      "slug": "quiz-sign-q020",
+      "nameEn": "Center line no overtaking zone",
+      "nameUr": "درمیانی لائن، اوور ٹیکنگ ممنوع ہے",
+      "category": "markings",
+      "image": "/signs/quiz/sign-q020.png",
+      "descriptionEn": "This traffic sign means: Center line no overtaking zone.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: درمیانی لائن، اوور ٹیکنگ ممنوع ہے۔",
+      "questionIds": [
+        "s-020"
+      ]
+    },
+    {
+      "slug": "quiz-sign-q021",
+      "nameEn": "Overtaking allow if no vehicle",
+      "nameUr": "اوور ٹیکنگ منع ہے",
+      "category": "regulatory",
+      "image": "/signs/quiz/sign-q021.png",
+      "descriptionEn": "This traffic sign means: Overtaking allow if no vehicle.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: اوور ٹیکنگ منع ہے۔",
+      "questionIds": [
+        "s-021"
+      ]
+    },
+    {
+      "slug": "quiz-sign-q022",
+      "nameEn": "Overtaking allow if no vehicle",
+      "nameUr": "اگر سامنے سے گاڑی نہ آرہی ہو تو اوور ٹیکنگ کر سکتے ہیں۔",
+      "category": "regulatory",
+      "image": "/signs/quiz/sign-q022.png",
+      "descriptionEn": "This traffic sign means: Overtaking allow if no vehicle.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: اگر سامنے سے گاڑی نہ آرہی ہو تو اوور ٹیکنگ کر سکتے ہیں۔۔",
+      "questionIds": [
+        "s-022"
+      ]
+    },
+    {
+      "slug": "quiz-sign-q024",
+      "nameEn": "Junction box",
+      "nameUr": "بکس چوک",
+      "category": "regulatory",
+      "image": "/signs/quiz/sign-q024.png",
+      "descriptionEn": "This traffic sign means: Junction box.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: بکس چوک۔",
+      "questionIds": [
+        "s-024"
+      ]
+    },
+    {
+      "slug": "quiz-sign-q025",
+      "nameEn": "Stop line",
+      "nameUr": "سٹاپ لائن",
+      "category": "markings",
+      "image": "/signs/quiz/sign-q025.png",
+      "descriptionEn": "This traffic sign means: Stop line.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: سٹاپ لائن۔",
+      "questionIds": [
+        "s-025"
+      ]
+    },
+    {
+      "slug": "quiz-sign-q059",
+      "nameEn": "No horn",
+      "nameUr": "ہارن بجانا منع ہے",
+      "category": "regulatory",
+      "image": "/signs/quiz/sign-q059.png",
+      "descriptionEn": "This traffic sign means: No horn.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: ہارن بجانا منع ہے۔",
+      "questionIds": [
+        "s-059"
+      ]
+    },
+    {
+      "slug": "quiz-sign-q060",
+      "nameEn": "Parking",
+      "nameUr": "پارکنگ",
+      "category": "informatory",
+      "image": "/signs/quiz/sign-q060.png",
+      "descriptionEn": "This traffic sign means: Parking.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: پارکنگ۔",
+      "questionIds": [
+        "s-060"
+      ]
+    },
+    {
+      "slug": "quiz-sign-q061",
+      "nameEn": "Hospital",
+      "nameUr": "ہسپتال",
+      "category": "informatory",
+      "image": "/signs/quiz/sign-q061.png",
+      "descriptionEn": "This traffic sign means: Hospital.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: ہسپتال۔",
+      "questionIds": [
+        "s-061"
+      ]
+    },
+    {
+      "slug": "quiz-sign-q064",
+      "nameEn": "Restaurant",
+      "nameUr": "ریستوران",
+      "category": "informatory",
+      "image": "/signs/quiz/sign-q064.png",
+      "descriptionEn": "This traffic sign means: Restaurant.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: ریستوران۔",
+      "questionIds": [
+        "s-064"
+      ]
+    },
+    {
+      "slug": "quiz-sign-q067",
+      "nameEn": "Parking place indicated",
+      "nameUr": "دائیں جانب پارکنگ",
+      "category": "informatory",
+      "image": "/signs/quiz/sign-q067.png",
+      "descriptionEn": "This traffic sign means: Parking place indicated.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: دائیں جانب پارکنگ۔",
+      "questionIds": [
+        "s-067"
+      ]
+    },
+    {
+      "slug": "quiz-sign-q068",
+      "nameEn": "Facility indicated",
+      "nameUr": "سہولت موجود ہے",
+      "category": "regulatory",
+      "image": "/signs/quiz/sign-q068.png",
+      "descriptionEn": "This traffic sign means: Facility indicated.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: سہولت موجود ہے۔",
+      "questionIds": [
+        "s-068"
+      ]
+    },
+    {
+      "slug": "quiz-sign-q069",
+      "nameEn": "100 meters Motorway exit",
+      "nameUr": "سو میٹر موٹروے خروج",
+      "category": "regulatory",
+      "image": "/signs/quiz/sign-q069.png",
+      "descriptionEn": "This traffic sign means: 100 meters Motorway exit.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: سو میٹر موٹروے خروج۔",
+      "questionIds": [
+        "s-069"
+      ]
+    },
+    {
+      "slug": "quiz-sign-q070",
+      "nameEn": "200 meters Motorway exit",
+      "nameUr": "موٹروے خروج دوسو میٹر",
+      "category": "regulatory",
+      "image": "/signs/quiz/sign-q070.png",
+      "descriptionEn": "This traffic sign means: 200 meters Motorway exit.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: موٹروے خروج دوسو میٹر۔",
+      "questionIds": [
+        "s-070"
+      ]
+    },
+    {
+      "slug": "quiz-sign-q071",
+      "nameEn": "300 meters Motorway exit",
+      "nameUr": "موٹروے خروج تین سو میٹر",
+      "category": "regulatory",
+      "image": "/signs/quiz/sign-q071.png",
+      "descriptionEn": "This traffic sign means: 300 meters Motorway exit.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: موٹروے خروج تین سو میٹر۔",
+      "questionIds": [
+        "s-071"
+      ]
+    },
+    {
+      "slug": "quiz-sign-q072",
+      "nameEn": "Start of motorway",
+      "nameUr": "موٹر وے شروع",
+      "category": "regulatory",
+      "image": "/signs/quiz/sign-q072.png",
+      "descriptionEn": "This traffic sign means: Start of motorway.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: موٹر وے شروع۔",
+      "questionIds": [
+        "s-072"
+      ]
+    },
+    {
+      "slug": "quiz-sign-q073",
+      "nameEn": "End of motorway",
+      "nameUr": "موٹروے ختم",
+      "category": "regulatory",
+      "image": "/signs/quiz/sign-q073.png",
+      "descriptionEn": "This traffic sign means: End of motorway.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: موٹروے ختم۔",
+      "questionIds": [
+        "s-073"
+      ]
+    },
+    {
+      "slug": "quiz-sign-q074",
+      "nameEn": "No horn",
+      "nameUr": "ہارن بجانا منع ہے",
+      "category": "regulatory",
+      "image": "/signs/quiz/sign-q074.png",
+      "descriptionEn": "This traffic sign means: No horn.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: ہارن بجانا منع ہے۔",
+      "questionIds": [
+        "s-074"
+      ]
+    },
+    {
+      "slug": "r-01",
+      "nameEn": "Stop",
+      "nameUr": "رکنے کا نشان",
+      "category": "regulatory",
+      "image": "/signs/r-01.png",
+      "descriptionEn": "This traffic sign means: Stop.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: رکنے کا نشان۔",
+      "questionIds": [
+        "s-042"
+      ]
+    },
+    {
+      "slug": "r-02",
+      "nameEn": "Give way warning",
+      "nameUr": "راستہ دینے کا نشان",
+      "category": "regulatory",
+      "image": "/signs/r-02.png",
+      "descriptionEn": "This traffic sign means: Give way warning.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: راستہ دینے کا نشان۔",
+      "questionIds": [
+        "s-023",
+        "s-033",
+        "s-078"
+      ]
+    },
+    {
+      "slug": "r-03",
+      "nameEn": "No entry",
+      "nameUr": "داخلہ ممنوع",
+      "category": "regulatory",
+      "image": "/signs/r-03.png",
+      "descriptionEn": "Pakistan traffic sign (r-03).",
+      "descriptionUr": "پاکستان ٹریفک نشان (r-03)۔",
+      "questionIds": []
+    },
+    {
+      "slug": "r-04",
+      "nameEn": "Slow",
+      "nameUr": "آہستہ چلیں",
+      "category": "regulatory",
+      "image": "/signs/r-04.png",
+      "descriptionEn": "This traffic sign means: Slow.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: آہستہ چلیں۔",
+      "questionIds": [
+        "s-043"
+      ]
+    },
+    {
+      "slug": "r-05",
+      "nameEn": "Road is closed ahead",
+      "nameUr": "آگے سڑک بند ہے",
+      "category": "regulatory",
+      "image": "/signs/r-05.png",
+      "descriptionEn": "This traffic sign means: Road is closed ahead.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: آگے سڑک بند ہے۔",
+      "questionIds": [
+        "s-044"
+      ]
+    },
+    {
+      "slug": "r-06",
+      "nameEn": "Straight ahead prohibited",
+      "nameUr": "سیدھا آگے جانا منع ہے",
+      "category": "regulatory",
+      "image": "/signs/r-06.png",
+      "descriptionEn": "This traffic sign means: Straight ahead prohibited.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: سیدھا آگے جانا منع ہے۔",
+      "questionIds": [
+        "s-045",
+        "s-051"
+      ]
+    },
+    {
+      "slug": "r-08",
+      "nameEn": "No entry for cycle",
+      "nameUr": "سائیکل کا داخلہ ممنوع ہے",
+      "category": "regulatory",
+      "image": "/signs/r-08.png",
+      "descriptionEn": "This traffic sign means: No entry for cycle.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: سائیکل کا داخلہ ممنوع ہے۔",
+      "questionIds": [
+        "s-013"
+      ]
+    },
+    {
+      "slug": "r-09",
+      "nameEn": "No entry for motor cycle",
+      "nameUr": "موٹر سائیکلوں کا داخلہ ممنوع ہے",
+      "category": "regulatory",
+      "image": "/signs/r-09.png",
+      "descriptionEn": "This traffic sign means: No entry for motor cycle.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: موٹر سائیکلوں کا داخلہ ممنوع ہے۔",
+      "questionIds": [
+        "s-047"
+      ]
+    },
+    {
+      "slug": "r-10",
+      "nameEn": "No entry for goods vehicle",
+      "nameUr": "مال بردار گاڑیوں کا داخلہ ممنوع ہے",
+      "category": "regulatory",
+      "image": "/signs/r-10.png",
+      "descriptionEn": "This traffic sign means: No entry for goods vehicle.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: مال بردار گاڑیوں کا داخلہ ممنوع ہے۔",
+      "questionIds": [
+        "s-014"
+      ]
+    },
+    {
+      "slug": "r-11",
+      "nameEn": "No entry for pedestrian",
+      "nameUr": "پیدل اشخاص کا داخلہ ممنوع ہے",
+      "category": "regulatory",
+      "image": "/signs/r-11.png",
+      "descriptionEn": "This traffic sign means: No entry for pedestrian.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: پیدل اشخاص کا داخلہ ممنوع ہے۔",
+      "questionIds": [
+        "s-015"
+      ]
+    },
+    {
+      "slug": "r-13",
+      "nameEn": "Speed limit",
+      "nameUr": "رفتار کی حد",
+      "category": "regulatory",
+      "image": "/signs/r-13.png",
+      "descriptionEn": "This traffic sign means: Speed limit.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: رفتار کی حد۔",
+      "questionIds": []
+    },
+    {
+      "slug": "r-20",
+      "nameEn": "No right turn",
+      "nameUr": "دائیں طرف مڑنا منع ہے",
+      "category": "regulatory",
+      "image": "/signs/r-20.png",
+      "descriptionEn": "This traffic sign means: No right turn.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: دائیں طرف مڑنا منع ہے۔",
+      "questionIds": [
+        "s-001"
+      ]
+    },
+    {
+      "slug": "r-21",
+      "nameEn": "No left turn",
+      "nameUr": "بائیں نہیں مڑ سکتے",
+      "category": "regulatory",
+      "image": "/signs/r-21.png",
+      "descriptionEn": "This traffic sign means: No left turn.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: بائیں نہیں مڑ سکتے۔",
+      "questionIds": [
+        "s-052"
+      ]
+    },
+    {
+      "slug": "r-22",
+      "nameEn": "No U turn",
+      "nameUr": "یو ٹرن منع ہے",
+      "category": "regulatory",
+      "image": "/signs/r-22.png",
+      "descriptionEn": "This traffic sign means: No U turn.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: یو ٹرن منع ہے۔",
+      "questionIds": [
+        "s-050"
+      ]
+    },
+    {
+      "slug": "r-23",
+      "nameEn": "Overtaking prohibited",
+      "nameUr": "اوور ٹیکنگ منع ہے",
+      "category": "regulatory",
+      "image": "/signs/r-23.png",
+      "descriptionEn": "This traffic sign means: Overtaking prohibited.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: اوور ٹیکنگ منع ہے۔",
+      "questionIds": [
+        "s-046"
+      ]
+    },
+    {
+      "slug": "r-24",
+      "nameEn": "Over taking by goods vehicle prohibited",
+      "nameUr": "مال بردار گاڑیوں کی اوور ٹیکنگ منع ہے",
+      "category": "regulatory",
+      "image": "/signs/r-24.png",
+      "descriptionEn": "This traffic sign means: Over taking by goods vehicle prohibited.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: مال بردار گاڑیوں کی اوور ٹیکنگ منع ہے۔",
+      "questionIds": [
+        "s-005"
+      ]
+    },
+    {
+      "slug": "r-25",
+      "nameEn": "Speed limit",
+      "nameUr": "حد رفتار",
+      "category": "regulatory",
+      "image": "/signs/r-25.png",
+      "descriptionEn": "This traffic sign means: Speed limit.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: حد رفتار۔",
+      "questionIds": [
+        "s-056"
+      ]
+    },
+    {
+      "slug": "r-27",
+      "nameEn": "Compulsory ahead",
+      "nameUr": "سیدھا جانا لازمی",
+      "category": "regulatory",
+      "image": "/signs/r-27.png",
+      "descriptionEn": "This traffic sign means: Compulsory ahead.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: سیدھا جانا لازمی۔",
+      "questionIds": []
+    },
+    {
+      "slug": "r-28",
+      "nameEn": "Custom police ahead",
+      "nameUr": "کسٹم پولیس آگے ہے",
+      "category": "regulatory",
+      "image": "/signs/r-28.png",
+      "descriptionEn": "This traffic sign means: Custom police ahead.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: کسٹم پولیس آگے ہے۔",
+      "questionIds": [
+        "s-003"
+      ]
+    },
+    {
+      "slug": "r-29",
+      "nameEn": "No parking",
+      "nameUr": "پارکنگ ممنوع ہے",
+      "category": "regulatory",
+      "image": "/signs/r-29.png",
+      "descriptionEn": "This traffic sign means: No parking.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: پارکنگ ممنوع ہے۔",
+      "questionIds": [
+        "s-026"
+      ]
+    },
+    {
+      "slug": "r-30",
+      "nameEn": "End of speed limit imposed",
+      "nameUr": "حد رفتار پر عائد پابندی ختم۔",
+      "category": "regulatory",
+      "image": "/signs/r-30.png",
+      "descriptionEn": "This traffic sign means: End of speed limit imposed.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: حد رفتار پر عائد پابندی ختم۔۔",
+      "questionIds": [
+        "s-028",
+        "s-076"
+      ]
+    },
+    {
+      "slug": "r-31",
+      "nameEn": "End of prohibition of overtaking",
+      "nameUr": "اوور ٹیکنگ پر عائد پابندی ختم ہے",
+      "category": "regulatory",
+      "image": "/signs/r-31.png",
+      "descriptionEn": "This traffic sign means: End of prohibition of overtaking.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: اوور ٹیکنگ پر عائد پابندی ختم ہے۔",
+      "questionIds": [
+        "s-053"
+      ]
+    },
+    {
+      "slug": "r-32",
+      "nameEn": "Compulsory keep right",
+      "nameUr": "دائیں رہیں",
+      "category": "regulatory",
+      "image": "/signs/r-32.png",
+      "descriptionEn": "This traffic sign means: Compulsory keep right.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: دائیں رہیں۔",
+      "questionIds": []
+    },
+    {
+      "slug": "r-33",
+      "nameEn": "End of all prohibitions imposed",
+      "nameUr": "تمام عائد کردہ پابندیاں ختم ہیں۔",
+      "category": "regulatory",
+      "image": "/signs/r-33.png",
+      "descriptionEn": "This traffic sign means: End of all prohibitions imposed.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: تمام عائد کردہ پابندیاں ختم ہیں۔۔",
+      "questionIds": [
+        "s-027"
+      ]
+    },
+    {
+      "slug": "r-34",
+      "nameEn": "Compulsory cycle track",
+      "nameUr": "سائیکل ٹریک لازمی",
+      "category": "regulatory",
+      "image": "/signs/r-34.png",
+      "descriptionEn": "This traffic sign means: Compulsory cycle track.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: سائیکل ٹریک لازمی۔",
+      "questionIds": []
+    },
+    {
+      "slug": "r-35",
+      "nameEn": "Turn to the left",
+      "nameUr": "بائیں مڑ جائیں",
+      "category": "regulatory",
+      "image": "/signs/r-35.png",
+      "descriptionEn": "This traffic sign means: Turn to the left.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: بائیں مڑ جائیں۔",
+      "questionIds": [
+        "s-054"
+      ]
+    },
+    {
+      "slug": "r-36",
+      "nameEn": "Go straight ahead",
+      "nameUr": "سیدھا آگے جائیں",
+      "category": "regulatory",
+      "image": "/signs/r-36.png",
+      "descriptionEn": "This traffic sign means: Go straight ahead.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: سیدھا آگے جائیں۔",
+      "questionIds": [
+        "s-055",
+        "s-066"
+      ]
+    },
+    {
+      "slug": "r-37",
+      "nameEn": "Dual carriageway",
+      "nameUr": "دوہری سڑک",
+      "category": "regulatory",
+      "image": "/signs/r-37.png",
+      "descriptionEn": "This traffic sign means: Dual carriageway.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: دوہری سڑک۔",
+      "questionIds": []
+    },
+    {
+      "slug": "r-38",
+      "nameEn": "One way",
+      "nameUr": "یک طرفہ",
+      "category": "regulatory",
+      "image": "/signs/r-38.png",
+      "descriptionEn": "This traffic sign means: One way.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: یک طرفہ۔",
+      "questionIds": []
+    },
+    {
+      "slug": "r-39",
+      "nameEn": "Buses only",
+      "nameUr": "صرف بسیں",
+      "category": "regulatory",
+      "image": "/signs/r-39.png",
+      "descriptionEn": "This traffic sign means: Buses only.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: صرف بسیں۔",
+      "questionIds": []
+    },
+    {
+      "slug": "r-40",
+      "nameEn": "Trucks prohibited",
+      "nameUr": "ٹرک منع",
+      "category": "regulatory",
+      "image": "/signs/r-40.png",
+      "descriptionEn": "This traffic sign means: Trucks prohibited.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: ٹرک منع۔",
+      "questionIds": []
+    },
+    {
+      "slug": "r-41",
+      "nameEn": "Axle weight limit",
+      "nameUr": "ایکسل وزن کی حد",
+      "category": "regulatory",
+      "image": "/signs/r-41.png",
+      "descriptionEn": "This traffic sign means: Axle weight limit.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: ایکسل وزن کی حد۔",
+      "questionIds": []
+    },
+    {
+      "slug": "r-42",
+      "nameEn": "Height limit",
+      "nameUr": "اونچائی کی حد",
+      "category": "regulatory",
+      "image": "/signs/r-42.png",
+      "descriptionEn": "This traffic sign means: Height limit.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: اونچائی کی حد۔",
+      "questionIds": []
+    },
+    {
+      "slug": "r-43",
+      "nameEn": "Width limit",
+      "nameUr": "چوڑائی کی حد",
+      "category": "regulatory",
+      "image": "/signs/r-43.png",
+      "descriptionEn": "This traffic sign means: Width limit.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: چوڑائی کی حد۔",
+      "questionIds": []
+    },
+    {
+      "slug": "r-44",
+      "nameEn": "Length limit",
+      "nameUr": "لمبائی کی حد",
+      "category": "regulatory",
+      "image": "/signs/r-44.png",
+      "descriptionEn": "This traffic sign means: Length limit.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: لمبائی کی حد۔",
+      "questionIds": []
+    },
+    {
+      "slug": "r-45",
+      "nameEn": "No handcarts",
+      "nameUr": "ہینڈ کارٹ منع",
+      "category": "regulatory",
+      "image": "/signs/r-45.png",
+      "descriptionEn": "This traffic sign means: No handcarts.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: ہینڈ کارٹ منع۔",
+      "questionIds": []
+    },
+    {
+      "slug": "r-46",
+      "nameEn": "Dual carriageway ahead",
+      "nameUr": "آگے ڈہری سڑک ہے",
+      "category": "regulatory",
+      "image": "/signs/r-46.png",
+      "descriptionEn": "This traffic sign means: Dual carriageway ahead.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: آگے ڈہری سڑک ہے۔",
+      "questionIds": [
+        "s-048"
+      ]
+    },
+    {
+      "slug": "r-47",
+      "nameEn": "Dual carriageway end",
+      "nameUr": "آگے ڈہری سڑک ختم ہے",
+      "category": "regulatory",
+      "image": "/signs/r-47.png",
+      "descriptionEn": "This traffic sign means: Dual carriageway end.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: آگے ڈہری سڑک ختم ہے۔",
+      "questionIds": [
+        "s-049"
+      ]
+    },
+    {
+      "slug": "r-48",
+      "nameEn": "R 48",
+      "nameUr": "R 48",
+      "category": "regulatory",
+      "image": "/signs/r-48.png",
+      "descriptionEn": "Pakistan traffic sign (r-48).",
+      "descriptionUr": "پاکستان ٹریفک نشان (r-48)۔",
+      "questionIds": []
+    },
+    {
+      "slug": "r-49",
+      "nameEn": "R 49",
+      "nameUr": "R 49",
+      "category": "regulatory",
+      "image": "/signs/r-49.png",
+      "descriptionEn": "Pakistan traffic sign (r-49).",
+      "descriptionUr": "پاکستان ٹریفک نشان (r-49)۔",
+      "questionIds": []
+    },
+    {
+      "slug": "r-50",
+      "nameEn": "R 50",
+      "nameUr": "R 50",
+      "category": "regulatory",
+      "image": "/signs/r-50.png",
+      "descriptionEn": "Pakistan traffic sign (r-50).",
+      "descriptionUr": "پاکستان ٹریفک نشان (r-50)۔",
+      "questionIds": []
+    },
+    {
+      "slug": "w-01",
+      "nameEn": "W 01",
+      "nameUr": "W 01",
+      "category": "warning",
+      "image": "/signs/w-01.png",
+      "descriptionEn": "Pakistan traffic sign (w-01).",
+      "descriptionUr": "پاکستان ٹریفک نشان (w-01)۔",
+      "questionIds": []
+    },
+    {
+      "slug": "w-02",
+      "nameEn": "Sharp deviation of route left",
+      "nameUr": "بائیں طرف سڑک کا نشان",
+      "category": "warning",
+      "image": "/signs/w-02.png",
+      "descriptionEn": "This traffic sign means: Sharp deviation of route left.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: بائیں طرف سڑک کا نشان۔",
+      "questionIds": [
+        "s-065"
+      ]
+    },
+    {
+      "slug": "w-03",
+      "nameEn": "Double bend on the road",
+      "nameUr": "دائیں طرف دہرا موڑ",
+      "category": "warning",
+      "image": "/signs/w-03.png",
+      "descriptionEn": "This traffic sign means: Double bend on the road.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: دائیں طرف دہرا موڑ۔",
+      "questionIds": [
+        "s-007"
+      ]
+    },
+    {
+      "slug": "w-04",
+      "nameEn": "W 04",
+      "nameUr": "W 04",
+      "category": "warning",
+      "image": "/signs/w-04.png",
+      "descriptionEn": "Pakistan traffic sign (w-04).",
+      "descriptionUr": "پاکستان ٹریفک نشان (w-04)۔",
+      "questionIds": []
+    },
+    {
+      "slug": "w-05",
+      "nameEn": "Steep Ascent",
+      "nameUr": "تیز چڑھائی",
+      "category": "warning",
+      "image": "/signs/w-05.png",
+      "descriptionEn": "This traffic sign means: Steep Ascent.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: تیز چڑھائی۔",
+      "questionIds": [
+        "s-039"
+      ]
+    },
+    {
+      "slug": "w-06",
+      "nameEn": "Dangerous descent",
+      "nameUr": "خطرناک اترائی",
+      "category": "warning",
+      "image": "/signs/w-06.png",
+      "descriptionEn": "This traffic sign means: Dangerous descent.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: خطرناک اترائی۔",
+      "questionIds": [
+        "s-034"
+      ]
+    },
+    {
+      "slug": "w-07",
+      "nameEn": "Road narrows on right",
+      "nameUr": "دائیں طرف سے سڑک تنگ ہو رہی ہے۔",
+      "category": "warning",
+      "image": "/signs/w-07.png",
+      "descriptionEn": "This traffic sign means: Road narrows on right.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: دائیں طرف سے سڑک تنگ ہو رہی ہے۔۔",
+      "questionIds": [
+        "s-036"
+      ]
+    },
+    {
+      "slug": "w-08",
+      "nameEn": "Carriageway narrows",
+      "nameUr": "آگے سڑک تنگ ہے۔",
+      "category": "warning",
+      "image": "/signs/w-08.png",
+      "descriptionEn": "This traffic sign means: Carriageway narrows.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: آگے سڑک تنگ ہے۔۔",
+      "questionIds": [
+        "s-037"
+      ]
+    },
+    {
+      "slug": "w-09",
+      "nameEn": "Swing bridge",
+      "nameUr": "جھولنے والا پل",
+      "category": "warning",
+      "image": "/signs/w-09.png",
+      "descriptionEn": "This traffic sign means: Swing bridge.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: جھولنے والا پل۔",
+      "questionIds": [
+        "s-019"
+      ]
+    },
+    {
+      "slug": "w-10",
+      "nameEn": "W 10",
+      "nameUr": "W 10",
+      "category": "warning",
+      "image": "/signs/w-10.png",
+      "descriptionEn": "Pakistan traffic sign (w-10).",
+      "descriptionUr": "پاکستان ٹریفک نشان (w-10)۔",
+      "questionIds": []
+    },
+    {
+      "slug": "w-11",
+      "nameEn": "Soft verges",
+      "nameUr": "سڑک کے کنارے نرم ہیں",
+      "category": "warning",
+      "image": "/signs/w-11.png",
+      "descriptionEn": "This traffic sign means: Soft verges.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: سڑک کے کنارے نرم ہیں۔",
+      "questionIds": [
+        "s-057"
+      ]
+    },
+    {
+      "slug": "w-12",
+      "nameEn": "W 12",
+      "nameUr": "W 12",
+      "category": "warning",
+      "image": "/signs/w-12.png",
+      "descriptionEn": "Pakistan traffic sign (w-12).",
+      "descriptionUr": "پاکستان ٹریفک نشان (w-12)۔",
+      "questionIds": []
+    },
+    {
+      "slug": "w-13",
+      "nameEn": "Road dips",
+      "nameUr": "سڑک پر نشیب ہے",
+      "category": "warning",
+      "image": "/signs/w-13.png",
+      "descriptionEn": "This traffic sign means: Road dips.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: سڑک پر نشیب ہے۔",
+      "questionIds": [
+        "s-038"
+      ]
+    },
+    {
+      "slug": "w-14",
+      "nameEn": "W 14",
+      "nameUr": "W 14",
+      "category": "warning",
+      "image": "/signs/w-14.png",
+      "descriptionEn": "Pakistan traffic sign (w-14).",
+      "descriptionUr": "پاکستان ٹریفک نشان (w-14)۔",
+      "questionIds": []
+    },
+    {
+      "slug": "w-15",
+      "nameEn": "Lose gravel",
+      "nameUr": "پتھروں کے اڑ کر لگنے کا خدشہ",
+      "category": "warning",
+      "image": "/signs/w-15.png",
+      "descriptionEn": "This traffic sign means: Lose gravel.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: پتھروں کے اڑ کر لگنے کا خدشہ۔",
+      "questionIds": [
+        "s-063"
+      ]
+    },
+    {
+      "slug": "w-16",
+      "nameEn": "W 16",
+      "nameUr": "W 16",
+      "category": "warning",
+      "image": "/signs/w-16.png",
+      "descriptionEn": "Pakistan traffic sign (w-16).",
+      "descriptionUr": "پاکستان ٹریفک نشان (w-16)۔",
+      "questionIds": []
+    },
+    {
+      "slug": "w-17",
+      "nameEn": "Pedestrian crossing",
+      "nameUr": "بچوں کے سڑک پار کرنے کا راستہ",
+      "category": "warning",
+      "image": "/signs/w-17.png",
+      "descriptionEn": "This traffic sign means: Pedestrian crossing.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: بچوں کے سڑک پار کرنے کا راستہ۔",
+      "questionIds": [
+        "s-041"
+      ]
+    },
+    {
+      "slug": "w-18",
+      "nameEn": "W 18",
+      "nameUr": "W 18",
+      "category": "warning",
+      "image": "/signs/w-18.png",
+      "descriptionEn": "Pakistan traffic sign (w-18).",
+      "descriptionUr": "پاکستان ٹریفک نشان (w-18)۔",
+      "questionIds": []
+    },
+    {
+      "slug": "w-19",
+      "nameEn": "W 19",
+      "nameUr": "W 19",
+      "category": "warning",
+      "image": "/signs/w-19.png",
+      "descriptionEn": "Pakistan traffic sign (w-19).",
+      "descriptionUr": "پاکستان ٹریفک نشان (w-19)۔",
+      "questionIds": []
+    },
+    {
+      "slug": "w-20",
+      "nameEn": "Cattle crossing",
+      "nameUr": "مویشیوں کے گزرنے کا راستہ",
+      "category": "warning",
+      "image": "/signs/w-20.png",
+      "descriptionEn": "This traffic sign means: Cattle crossing.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: مویشیوں کے گزرنے کا راستہ۔",
+      "questionIds": [
+        "s-031"
+      ]
+    },
+    {
+      "slug": "w-21",
+      "nameEn": "Wild animal crossing",
+      "nameUr": "جنگلی جانوروں کے گزرنے کا راستہ",
+      "category": "warning",
+      "image": "/signs/w-21.png",
+      "descriptionEn": "This traffic sign means: Wild animal crossing.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: جنگلی جانوروں کے گزرنے کا راستہ۔",
+      "questionIds": [
+        "s-030"
+      ]
+    },
+    {
+      "slug": "w-22",
+      "nameEn": "Road work",
+      "nameUr": "سڑک پر کام ہو رہا ہے",
+      "category": "warning",
+      "image": "/signs/w-22.png",
+      "descriptionEn": "This traffic sign means: Road work.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: سڑک پر کام ہو رہا ہے۔",
+      "questionIds": [
+        "s-058"
+      ]
+    },
+    {
+      "slug": "w-23",
+      "nameEn": "W 23",
+      "nameUr": "W 23",
+      "category": "warning",
+      "image": "/signs/w-23.png",
+      "descriptionEn": "Pakistan traffic sign (w-23).",
+      "descriptionUr": "پاکستان ٹریفک نشان (w-23)۔",
+      "questionIds": []
+    },
+    {
+      "slug": "w-24",
+      "nameEn": "Airport",
+      "nameUr": "ائیر پورٹ",
+      "category": "warning",
+      "image": "/signs/w-24.png",
+      "descriptionEn": "This traffic sign means: Airport.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: ائیر پورٹ۔",
+      "questionIds": [
+        "s-032"
+      ]
+    },
+    {
+      "slug": "w-25",
+      "nameEn": "Strong cross wind",
+      "nameUr": "تیز آندھی کا علاقہ",
+      "category": "warning",
+      "image": "/signs/w-25.png",
+      "descriptionEn": "This traffic sign means: Strong cross wind.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: تیز آندھی کا علاقہ۔",
+      "questionIds": [
+        "s-002"
+      ]
+    },
+    {
+      "slug": "w-26",
+      "nameEn": "Two way traffic crosses one way road",
+      "nameUr": "دو طرفہ ٹریفک یک طرفہ روڈ کو کراس کر رہی ہے",
+      "category": "warning",
+      "image": "/signs/w-26.png",
+      "descriptionEn": "This traffic sign means: Two way traffic crosses one way road.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: دو طرفہ ٹریفک یک طرفہ روڈ کو کراس کر رہی ہے۔",
+      "questionIds": [
+        "s-018"
+      ]
+    },
+    {
+      "slug": "w-27",
+      "nameEn": "Major / priority road at the crossroads",
+      "nameUr": "چوک پر اہم / ترجیحی سڑک",
+      "category": "warning",
+      "image": "/signs/w-27.png",
+      "descriptionEn": "This traffic sign means: You are on a major/priority road approaching a crossroads; traffic on your road has priority.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: آپ اہم/ترجیحی سڑک پر چوک کی طرف جا رہے ہیں؛ آپ کی سڑک پر ٹریفک کو ترجیح حاصل ہے۔",
+      "questionIds": [
+        "s-075",
+        "s-077"
+      ]
+    },
+    {
+      "slug": "w-28",
+      "nameEn": "W 28",
+      "nameUr": "W 28",
+      "category": "warning",
+      "image": "/signs/w-28.png",
+      "descriptionEn": "Pakistan traffic sign (w-28).",
+      "descriptionUr": "پاکستان ٹریفک نشان (w-28)۔",
+      "questionIds": []
+    },
+    {
+      "slug": "w-29",
+      "nameEn": "W 29",
+      "nameUr": "W 29",
+      "category": "warning",
+      "image": "/signs/w-29.png",
+      "descriptionEn": "Pakistan traffic sign (w-29).",
+      "descriptionUr": "پاکستان ٹریفک نشان (w-29)۔",
+      "questionIds": []
+    },
+    {
+      "slug": "w-30",
+      "nameEn": "W 30",
+      "nameUr": "W 30",
+      "category": "warning",
+      "image": "/signs/w-30.png",
+      "descriptionEn": "Pakistan traffic sign (w-30).",
+      "descriptionUr": "پاکستان ٹریفک نشان (w-30)۔",
+      "questionIds": []
+    },
+    {
+      "slug": "w-31",
+      "nameEn": "W 31",
+      "nameUr": "W 31",
+      "category": "warning",
+      "image": "/signs/w-31.png",
+      "descriptionEn": "Pakistan traffic sign (w-31).",
+      "descriptionUr": "پاکستان ٹریفک نشان (w-31)۔",
+      "questionIds": []
+    },
+    {
+      "slug": "w-32",
+      "nameEn": "Level crossing (without gate)",
+      "nameUr": "ریلوے پھاٹک بغیر گیٹ",
+      "category": "warning",
+      "image": "/signs/w-32.png",
+      "descriptionEn": "This traffic sign means: Level crossing (without gate).",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: ریلوے پھاٹک بغیر گیٹ۔",
+      "questionIds": [
+        "s-040"
+      ]
+    },
+    {
+      "slug": "w-33",
+      "nameEn": "Level crossing with gate",
+      "nameUr": "گیٹ والا ریلوے پھاٹک",
+      "category": "warning",
+      "image": "/signs/w-33.png",
+      "descriptionEn": "This traffic sign means: Level crossing with gate.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: گیٹ والا ریلوے پھاٹک۔",
+      "questionIds": [
+        "s-062"
+      ]
+    },
+    {
+      "slug": "w-34",
+      "nameEn": "W 34",
+      "nameUr": "W 34",
+      "category": "warning",
+      "image": "/signs/w-34.png",
+      "descriptionEn": "Pakistan traffic sign (w-34).",
+      "descriptionUr": "پاکستان ٹریفک نشان (w-34)۔",
+      "questionIds": []
+    },
+    {
+      "slug": "w-35",
+      "nameEn": "W 35",
+      "nameUr": "W 35",
+      "category": "warning",
+      "image": "/signs/w-35.png",
+      "descriptionEn": "Pakistan traffic sign (w-35).",
+      "descriptionUr": "پاکستان ٹریفک نشان (w-35)۔",
+      "questionIds": []
+    },
+    {
+      "slug": "w-36",
+      "nameEn": "W 36",
+      "nameUr": "W 36",
+      "category": "warning",
+      "image": "/signs/w-36.png",
+      "descriptionEn": "Pakistan traffic sign (w-36).",
+      "descriptionUr": "پاکستان ٹریفک نشان (w-36)۔",
+      "questionIds": []
+    },
+    {
+      "slug": "w-37",
+      "nameEn": "W 37",
+      "nameUr": "W 37",
+      "category": "warning",
+      "image": "/signs/w-37.png",
+      "descriptionEn": "Pakistan traffic sign (w-37).",
+      "descriptionUr": "پاکستان ٹریفک نشان (w-37)۔",
+      "questionIds": []
+    },
+    {
+      "slug": "w-38",
+      "nameEn": "W 38",
+      "nameUr": "W 38",
+      "category": "warning",
+      "image": "/signs/w-38.png",
+      "descriptionEn": "Pakistan traffic sign (w-38).",
+      "descriptionUr": "پاکستان ٹریفک نشان (w-38)۔",
+      "questionIds": []
+    },
+    {
+      "slug": "w-39",
+      "nameEn": "W 39",
+      "nameUr": "W 39",
+      "category": "warning",
+      "image": "/signs/w-39.png",
+      "descriptionEn": "Pakistan traffic sign (w-39).",
+      "descriptionUr": "پاکستان ٹریفک نشان (w-39)۔",
+      "questionIds": []
+    },
+    {
+      "slug": "w-40",
+      "nameEn": "W 40",
+      "nameUr": "W 40",
+      "category": "warning",
+      "image": "/signs/w-40.png",
+      "descriptionEn": "Pakistan traffic sign (w-40).",
+      "descriptionUr": "پاکستان ٹریفک نشان (w-40)۔",
+      "questionIds": []
+    },
+    {
+      "slug": "w-41",
+      "nameEn": "Other danger",
+      "nameUr": "دیگر خطرات۔",
+      "category": "warning",
+      "image": "/signs/w-41.png",
+      "descriptionEn": "This traffic sign means: Other danger.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: دیگر خطرات۔۔",
+      "questionIds": [
+        "s-029"
+      ]
+    },
+    {
+      "slug": "w-42",
+      "nameEn": "Danger ahead",
+      "nameUr": "آگے خطرہ ہے۔",
+      "category": "warning",
+      "image": "/signs/w-42.png",
+      "descriptionEn": "This traffic sign means: Danger ahead.",
+      "descriptionUr": "اس ٹریفک نشان کا مطلب ہے: آگے خطرہ ہے۔۔",
+      "questionIds": [
+        "s-035"
+      ]
+    }
+  ]
+}

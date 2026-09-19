@@ -27,11 +27,11 @@
       "source": "sign test (1).pdf + OK Driving School sheets",
       "correctAnswer": "B",
       "english": {
-        "question": "During driving at night high beam can not be used continuously?",
+        "question": "Can high beam headlights be used continuously while driving at night?",
         "options": {
           "A": "Yes",
           "B": "No",
-          "C": "Don’t know"
+          "C": "Don't know"
         }
       },
       "urdu": {
@@ -119,19 +119,19 @@
       "source": "sign test (1).pdf + OK Driving School sheets",
       "correctAnswer": "C",
       "english": {
-        "question": "What do you mean by Give Way sign?",
+        "question": "What does a Give Way sign mean?",
         "options": {
-          "A": "Give way to the traffic coming from back",
-          "B": "Give way to the traffic approaching from left",
-          "C": "Give way to the traffic approaching from right"
+          "A": "Give way only to traffic coming from behind",
+          "B": "You have priority over all other traffic",
+          "C": "Slow down and give way to traffic that has priority"
         }
       },
       "urdu": {
         "question": "گیو وے سائن بورڈ کا کیا مطلب ہے؟",
         "options": {
-          "A": "پیچھے سے آنے والی گاڑی کو راستہ دیں",
-          "B": "بائیں سے آنے والی گاڑی کو راستہ دیں",
-          "C": "دائیں سے آنے والی گاڑی کو راستہ دیں"
+          "A": "صرف پیچھے سے آنے والی گاڑی کو راستہ دیں",
+          "B": "آپ کو تمام ٹریفک پر ترجیح حاصل ہے",
+          "C": "رفتار کم کریں اور ترجیح والی ٹریفک کو راستہ دیں"
         }
       }
     },
@@ -154,7 +154,7 @@
         "options": {
           "A": "گاڑی کی رفتار کم کر کے",
           "B": "گاڑی ایک سائیڈ پر کھڑی کر کے",
-          "C": "سپیکر آن کر کے"
+          "C": "ہیڈ فون / ایئر فون لگا کر"
         }
       }
     },
@@ -163,21 +163,21 @@
       "type": "text",
       "category": "Driving Rules",
       "source": "sign test (1).pdf + OK Driving School sheets",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "english": {
-        "question": "What do you mean by Yellow light?",
+        "question": "What does a steady yellow (amber) traffic light mean?",
         "options": {
-          "A": "To stop",
-          "B": "Warning",
-          "C": "Must stop"
+          "A": "Speed up to clear the junction",
+          "B": "Prepare to stop if it is safe to do so",
+          "C": "Same as green — continue at full speed"
         }
       },
       "urdu": {
-        "question": "زرد لائٹ کا کیا مطلب ہے؟",
+        "question": "ٹریفک سگنل پر مسلسل زرد (امبر) لائٹ کا کیا مطلب ہے؟",
         "options": {
-          "A": "رکنا چاہیے",
-          "B": "آگاہ کرنا چاہیے",
-          "C": "ضرور رکنا چاہیے"
+          "A": "رفتار بڑھا کر چوک پار کر لیں",
+          "B": "اگر محفوظ ہو تو رک جانے کی تیاری کریں",
+          "C": "سبز کی طرح پوری رفتار سے چلتے رہیں"
         }
       }
     },
@@ -219,7 +219,7 @@
         }
       },
       "urdu": {
-        "question": "گاڑی کو روکنے سے پہلے آپ کو کیا کرنا چاہیے؟",
+        "question": "گاڑی روکتے وقت آپ کو کیا کرنا چاہیے؟",
         "options": {
           "A": "ہارن بجائیں گے",
           "B": "چھوٹے گیئر کا استعمال کریں گے",
@@ -288,11 +288,11 @@
         }
       },
       "urdu": {
-        "question": "گاڑی میں سیٹ بیلٹ نہ باندھنا کس کی ذمہ داری ہے؟",
+        "question": "اگر گاڑی میں مسافر سیٹ بیلٹ نہ باندھیں تو ذمہ داری کس کی ہے؟",
         "options": {
           "A": "مسافر کی ذمہ داری",
-          "B": "دونوں کی ذمہ داری",
-          "C": "ڈرائیور کی ذمہ داری"
+          "B": "ڈرائیور کی ذمہ داری",
+          "C": "دونوں کی ذمہ داری"
         }
       }
     },
@@ -439,9 +439,9 @@
       "type": "text",
       "category": "Driving Rules",
       "source": "sign test (1).pdf + OK Driving School sheets",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "english": {
-        "question": "You should ON your vehicle’s lights after sun set:",
+        "question": "You should switch on your vehicle lights after sunset within about:",
         "options": {
           "A": "20 minutes",
           "B": "30 minutes",
@@ -449,11 +449,11 @@
         }
       },
       "urdu": {
-        "question": "سورج غروب ہونے سے کتنی دیر پہلے گاڑی کی لائٹ جلانی چاہئیے۔",
+        "question": "سورج غروب ہونے کے بعد تقریباً کتنی دیر میں گاڑی کی لائٹیں جلانی چاہییں؟",
         "options": {
-          "A": "20 Minutes",
-          "B": "30 Minutes",
-          "C": "40 Minutes"
+          "A": "20 منٹ",
+          "B": "30 منٹ",
+          "C": "40 منٹ"
         }
       }
     },
@@ -495,7 +495,7 @@
         }
       },
       "urdu": {
-        "question": "اگر کسی چوراہے کے قریب گاڑی پارک کریں تو چوراہے سے آپ کا فاصلہ کتنا ہونا چاہیے۔ گاڑی کا",
+        "question": "چوراہے / کراسنگ کے قریب پارکنگ کرتے وقت کم از کم کتنا فاصلہ رکھنا چاہیے؟",
         "options": {
           "A": "دس میٹر",
           "B": "بیس میٹر",
@@ -508,20 +508,20 @@
       "type": "text",
       "category": "Driving Rules",
       "source": "sign test (1).pdf + OK Driving School sheets",
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "english": {
-        "question": "Can your park your vehicle at bus stop?",
+        "question": "Can you park your vehicle at a bus stop?",
         "options": {
-          "A": "Can park",
+          "A": "Yes, briefly",
           "B": "Not allowed",
-          "C": "Don’t know"
+          "C": "Don't know"
         }
       },
       "urdu": {
-        "question": "کیا کسی بس سٹاپ پر گاڑی کو پارک کیا جا سکتا ہے۔",
+        "question": "کیا بس سٹاپ پر گاڑی پارک کی جا سکتی ہے؟",
         "options": {
-          "A": "منع ہے",
-          "B": "پارک کر سکتے ہیں",
+          "A": "ہاں، تھوڑی دیر کے لیے",
+          "B": "منع ہے",
           "C": "معلوم نہیں"
         }
       }
@@ -541,11 +541,11 @@
         }
       },
       "urdu": {
-        "question": "کیا موٹر وے پر پارکنگ کی جا سکتی ہے۔",
+        "question": "ایمرجنسی کی صورت میں گاڑی کہاں کھڑی کی جا سکتی ہے؟",
         "options": {
-          "A": "ممنوع ہے",
-          "B": "ممنوع نہیں ہے",
-          "C": "معلوم نہیں"
+          "A": "ہارڈ شولڈر پر",
+          "B": "ڈبل پیلی لائن کے ساتھ",
+          "C": "فٹ پاتھ پر"
         }
       }
     },
@@ -564,11 +564,11 @@
         }
       },
       "urdu": {
-        "question": "ایمرجنسی کی صورت میں گاڑی کو کہاں پر کھڑا کیا جا سکتا ہے۔",
+        "question": "کیا موٹر وے پر گاڑی پارک کی جا سکتی ہے؟",
         "options": {
-          "A": "ہارڈ شولڈر پر",
-          "B": "ڈبل پیلی لائن کے ساتھ",
-          "C": "فٹ پاتھ"
+          "A": "ممنوع ہے",
+          "B": "اجازت ہے",
+          "C": "معلوم نہیں"
         }
       }
     },
@@ -669,21 +669,21 @@
       "type": "text",
       "category": "Driving Rules",
       "source": "sign test (1).pdf + OK Driving School sheets",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "english": {
-        "question": "Always keep in your vehicle during journey which will helpful in case of accidents:",
+        "question": "What should you always keep in your vehicle to help in case of an accident?",
         "options": {
           "A": "Injections",
           "B": "Cream",
-          "C": "First Aid box"
+          "C": "First aid box"
         }
       },
       "urdu": {
-        "question": "لاہور سے اسلام آباد تک موٹروے کو کیا کہا جاتا ہے ؟",
+        "question": "حادثے کی صورت میں مدد کے لیے گاڑی میں ہمیشہ کیا رکھنا چاہیے؟",
         "options": {
-          "A": "M-2",
-          "B": "M-3",
-          "C": "M-4"
+          "A": "انجیکشن",
+          "B": "کریم",
+          "C": "فرسٹ ایڈ باکس"
         }
       }
     },
@@ -702,11 +702,11 @@
         }
       },
       "urdu": {
-        "question": "دوران سفر ہمیشہ اپنے ساتھ رکھیں تا کہ حادثات کی صورت میں بہم پہنچا سکیں ؟",
+        "question": "کس تیل کی کمی سے حادثہ ہو سکتا ہے؟",
         "options": {
-          "A": "ٹیکے",
-          "B": "کریم",
-          "C": "فرسٹ ایڈ بکس"
+          "A": "ایندھن",
+          "B": "انجن آئل",
+          "C": "بریک آئل"
         }
       }
     },
@@ -725,11 +725,11 @@
         }
       },
       "urdu": {
-        "question": "کس کی کمی کی وجہ سے حادثہ پیش آ سکتا ہے ؟",
+        "question": "عمر رسیدہ ڈرائیوروں کا ردعمل کیسا ہوتا ہے؟",
         "options": {
-          "A": "ایندھن",
-          "B": "انجن آئل",
-          "C": "بریک آئل"
+          "A": "تیز ہوتا ہے",
+          "B": "درمیانہ ہوتا ہے",
+          "C": "سست ہوتا ہے"
         }
       }
     },
@@ -748,11 +748,11 @@
         }
       },
       "urdu": {
-        "question": "عمر رسیدہ ڈرائیوروں کا ردعمل کیسا ہوتا ہے ؟",
+        "question": "اعداد و شمار کے مطابق سنگین حادثوں میں زیادہ تر کس عمر کے ڈرائیور ملوث ہوتے ہیں؟",
         "options": {
-          "A": "تیز ہوتا ہے",
-          "B": "درمیانہ ہوتا ہے",
-          "C": "سست ہوتا ہے"
+          "A": "سترہ تا پچیس سال",
+          "B": "پچیس تا چالیس سال",
+          "C": "چالیس تا پچاس سال"
         }
       }
     },
@@ -771,11 +771,11 @@
         }
       },
       "urdu": {
-        "question": "اعداد و شمار کے مطابق کس عمر کے گروپ کے لوگ زیادہ ملوث ہوتے ہیں۔ سنگین حادثوں میں",
+        "question": "رہائشی علاقوں میں کس وقت ہارن بجانا منع ہے؟",
         "options": {
-          "A": "سترہ تا پچیس سال",
-          "B": "پچیس تا چالیس سال",
-          "C": "چالیس تا پچاس سال"
+          "A": "رات 12:30 سے صبح 8:00 تک",
+          "B": "رات 11:30 سے صبح 7:00 تک",
+          "C": "رات 1:00 سے صبح 9:00 تک"
         }
       }
     },
@@ -794,7 +794,7 @@
         }
       },
       "urdu": {
-        "question": "ڈرائیورز کے لیئے ضروری ہے کہ اس کی بصارت اس قابل ہو کہ؟",
+        "question": "ڈرائیور کی بصارت اتنی ہونی چاہیے کہ وہ گاڑی کی نمبر پلیٹ پڑھ سکے:",
         "options": {
           "A": "35 فٹ کے فاصلہ سے کسی گاڑی کی نمبر پلیٹ پڑھ سکتا ہو",
           "B": "40 فٹ کے فاصلہ سے کسی گاڑی کی نمبر پلیٹ پڑھ سکتا ہو",
@@ -817,11 +817,11 @@
         }
       },
       "urdu": {
-        "question": "ڈرائیونگ سیکھنے والے افراد لازماً کسی ایسے تجربہ کار ڈرائیور کی زیر نگرانی گاڑی چلانا سیکھیں جن کے پاس ؟",
+        "question": "ڈرائیونگ سیکھنے والے افراد کو ایسے تجربہ کار ڈرائیور کی نگرانی میں سیکھنا چاہیے جن کے پاس لائسنس ہو:",
         "options": {
-          "A": "گزشتہ دو سال سے",
-          "B": "گزشتہ ایک سال سے",
-          "C": "گزشتہ تین سال سے گاڑی چلانے کا لائسنس ہو"
+          "A": "کم از کم ایک سال کا",
+          "B": "کم از کم دو سال کا",
+          "C": "کم از کم تین سال کا"
         }
       }
     },
@@ -830,21 +830,21 @@
       "type": "text",
       "category": "Driving Rules",
       "source": "sign test (1).pdf + OK Driving School sheets",
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "english": {
-        "question": "Why you use dimmer?",
+        "question": "Why do you dip / use dimmer headlights when meeting other traffic?",
         "options": {
-          "A": "To proceed ahead",
-          "B": "To stop",
-          "C": "To show your presence"
+          "A": "To avoid dazzling oncoming drivers",
+          "B": "To stop the vehicle",
+          "C": "Only to show your presence"
         }
       },
       "urdu": {
-        "question": "بڑی بتیوں کا تیز اور مدہم کرنے کا کیا مطلب ہے؟",
+        "question": "سامنے آنے والی ٹریفک پر ڈمر / مدہم لائٹ کیوں استعمال کی جاتی ہے؟",
         "options": {
-          "A": "آگے بڑھنے کے لیے",
-          "B": "رکنے کے لیے",
-          "C": "دوسرے ڈرائیوروں کو اپنی موجودگی سے آگاہ کرنا"
+          "A": "تاکہ سامنے والے ڈرائیور کی نظر خیرہ نہ ہو",
+          "B": "گاڑی روکنے کے لیے",
+          "C": "صرف اپنی موجودگی دکھانے کے لیے"
         }
       }
     },
@@ -886,7 +886,7 @@
         }
       },
       "urdu": {
-        "question": "قانون کے مطابق کوئی شخص کسی مقام عام پر موٹر وہیکلز نہیں جب تک اس کی عمر؟ چلائے گا",
+        "question": "قانون کے مطابق کوئی شخص عام جگہ پر موٹر گاڑی نہیں چلا سکتا جب تک اس کی عمر:",
         "options": {
           "A": "اٹھارہ سال یا اس سے زائد",
           "B": "سترہ سال سے زائد",
@@ -932,7 +932,7 @@
         }
       },
       "urdu": {
-        "question": "مندرجہ ذیل کسی بیماری کی وجہ سے کوئی شخص گاڑی چلانے ہوتا؟",
+        "question": "مندرجہ ذیل میں سے کس بیماری کی وجہ سے گاڑی چلانا منع ہے؟",
         "options": {
           "A": "بہرہ پن",
           "B": "کینسر",
@@ -955,7 +955,7 @@
         }
       },
       "urdu": {
-        "question": "کیا فٹ پاتھ پر پارکنگ قابل چالان ہے؟",
+        "question": "کیا فٹ پاتھ پر گاڑی پارک کرنا جائز ہے؟",
         "options": {
           "A": "ہاں",
           "B": "نہیں",
@@ -1097,7 +1097,7 @@
         "options": {
           "A": "دائیں",
           "B": "بائیں",
-          "C": "اوور ٹیکنگ نہیں کر سکتے۔"
+          "C": "اوور ٹیکنگ والا اشارہ"
         }
       }
     },
@@ -1106,21 +1106,21 @@
       "type": "text",
       "category": "Driving Rules",
       "source": "sign test (1).pdf + OK Driving School sheets",
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "english": {
-        "question": "What do you mean by double indicator?",
+        "question": "What do double indicators (both sides flashing) mean?",
         "options": {
-          "A": "Can park vehicle",
-          "B": "Can not stop",
-          "C": "Overtaking is not allowed"
+          "A": "Hazard / emergency lights",
+          "B": "Overtaking is not allowed",
+          "C": "You may park anywhere"
         }
       },
       "urdu": {
-        "question": "دوہری پیلی لکیر کا کیا مطلب ہے۔",
+        "question": "ڈبل انڈیکیٹر (دونوں طرف جلتے بجھتے) کا کیا مطلب ہے؟",
         "options": {
-          "A": "گاڑی پارک کر سکتے ہیں",
-          "B": "گاڑی روک نہیں سکتے",
-          "C": "بڑی گاڑی کو راستہ دیں"
+          "A": "خطرہ / ایمرجنسی لائٹس",
+          "B": "اوور ٹیکنگ منع ہے",
+          "C": "کہیں بھی پارک کر سکتے ہیں"
         }
       }
     },
@@ -1336,17 +1336,17 @@
       "type": "text",
       "category": "Driving Rules",
       "source": "sign test (1).pdf + OK Driving School sheets",
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "english": {
-        "question": "Can you use mobile phone while driving?",
+        "question": "Can you use a handheld mobile phone while driving?",
         "options": {
           "A": "Yes",
           "B": "No",
-          "C": "don’t know"
+          "C": "Don't know"
         }
       },
       "urdu": {
-        "question": "کیا دوران ڈرائیونگ آپ موبائل سن سکتے ہیں ؟",
+        "question": "کیا دوران ڈرائیونگ ہینڈ ہیلڈ موبائل استعمال کر سکتے ہیں؟",
         "options": {
           "A": "ہاں",
           "B": "نہیں",
@@ -1359,11 +1359,11 @@
       "type": "text",
       "category": "Driving Rules",
       "source": "sign test (1).pdf + OK Driving School sheets",
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "english": {
-        "question": "which of the following should you do before stopping?",
+        "question": "Which of the following should you do before stopping?",
         "options": {
-          "A": "Uses the mirrors",
+          "A": "Check the mirrors",
           "B": "Suddenly use the brakes",
           "C": "Sound the horn"
         }
@@ -1372,8 +1372,8 @@
         "question": "رکنے سے پہلے آپ کو کیا کرنا چاہیے؟",
         "options": {
           "A": "شیشوں کا استعمال کریں",
-          "B": "اچانک بریک لگائیں ۔",
-          "C": "ہارن بجائیں ۔"
+          "B": "اچانک بریک لگائیں",
+          "C": "ہارن بجائیں"
         }
       }
     },
@@ -1392,11 +1392,11 @@
         }
       },
       "urdu": {
-        "question": "آپ اپنی گاڑی کا ہارن کب استعمال کر سکتے ہیں؟",
+        "question": "آپ اپنی گاڑی کا ہارن کب بجا سکتے ہیں؟",
         "options": {
-          "A": "لوگوں کو خبردار کرنے کے لیے",
-          "B": "اگلے ڈرائیور کے لیے اشارہ کہ گاڑی تیز چلائے",
-          "C": "خوشی کے موڈ میں"
+          "A": "کسی سڑک استعمال کنندہ کو خطرے سے خبردار کرنے کے لیے",
+          "B": "آگے والے ڈرائیور کو تیز چلانے کا اشارہ دینے کے لیے",
+          "C": "کسی جاننے والے کو سلام / مبارکباد دینے کے لیے"
         }
       }
     },
@@ -1405,7 +1405,7 @@
       "type": "text",
       "category": "Driving Rules",
       "source": "sign test (1).pdf + OK Driving School sheets",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "english": {
         "question": "If there are no lanes marked on the road, you should drive on which side?",
         "options": {
@@ -1415,7 +1415,7 @@
         }
       },
       "urdu": {
-        "question": "اگر سڑک پر لین مارکنگ نہ ہوں تو آپ کو کس طرف چلنا چاہیے۔۔۔؟",
+        "question": "اگر سڑک پر لین مارکنگ نہ ہوں تو آپ کو کس طرف چلنا چاہیے؟",
         "options": {
           "A": "کسی بھی طرف",
           "B": "سڑک کے درمیان",
@@ -1428,20 +1428,20 @@
       "type": "text",
       "category": "Driving Rules",
       "source": "sign test (1).pdf + OK Driving School sheets",
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "english": {
-        "question": "Do you have any responsibilities when opening a vehicle door on a road way?",
+        "question": "Do you have any responsibilities when opening a vehicle door on a roadway?",
         "options": {
-          "A": "No, there is not your responsibility to regulate the traffic.",
-          "B": "Yes, you should not open a door if you are likely to cause danger to road users.",
-          "C": "Don’t know"
+          "A": "No, regulating traffic is not your responsibility",
+          "B": "Yes — do not open a door if it may endanger other road users",
+          "C": "Don't know"
         }
       },
       "urdu": {
         "question": "سڑک پر گاڑی کا دروازہ کھولتے وقت آپ کی کیا ذمہ داری ہے؟",
         "options": {
           "A": "ٹریفک کو جاری رکھنا آپ کی ذمہ داری نہیں ہے",
-          "B": "آپ کو دروازہ نہیں کھولنا چاہیے جو کہ دیگر لوگوں کے لیے خطرے کا باعث بن سکتا ہے",
+          "B": "ہاں — اگر خطرہ ہو تو دروازہ نہ کھولیں",
           "C": "معلوم نہیں"
         }
       }
@@ -1451,21 +1451,21 @@
       "type": "text",
       "category": "Driving Rules",
       "source": "sign test (1).pdf + OK Driving School sheets",
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "english": {
-        "question": "Is it offence to obstruct clear vision of your number plate.",
+        "question": "Is it an offence to obstruct a clear view of your number plate?",
         "options": {
-          "A": "No, you are not allowed to cover your number plates if you want to",
-          "B": "Yes, you are allowed to cover your back number plates only",
-          "C": "Yes"
+          "A": "No, you may cover number plates if you want",
+          "B": "Yes, but only the rear plate may be covered",
+          "C": "Yes — the number plate must remain clearly visible"
         }
       },
       "urdu": {
-        "question": "کیا نمبر پلیٹ کا صاف نظر نہ آنا قانوناً جرم ہے",
+        "question": "کیا نمبر پلیٹ کا صاف نظر نہ آنا قانوناً جرم ہے؟",
         "options": {
-          "A": "نہیں آپ اپنی نمبر پلیٹ کو کور کر سکتے ہیں",
-          "B": "ہاں صرف پچھلی نمبر پلیٹ کو کور کر سکتے ہیں",
-          "C": "ہاں"
+          "A": "نہیں، آپ نمبر پلیٹ کور کر سکتے ہیں",
+          "B": "ہاں، صرف پچھلی نمبر پلیٹ کور کر سکتے ہیں",
+          "C": "ہاں — نمبر پلیٹ واضح نظر آنا ضروری ہے"
         }
       }
     },
@@ -1497,20 +1497,20 @@
       "type": "text",
       "category": "Driving Rules",
       "source": "sign test (1).pdf + OK Driving School sheets",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "english": {
-        "question": "Are you allowed to use a hand held mobile phone while driving a car?",
+        "question": "Are you allowed to use a handheld mobile phone while driving a car?",
         "options": {
-          "A": "Yes, but only when you stop at intersections",
-          "B": "Yes, but you must hold the steering with at least one hand",
+          "A": "Yes, but only when stopped at intersections",
+          "B": "Yes, if you hold the steering with one hand",
           "C": "No"
         }
       },
       "urdu": {
-        "question": "کیا دوران ڈرائیونگ آپ موبائل استعمال کر سکتے ہیں ؟",
+        "question": "کیا دوران ڈرائیونگ ہینڈ ہیلڈ موبائل استعمال کر سکتے ہیں؟",
         "options": {
-          "A": "ہاں لیکن اس وقت جب آپ چوک پر کھڑے ہوں",
-          "B": "ہاں ایک ہاتھ سے سٹیرنگ وہیل کو پکڑنا ضروری ہے",
+          "A": "ہاں لیکن صرف چوک پر کھڑے ہو کر",
+          "B": "ہاں اگر ایک ہاتھ سے سٹیرنگ پکڑیں",
           "C": "نہیں"
         }
       }
@@ -1520,7 +1520,7 @@
       "type": "text",
       "category": "Driving Rules",
       "source": "sign test (1).pdf + OK Driving School sheets",
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "english": {
         "question": "Are you required to carry your driver’s license with you every time you drive?",
         "options": {
@@ -1530,10 +1530,10 @@
         }
       },
       "urdu": {
-        "question": "کیا گاڑی چلاتے وقت آپ کے پاس لائسنس ہونا ضروری ہے",
+        "question": "کیا گاڑی چلاتے وقت آپ کے پاس لائسنس ہونا ضروری ہے؟",
         "options": {
           "A": "ہاں",
-          "B": "صرف لمبے سفر پر جاتے وقت ضروری ہے",
+          "B": "صرف لمبے سفر پر ضروری ہے",
           "C": "لائسنس ہولڈر ہونا ہی کافی ہے"
         }
       }
@@ -1543,21 +1543,21 @@
       "type": "text",
       "category": "Driving Rules",
       "source": "sign test (1).pdf + OK Driving School sheets",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "english": {
-        "question": "If you get sleepy while driving, out of the following which is best to do?",
+        "question": "If you get sleepy while driving, which is best?",
         "options": {
-          "A": "Turn On the radio very loud",
-          "B": "Turn On the heater",
-          "C": "Stop, rest and change driver if possible"
+          "A": "Turn the radio on very loud",
+          "B": "Turn on the heater",
+          "C": "Stop, rest, and change driver if possible"
         }
       },
       "urdu": {
-        "question": "اگر دوران ڈرائیونگ آپ کو غنودگی ہو تو آپ کو کیا کرنا چاہیے؟",
+        "question": "اگر دوران ڈرائیونگ غنودگی ہو تو بہترین کیا ہے؟",
         "options": {
           "A": "ریڈیو کی آواز اونچی کر دیں",
           "B": "ہیٹر آن کر دیں",
-          "C": "رکیں آرام کریں یا ممکن ہو تو ڈرائیور تبدیل کر دیں"
+          "C": "رکیں، آرام کریں، ممکن ہو تو ڈرائیور تبدیل کریں"
         }
       }
     },
@@ -1589,21 +1589,21 @@
       "type": "text",
       "category": "Driving Rules",
       "source": "sign test (1).pdf + OK Driving School sheets",
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "english": {
-        "question": "When approaching a marked pedestrian crossing and no pedestrian are in sight, you should?",
+        "question": "When approaching a marked pedestrian crossing and no pedestrians are in sight, you should?",
         "options": {
           "A": "Slow down or be ready to make a safe stop",
-          "B": "Come to the complete stop before the crossing",
-          "C": "Go faster, in case a pedestrian step onto the crossing"
+          "B": "Come to a complete stop before every empty crossing",
+          "C": "Go faster in case a pedestrian steps onto the crossing"
         }
       },
       "urdu": {
-        "question": "جب آپ سڑک پر پیدل کراس کرنے والی جگہ کی طرف جا رہے ہوں اور کوئی پیدل اشخاص نہ ہوں تو۔۔۔۔؟",
+        "question": "جب آپ زیبرا کراسنگ کی طرف جا رہے ہوں اور کوئی پیدل نہ ہو تو آپ کو کیا کرنا چاہیے؟",
         "options": {
-          "A": "کم کریں یا رک جائیں",
-          "B": "کراس کرنے سے پہلے مکمل طور پر رک جائیں",
-          "C": "اپنی رفتار بڑھا دیں"
+          "A": "رفتار کم کریں یا محفوظ طریقے سے رکنے کو تیار رہیں",
+          "B": "ہر خالی کراسنگ سے پہلے مکمل رک جائیں",
+          "C": "رفتار بڑھا دیں"
         }
       }
     },
@@ -1612,7 +1612,7 @@
       "type": "text",
       "category": "Driving Rules",
       "source": "sign test (1).pdf + OK Driving School sheets",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "english": {
         "question": "If elderly people or children are on a pedestrian crossing you will probably need to?",
         "options": {
@@ -1622,11 +1622,11 @@
         }
       },
       "urdu": {
-        "question": "جب عمر رسیدہ اشخاص یا بچے پیدل کراسنگ کر رہے ہوں۔۔؟",
+        "question": "جب عمر رسیدہ اشخاص یا بچے پیدل کراسنگ کر رہے ہوں تو؟",
         "options": {
-          "A": "ہارن بجائیں تاکہ وہ ہوشیار ہو جائیں",
-          "B": "گاڑی ان کی سائیڈوں سے گزار لیں تاکہ ٹریفک میں خلل نہ پڑے",
-          "C": "ان کا سڑک پار کرنے تک انتظار کریں"
+          "A": "ہارن بجائیں تاکہ وہ جلدی کریں",
+          "B": "ان کی سائیڈ سے گزر جائیں",
+          "C": "ان کا محفوظ پار کرنے تک انتظار کریں"
         }
       }
     },
@@ -1635,21 +1635,21 @@
       "type": "text",
       "category": "Driving Rules",
       "source": "sign test (1).pdf + OK Driving School sheets",
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "english": {
-        "question": "The most effective device for protecting passengers/drivers when in an accident is?",
+        "question": "The most effective device for protecting passengers/drivers in a crash is?",
         "options": {
           "A": "Comfortable seats",
           "B": "Seat belts",
-          "C": "Safe vehicle body"
+          "C": "Safe vehicle body alone"
         }
       },
       "urdu": {
-        "question": "حادثے سے بچنے کے لیے ڈرائیور اور مسافر کے لیے بہترین چیز کیا ہے؟",
+        "question": "حادثے میں ڈرائیور/مسافر کے لیے سب سے مؤثر تحفظ کیا ہے؟",
         "options": {
-          "A": "سیٹوں کا آرام دہ ہونا",
-          "B": "سیٹ بیلٹ باندھنا",
-          "C": "گاڑی کی مضبوطی"
+          "A": "آرام دہ سیٹیں",
+          "B": "سیٹ بیلٹ",
+          "C": "صرف گاڑی کی مضبوطی"
         }
       }
     },
@@ -1867,19 +1867,19 @@
       "source": "Punjab Traffic Police mcq1.pdf",
       "correctAnswer": "B",
       "english": {
-        "question": "On a two-way road, on which side of an oncoming vehicle should you pass?",
+        "question": "On a two-way road in Pakistan, you should keep to which side when meeting oncoming traffic?",
         "options": {
           "A": "Right",
           "B": "Left",
-          "C": "Neither 1 nor 2"
+          "C": "Neither"
         }
       },
       "urdu": {
-        "question": "دوطرفہ سڑک پر سامنے سے آنیوالی گاڑی کے کس طرف سے گزرنا چاہئے",
+        "question": "پاکستان میں دوطرفہ سڑک پر سامنے آنے والی ٹریفک کے وقت آپ کو کس طرف رہنا چاہیے؟",
         "options": {
           "A": "دائیں",
           "B": "بائیں",
-          "C": "1 اور 2 دونوں نہیں"
+          "C": "کسی طرف نہیں"
         }
       }
     },
@@ -1888,9 +1888,9 @@
       "type": "text",
       "category": "Driving Rules",
       "source": "Punjab Traffic Police mcq1.pdf",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "english": {
-        "question": "Which lane of the road should a motorcyclist use?",
+        "question": "Which lane should a motorcyclist normally use?",
         "options": {
           "A": "Right lane",
           "B": "Middle lane",
@@ -1898,7 +1898,7 @@
         }
       },
       "urdu": {
-        "question": "موٹر سائیکل سوار کو سڑک کی کونسی لین استعمال کرنی چاہئے",
+        "question": "موٹر سائیکل سوار کو عام طور پر کونسی لین استعمال کرنی چاہیے؟",
         "options": {
           "A": "دائیں لین",
           "B": "درمیان والی لین",
@@ -1910,7 +1910,7 @@
       "id": 83,
       "type": "text",
       "category": "Driving Rules",
-      "source": "Punjab Traffic Police mcq1.pdf",
+      "source": "Provincial Motor Vehicles Ordinance 1965 s.89-A (helmet)",
       "correctAnswer": "A",
       "english": {
         "question": "Under which section of the Motor Vehicle Ordinance is it mandatory for a motorcyclist to wear a helmet?",
@@ -2140,7 +2140,7 @@
       "id": 93,
       "type": "text",
       "category": "Driving Rules",
-      "source": "Punjab Traffic Police mcq1.pdf",
+      "source": "Provincial Motor Vehicles Ordinance 1965 s.3 (driving without licence)",
       "correctAnswer": "A",
       "english": {
         "question": "Under which section of the Motor Vehicle Ordinance is driving without a license prohibited?",
@@ -2324,7 +2324,7 @@
       "id": 101,
       "type": "text",
       "category": "Driving Rules",
-      "source": "Punjab Traffic Police mcq1.pdf",
+      "source": "Provincial Motor Vehicles Ordinance 1965 s.89 (pillion riding)",
       "correctAnswer": "C",
       "english": {
         "question": "Under which section of the Motor Vehicle Ordinance is double riding on a motorcycle permitted?",
@@ -2462,7 +2462,7 @@
       "id": 107,
       "type": "text",
       "category": "Driving Rules",
-      "source": "Punjab Traffic Police mcq1.pdf",
+      "source": "Pakistan Penal Code s.279 (rash driving)",
       "correctAnswer": "A",
       "english": {
         "question": "Under which section of the PPC can action be taken against reckless and negligent driving?",
@@ -2715,7 +2715,7 @@
       "id": 118,
       "type": "text",
       "category": "Driving Rules",
-      "source": "Punjab Traffic Police mcq1.pdf",
+      "source": "Provincial Motor Vehicles Ordinance 1965 s.99-A (one-wheeling)",
       "correctAnswer": "B",
       "english": {
         "question": "Under which section of the Motor Vehicle Ordinance is one-wheeling prohibited?",
@@ -2738,7 +2738,7 @@
       "id": 119,
       "type": "text",
       "category": "Driving Rules",
-      "source": "Punjab Traffic Police mcq1.pdf",
+      "source": "Provincial Motor Vehicles Ordinance 1965 s.85 (leaving vehicle in dangerous position)",
       "correctAnswer": "B",
       "english": {
         "question": "Under which section of the Motor Vehicle Ordinance is it prohibited to leave a vehicle in a dangerous condition?",
@@ -2922,7 +2922,7 @@
       "id": 127,
       "type": "text",
       "category": "Driving Rules",
-      "source": "Punjab Traffic Police mcq1.pdf",
+      "source": "Provincial Motor Vehicles Ordinance 1965 s.101-A (mobile telephone)",
       "correctAnswer": "C",
       "english": {
         "question": "Under which section of the Motor Vehicle Ordinance is the use of a mobile phone while driving prohibited?",
@@ -3083,22 +3083,22 @@
       "id": 134,
       "type": "text",
       "category": "Driving Rules",
-      "source": "Punjab Traffic Police mcq2.pdf",
-      "correctAnswer": "B",
+      "source": "Flashing amber = caution / proceed if clear (distinct from steady amber)",
+      "correctAnswer": "C",
       "english": {
-        "question": "If the yellow or amber light is flashing at a traffic signal and no traffic constable is present, what will you do?",
+        "question": "If the yellow/amber light is flashing at a traffic signal and no traffic officer is directing traffic, what should you do?",
         "options": {
-          "A": "Will pass at a speed of 40 km/h",
-          "B": "Will stop the vehicle and wait for the green light to turn on",
-          "C": "Will look left and right and pass with caution and appropriate speed"
+          "A": "Pass at 40 km/h without looking",
+          "B": "Stop and wait indefinitely for a steady green",
+          "C": "Look both ways and proceed with caution if the way is clear"
         }
       },
       "urdu": {
-        "question": "اگر ٹریفک اشارے پر پیلی یا زرد بتی جل بجھ رہی ہے اور وہاں ٹریفک کانسٹیبل موجود نہ ہے تو آپ کیا کریں گے؟",
+        "question": "اگر ٹریفک سگنل پر پیلی لائٹ جل بجھ رہی ہو اور کوئی ٹریفک افسر نہ ہو تو آپ کیا کریں؟",
         "options": {
-          "A": "40 کلو میٹر فی گھنٹہ کی رفتار سے گزر جائیں گے",
-          "B": "گاڑی کو روک دیں گے اور سبز بتی جلنے کا انتظار کریں گے",
-          "C": "دائیں بائیں دیکھ کر احتیاط اور مناسب رفتار سے گاڑی گزاریں گے"
+          "A": "بغیر دیکھے 40 کلومیٹر فی گھنٹہ سے گزر جائیں",
+          "B": "رک کر مسلسل سبز لائٹ کا انتظار کریں",
+          "C": "دائیں بائیں دیکھ کر احتیاط سے آگے بڑھیں اگر راستہ صاف ہو"
         }
       }
     },
@@ -3497,7 +3497,7 @@
       "id": 152,
       "type": "text",
       "category": "Driving Rules",
-      "source": "Punjab Traffic Police mcq2.pdf",
+      "source": "Provincial Motor Vehicles Ordinance 1965 Ninth Schedule (traffic signs)",
       "correctAnswer": "B",
       "english": {
         "question": "In which schedule of the Motor Vehicle Ordinance are traffic signs mentioned?",
@@ -3544,21 +3544,21 @@
       "type": "text",
       "category": "Driving Rules",
       "source": "Punjab Traffic Police mcq2.pdf",
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "english": {
-        "question": "In an intersection without signals, which traffic has the first right of way?",
+        "question": "At an unmarked intersection without signals, who generally has priority?",
         "options": {
-          "A": "Vehicles going straight through the intersection without turning",
-          "B": "Vehicles that want to turn left after reaching the intersection",
-          "C": "Vehicles that want to turn right after reaching the intersection"
+          "A": "Traffic approaching from the right",
+          "B": "Vehicles that want to turn left",
+          "C": "Vehicles that want to turn right"
         }
       },
       "urdu": {
-        "question": "بغیر اشارے والے چوک میں کس ٹریفک کو گزرنے کا حق (Right of way) پہلا ہے؟",
+        "question": "بغیر اشارے والے چوک میں عام طور پر کس کو ترجیح حاصل ہے؟",
         "options": {
-          "A": "وہ گاڑیاں جو کہ چوک میں مڑے بغیر سیدھا جارہی ہے۔",
-          "B": "وہ گاڑیاں جو کہ چوک میں پہنچ کر بائیں مڑنا چاہتی ہے۔",
-          "C": "وہ گاڑیاں جو کہ چوک میں پہنچ کر دائیں مڑنا چاہتی ہے۔"
+          "A": "دائیں طرف سے آنے والی ٹریفک",
+          "B": "بائیں مڑنے والی گاڑیاں",
+          "C": "دائیں مڑنے والی گاڑیاں"
         }
       }
     },
@@ -3704,7 +3704,7 @@
       "id": 161,
       "type": "text",
       "category": "Driving Rules",
-      "source": "Punjab Traffic Police mcq2.pdf",
+      "source": "Provincial Motor Vehicles Ordinance 1965 Third Schedule (test of competence)",
       "correctAnswer": "C",
       "english": {
         "question": "In which schedule of the Motor Vehicle Ordinance is the driving test mentioned?",
@@ -3727,7 +3727,7 @@
       "id": 162,
       "type": "text",
       "category": "Driving Rules",
-      "source": "Punjab Traffic Police mcq3.pdf",
+      "source": "Provincial Motor Vehicles Ordinance 1965 s.75 (limits of speed)",
       "correctAnswer": "A",
       "english": {
         "question": "Under which section of the Motor Vehicle Ordinance can a vehicle not be driven faster than the prescribed speed in a designated area?",
@@ -3750,10 +3750,10 @@
       "id": 163,
       "type": "text",
       "category": "Driving Rules",
-      "source": "Punjab Traffic Police mcq3.pdf",
-      "correctAnswer": "B",
+      "source": "Provincial Motor Vehicles Ordinance 1965, Eighth Schedule (motor car 95 km/h)",
+      "correctAnswer": "C",
       "english": {
-        "question": "On a provincial highway where the speed limit is not specified, what is the maximum speed in km/h a car can be driven?",
+        "question": "Where no special speed limit is posted, what is the maximum speed for a motor car under the Provincial Motor Vehicles Ordinance Eighth Schedule?",
         "options": {
           "A": "60 km/h",
           "B": "40 km/h",
@@ -3761,7 +3761,7 @@
         }
       },
       "urdu": {
-        "question": "جس صوبائی شاہراہ پر حد رفتار متعین نہ ہو وہاں کار زیادہ سے زیادہ کتنے کلومیٹر فی گھنٹہ کی رفتار سے چلائی جا سکتی ہے",
+        "question": "جہاں الگ حد رفتار نہیں لکھی، صوبائی موٹر وہیکل آرڈیننس کی آٹھویں شیڈول کے مطابق موٹر کار کی زیادہ سے زیادہ رفتار کیا ہے؟",
         "options": {
           "A": "60 کلومیٹر فی گھنٹہ",
           "B": "40 کلومیٹر فی گھنٹہ",
@@ -3819,22 +3819,22 @@
       "id": 166,
       "type": "text",
       "category": "Driving Rules",
-      "source": "Punjab Traffic Police mcq3.pdf",
+      "source": "NHMP press release (restored limits): cars/LTV 120, HTV/PSV 110 on motorways",
       "correctAnswer": "B",
       "english": {
-        "question": "What is the speed limit for HTVs on the motorway?",
+        "question": "What is the maximum speed limit for HTVs / PSVs on the motorway (current NHMP limit)?",
         "options": {
           "A": "120 km/h",
-          "B": "80 km/h",
-          "C": "100 km/h"
+          "B": "110 km/h",
+          "C": "80 km/h"
         }
       },
       "urdu": {
-        "question": "موٹروے پر HTV کی حد رفتار کیا ہے",
+        "question": "موٹروے پر ایچ ٹی وی / پی ایس وی گاڑیوں کی زیادہ سے زیادہ حد رفتار (موجودہ این ایچ ایم پی) کیا ہے؟",
         "options": {
           "A": "120 کلومیٹر فی گھنٹہ",
-          "B": "80 کلومیٹر فی گھنٹہ",
-          "C": "100 کلومیٹر فی گھنٹہ"
+          "B": "110 کلومیٹر فی گھنٹہ",
+          "C": "80 کلومیٹر فی گھنٹہ"
         }
       }
     },
@@ -3843,21 +3843,21 @@
       "type": "text",
       "category": "Driving Rules",
       "source": "Punjab Traffic Police mcq3.pdf",
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "english": {
-        "question": "Where can a vehicle be parked in case of an emergency?",
+        "question": "In an emergency, where may you stop the vehicle if you cannot continue?",
         "options": {
-          "A": "In a no-parking area",
-          "B": "On the left side of the intersection",
-          "C": "At a bus stop"
+          "A": "On the left hard shoulder / roadside where it is safe and legal",
+          "B": "In the middle of an intersection",
+          "C": "At a bus stop bay blocking buses"
         }
       },
       "urdu": {
-        "question": "ایمرجنسی کی صورت گاڑی کو کس جگہ پر کھڑا کیا جا سکتا ہے؟",
+        "question": "ایمرجنسی میں اگر گاڑی نہ چل سکے تو کہاں رک سکتے ہیں؟",
         "options": {
-          "A": "نو پارکنگ ایریا میں",
-          "B": "چوک کے بائیں جانب",
-          "C": "بس سٹاپ پر"
+          "A": "بائیں ہارڈ شولڈر / محفوظ اور قانونی کنارے پر",
+          "B": "چوک کے بیچ میں",
+          "C": "بس سٹاپ پر جہاں بسیں رکتی ہیں"
         }
       }
     },
@@ -3983,19 +3983,19 @@
       "source": "Punjab Traffic Police mcq3.pdf",
       "correctAnswer": "B",
       "english": {
-        "question": "If no parking board is installed, where can the vehicle be parked?",
+        "question": "If no parking board is installed, where should you normally park?",
         "options": {
-          "A": "Right side of the intersection",
-          "B": "Left side of the intersection",
-          "C": "Both 1 and 2"
+          "A": "On the right side facing traffic",
+          "B": "On the left side of the road where parking is not otherwise prohibited",
+          "C": "In the middle of an intersection"
         }
       },
       "urdu": {
-        "question": "پارکنگ بورڈ نصب نہ ہو تو گاڑی کو کس جگہ کھڑا کیا جاسکتا ہے؟",
+        "question": "پارکنگ بورڈ نصب نہ ہو تو عام طور پر گاڑی کہاں کھڑی کریں؟",
         "options": {
-          "A": "چوک کے دائیں جانب",
-          "B": "چوک کے بائیں جانب",
-          "C": "1 اور 2 دونوں"
+          "A": "ٹریفک کے مخالف دائیں جانب",
+          "B": "سڑک کے بائیں جانب جہاں پارکنگ ورنہ منع نہ ہو",
+          "C": "چوک کے بیچ میں"
         }
       }
     },
@@ -4026,7 +4026,7 @@
       "id": 175,
       "type": "text",
       "category": "Driving Rules",
-      "source": "Punjab Traffic Police mcq3.pdf",
+      "source": "Provincial Motor Vehicles Ordinance 1965 Second Schedule (disqualification)",
       "correctAnswer": "B",
       "english": {
         "question": "In which schedule of the Motor Vehicle Ordinance is the cancellation of a driving license mentioned?",
@@ -4210,22 +4210,22 @@
       "id": 183,
       "type": "text",
       "category": "Driving Rules",
-      "source": "Punjab Traffic Police mcq3.pdf",
-      "correctAnswer": "B",
+      "source": "Flashing amber = caution / proceed if clear (distinct from steady amber)",
+      "correctAnswer": "C",
       "english": {
-        "question": "If the yellow light at a traffic signal is flashing and no traffic constable is present, what will you do?",
+        "question": "If the yellow/amber light is flashing at a traffic signal and no traffic officer is directing traffic, what should you do?",
         "options": {
-          "A": "Pass at 40 km/h",
-          "B": "Stop the vehicle and wait for the green light",
-          "C": "Look left and right and pass with caution at appropriate speed"
+          "A": "Pass at 40 km/h without looking",
+          "B": "Stop and wait indefinitely for a steady green",
+          "C": "Look both ways and proceed with caution if the way is clear"
         }
       },
       "urdu": {
-        "question": "اگر ٹریفک اشارے پر پیلی یا زرد بتی جل بجھ رہی ہے اور وہاں ٹریفک کنسٹیبل موجود نہ ہے تو آپ کیا کریں گے؟",
+        "question": "اگر ٹریفک سگنل پر پیلی لائٹ جل بجھ رہی ہو اور کوئی ٹریفک افسر نہ ہو تو آپ کیا کریں؟",
         "options": {
-          "A": "40 کلومیٹر فی گھنٹہ کی رفتار سے گزر جائیں گے",
-          "B": "گاڑی کو روک دیں گے اور سبز بتی جلنے کا انتظار کریں گے",
-          "C": "دائیں بائیں دیکھ کر احتیاط اور مناسب رفتار سے گاڑی گزاریں گے"
+          "A": "بغیر دیکھے 40 کلومیٹر فی گھنٹہ سے گزر جائیں",
+          "B": "رک کر مسلسل سبز لائٹ کا انتظار کریں",
+          "C": "دائیں بائیں دیکھ کر احتیاط سے آگے بڑھیں اگر راستہ صاف ہو"
         }
       }
     },
@@ -4394,7 +4394,7 @@
       "id": 191,
       "type": "text",
       "category": "Driving Rules",
-      "source": "Punjab Traffic Police mcq3.pdf",
+      "source": "Provincial Motor Vehicles Ordinance 1965 s.89-B (seatbelt)",
       "correctAnswer": "B",
       "english": {
         "question": "Under which section of the Motor Vehicle Ordinance is it mandatory to wear a seat belt while driving a motor vehicle?",
@@ -4463,22 +4463,22 @@
       "id": 194,
       "type": "text",
       "category": "Driving Rules",
-      "source": "Punjab Traffic Police mcq4.pdf",
-      "correctAnswer": "B",
+      "source": "Flashing amber = caution / proceed if clear (distinct from steady amber)",
+      "correctAnswer": "C",
       "english": {
-        "question": "If the yellow light is flashing at a traffic signal and no traffic constable is present, what will you do?",
+        "question": "If the yellow/amber light is flashing at a traffic signal and no traffic officer is directing traffic, what should you do?",
         "options": {
-          "A": "Pass at 40 km/h",
-          "B": "Stop and wait for the green light",
-          "C": "Look left and right and pass with caution at an appropriate speed"
+          "A": "Pass at 40 km/h without looking",
+          "B": "Stop and wait indefinitely for a steady green",
+          "C": "Look both ways and proceed with caution if the way is clear"
         }
       },
       "urdu": {
-        "question": "اگر ٹریفک اشارے پر پیلی بتی جل بجھ رہی ہے اور وہاں ٹریفک کانسٹیبل موجود نہ ہے تو آپ کیا کریں گے؟",
+        "question": "اگر ٹریفک سگنل پر پیلی لائٹ جل بجھ رہی ہو اور کوئی ٹریفک افسر نہ ہو تو آپ کیا کریں؟",
         "options": {
-          "A": "40 کلومیٹر فی گھنٹہ کی رفتار سے گزر جائیں گے",
-          "B": "گاڑی کو روک دیں گے اور سبز بتی جلنے کا انتظار کریں گے",
-          "C": "دائیں بائیں دیکھ کر احتیاط اور مناسب رفتار سے گاڑی گزاریں گے"
+          "A": "بغیر دیکھے 40 کلومیٹر فی گھنٹہ سے گزر جائیں",
+          "B": "رک کر مسلسل سبز لائٹ کا انتظار کریں",
+          "C": "دائیں بائیں دیکھ کر احتیاط سے آگے بڑھیں اگر راستہ صاف ہو"
         }
       }
     },
@@ -4487,21 +4487,21 @@
       "type": "text",
       "category": "Driving Rules",
       "source": "Punjab Traffic Police mcq4.pdf",
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "english": {
-        "question": "You are driving at an appropriate speed and intended to turn right or left, but reached the turn without slowing down and cannot safely take the turn. What will you do?",
+        "question": "You intended to turn but reached the turn too fast to turn safely. What should you do?",
         "options": {
-          "A": "Brake without looking ahead or behind, ignore surrounding traffic, pass the turn point, violate one-way and take a U-turn",
-          "B": "Look ahead and behind, brake, violate one-way and take a U-turn without regard for traffic",
-          "C": "Proceed past the turn cautiously, use side mirrors to slow down, let traffic pass, then reverse or U-turn when safe"
+          "A": "Brake hard without checking traffic and make an illegal U-turn",
+          "B": "Ignore other traffic and cut across a one-way street",
+          "C": "Continue past the turn safely, then reverse or U-turn only when it is legal and clear"
         }
       },
       "urdu": {
-        "question": "آپ اپنی گاڑی میں سڑک پر مناسب رفتار سے جا رہے ہیں۔ آپ نے دائیں یا بائیں طرف مڑنا تھا۔ لیکن کسی وجہ سے آپ ٹرن لینے کے مقام پر پہنچ گئے اور اپنی وہیکل کی سپیڈ کم کرنا بھول گئے اور گاڑی کی رفتار اتنی تیز ہے کہ آپ اب ٹرن محفوظ طریقہ سے نہیں لے سکتے تو آپ کیا کریں گے؟",
+        "question": "آپ نے مڑنا تھا لیکن رفتار زیادہ تھی اور محفوظ طریقے سے ٹرن نہیں لے سکتے۔ آپ کیا کریں؟",
         "options": {
-          "A": "آگے پیچھے دیکھے بغیر بریک لگا دیں گے۔ چاہے گاڑی مڑنے کے مقام سے آگے نکل گئی ہو اردگرد سے گزرنے والی ٹریفک کی پروا نہیں کریں گے اور ون وے کی خلاف ورزی کرتے ہوئے یوٹرن لیں گے۔",
-          "B": "آگے پیچھے دیکھ کر بریک لگا دیں گے اور ون وے کی خلاف ورزی کرتے ہوئے یوٹرن لیں گے۔ دائیں بائیں گزرنے والی ٹریفک کی پروا نہیں کریں گے۔",
-          "C": "آگے ٹرن سے محتاط رہیں گیا اور (Side mirror) کا استعمال کر کے گاڑی کو احتیاط سے آہستہ کریں گے اردگرد گزرنے والی ٹریفک کو گزرنے دیں گے اور ٹریفک میں مناسب وقفہ آنے کے بعد گاڑی ریورس کریں گے یا یوٹرن لیں گے۔"
+          "A": "بغیر دیکھے بریک لگا کر غیر قانونی یو ٹرن لیں",
+          "B": "ٹریفک نظرانداز کر کے ون وے کاٹیں",
+          "C": "ٹرن سے آگے محفوظ گزریں، پھر قانونی اور صاف موقع پر ریورس یا یو ٹرن لیں"
         }
       }
     },
@@ -4579,21 +4579,21 @@
       "type": "text",
       "category": "Driving Rules",
       "source": "Punjab Traffic Police mcq4.pdf",
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "english": {
-        "question": "At an intersection without signals, which traffic has the first right of way?",
+        "question": "At an intersection without signals, which traffic generally has first right of way?",
         "options": {
-          "A": "Vehicles going straight through without turning",
-          "B": "Vehicles wanting to turn left at the intersection",
-          "C": "Vehicles wanting to turn right at the intersection"
+          "A": "Traffic approaching from the right",
+          "B": "Vehicles wanting to turn left",
+          "C": "Vehicles wanting to turn right"
         }
       },
       "urdu": {
-        "question": "بغیر اشارے والے چوک میں کس ٹریفک کو گزرنے کا حق (Right of away) پہلا ہے؟",
+        "question": "بغیر اشارے والے چوک میں کس ٹریفک کو عام طور پر پہلا حق حاصل ہے؟",
         "options": {
-          "A": "وہ گاڑیاں جو کہ چوک میں مڑے بغیر سیدھا جا رہی ہے۔",
-          "B": "وہ گاڑیاں جو کہ چوک میں پہنچ کر بائیں مڑنا چاہتی ہے۔",
-          "C": "وہ گاڑیاں جو کہ چوک میں پہنچ کر دائیں مڑنا چاہتی ہے۔"
+          "A": "دائیں طرف سے آنے والی ٹریفک",
+          "B": "بائیں مڑنے والی گاڑیاں",
+          "C": "دائیں مڑنے والی گاڑیاں"
         }
       }
     },
@@ -5085,21 +5085,21 @@
       "type": "text",
       "category": "Driving Rules",
       "source": "Urdu written theory papers (QuestionsReference JPEG scans)",
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "english": {
-        "question": "When is 'rubber necking' done?",
+        "question": "What does 'rubber-necking' mean while driving?",
         "options": {
-          "A": "In an emergency",
-          "B": "For overtaking",
-          "C": "When parking the vehicle"
+          "A": "Slowing or staring at an incident, which distracts you and others",
+          "B": "A safe technique used for overtaking",
+          "C": "A parking manoeuvre"
         }
       },
       "urdu": {
-        "question": "'RUBBER NECK' کب کی جاتی ہے۔",
+        "question": "'ربڑ نیکنگ' دوران ڈرائیونگ کا کیا مطلب ہے؟",
         "options": {
-          "A": "ایمرجنسی میں",
-          "B": "اوورٹیکنگ کے لیے",
-          "C": "گاڑی پارک کرتے وقت"
+          "A": "حادثے/واقعے کو گھورتے ہوئے رفتار کم کرنا جو توجہ بھٹکاتا ہے",
+          "B": "اوور ٹیکنگ کی محفوظ تکنیک",
+          "C": "پارکنگ کا طریقہ"
         }
       }
     },
@@ -5361,21 +5361,21 @@
       "type": "text",
       "category": "Driving Rules",
       "source": "Urdu written theory papers (QuestionsReference JPEG scans)",
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "english": {
         "question": "If the yellow light at a traffic signal is continuously on, the driver should:",
         "options": {
-          "A": "Stop at the stop line",
-          "B": "Look both ways and cross carefully",
-          "C": "No need to stop"
+          "A": "Stop at the stop line if it is safe to do so",
+          "B": "Speed up to clear the junction",
+          "C": "Treat it the same as a green light"
         }
       },
       "urdu": {
-        "question": "اگر ٹریفک سگنل پر پیلی لائٹ مسلسل جل رہی ہو تو ڈرائیور کو چاہیے۔",
+        "question": "اگر ٹریفک سگنل پر پیلی لائٹ مسلسل جل رہی ہو تو ڈرائیور کو چاہیے:",
         "options": {
-          "A": "سٹاپ لائن پر رک جائیں",
-          "B": "دائیں بائیں دیکھ کر احتیاط سے سگنل کراس کرلے",
-          "C": "رکنے کی ضرورت نہیں"
+          "A": "اگر محفوظ ہو تو سٹاپ لائن پر رک جائیں",
+          "B": "رفتار بڑھا کر چوک پار کر لیں",
+          "C": "اسے سبز لائٹ کی طرح سمجھیں"
         }
       }
     },
@@ -5590,20 +5590,20 @@
       "id": 243,
       "type": "text",
       "category": "Driving Rules",
-      "source": "Urdu written theory papers (QuestionsReference JPEG scans)",
+      "source": "Common NHMP/teaching guidance on not driving too slowly on motorways; follow posted signs",
       "correctAnswer": "A",
       "english": {
-        "question": "What is the minimum speed for an HTV on the motorway?",
+        "question": "What minimum speed is commonly expected on a Pakistan motorway so you do not obstruct faster traffic (when conditions allow)?",
         "options": {
-          "A": "65 km/h",
+          "A": "About 65 km/h",
           "B": "100 km/h",
           "C": "110 km/h"
         }
       },
       "urdu": {
-        "question": "HTV گاڑی کی موٹروے پر کم از کم رفتار کتنی ہونی چاہیے۔",
+        "question": "پاکستان موٹروے پر عام طور پر کم از کم کتنی رفتار متوقع ہے تاکہ تیز ٹریفک میں رکاوٹ نہ بنیں (جب حالات اجازت دیں)؟",
         "options": {
-          "A": "65 کلومیٹر فی گھنٹہ",
+          "A": "تقریباً 65 کلومیٹر فی گھنٹہ",
           "B": "100 کلومیٹر فی گھنٹہ",
           "C": "110 کلومیٹر فی گھنٹہ"
         }
@@ -5701,5 +5701,15 @@
         }
       }
     }
-  ]
+  ],
+  "legalVerification": {
+    "verifiedAt": "2026-09-19",
+    "provincialMvo": "Provincial Motor Vehicles Ordinance 1965 (Punjab laws text) — section/schedule IDs above confirmed",
+    "nhmpSpeeds": "As of restored NHMP limits (announced mid-2026): motorway cars/LTV max 120 km/h; HTV/PSV max 110 km/h. Temporary March 2026 reductions no longer apply.",
+    "caveat": "Always follow posted signs; provincial gazettes and temporary NHMP orders can change limits."
+  },
+  "urduAlignment": {
+    "verifiedAt": "2026-09-19",
+    "note": "EN/UR pairs audited; critical swaps (23/24, 30–33 cascade, option letter mismatches) and ambiguous Urdu fixed to parallel English."
+  }
 }

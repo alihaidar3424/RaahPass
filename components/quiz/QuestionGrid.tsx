@@ -1,12 +1,12 @@
 "use client";
 
-import { CorrectOption } from "@/generated/prisma/client";
 import { cn } from "@/lib/utils";
+import type { QuizOptionKey } from "@/components/quiz/OptionButton";
 
 type QuestionGridProps = {
   total: number;
   currentIndex: number;
-  answers: Record<string, CorrectOption>;
+  answers: Record<string, QuizOptionKey | undefined>;
   questionIds: string[];
   disabled?: boolean;
   onJump: (index: number) => void;

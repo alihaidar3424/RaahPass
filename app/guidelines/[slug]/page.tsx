@@ -34,7 +34,7 @@ export default async function GuidelineArticlePage({
     <AppShell
       lang={lang}
       rtl={rtl}
-      nav="guidelines"
+      nav="learn"
       showBottomNav
       langBasePath={`/guidelines/${slug}`}
       backHref={withLang("/guidelines", lang)}

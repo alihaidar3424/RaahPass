@@ -1,5 +1,9 @@
 import { describe, expect, it } from "vitest";
-import { createAttemptSchema } from "@/lib/validations";
+import {
+  QUIZ_SIZE,
+  createAttemptSchema,
+  submitQuizSchema,
+} from "@/lib/validations";
 
 describe("createAttemptSchema", () => {
   it("accepts valid input", () => {
@@ -25,6 +29,46 @@ describe("createAttemptSchema", () => {
       name: "Ahmed",
       phone: "abc",
       language: "ur",
+    });
+    expect(result.success).toBe(false);
+  });
+});
+
+function answers(allSelected: boolean) {
+  return Array.from({ length: QUIZ_SIZE }, (_, i) => ({
+    attemptQuestionId: `aq-${i}`,
+    ...(allSelected ? { selectedOption: "A" as const } : {}),
+  }));
+}
+
+describe("submitQuizSchema", () => {
+  it("accepts a fully answered quiz", () => {
+    const result = submitQuizSchema.safeParse({
+      attemptId: "attempt-1",
+      answers: answers(true),
+    });
+    expect(result.success).toBe(true);
+  });
+
+  it("rejects incomplete answers unless timed out", () => {
+    const incomplete = submitQuizSchema.safeParse({
+      attemptId: "attempt-1",
+      answers: answers(false),
+    });
+    expect(incomplete.success).toBe(false);
+
+    const timedOut = submitQuizSchema.safeParse({
+      attemptId: "attempt-1",
+      timedOut: true,
+      answers: answers(false),
+    });
+    expect(timedOut.success).toBe(true);
+  });
+
+  it("rejects wrong answer count", () => {
+    const result = submitQuizSchema.safeParse({
+      attemptId: "attempt-1",
+      answers: answers(true).slice(0, 10),
     });
     expect(result.success).toBe(false);
   });

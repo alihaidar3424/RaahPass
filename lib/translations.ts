@@ -74,15 +74,69 @@ type TranslationKey =
   | "errorHint"
   | "tryAgainAction"
   | "lightMode"
-  | "darkMode";
+  | "darkMode"
+  | "navSignTest"
+  | "navSigns"
+  | "navFees"
+  | "navLearn"
+  | "navAbout"
+  | "navContact"
+  | "startSignTest"
+  | "learnSigns"
+  | "rulesPractice"
+  | "chooseLicense"
+  | "signTestTitle"
+  | "signTestSubtitle"
+  | "startSignTestCta"
+  | "signsTitle"
+  | "signsSubtitle"
+  | "searchSigns"
+  | "allCategories"
+  | "noSignsFound"
+  | "relatedPractice"
+  | "feesTitle"
+  | "feesSubtitle"
+  | "province"
+  | "purpose"
+  | "duration"
+  | "lateFee"
+  | "lateFeeAmount"
+  | "calculateFee"
+  | "estimatedTotal"
+  | "baseFee"
+  | "aboutTitle"
+  | "aboutBody"
+  | "contactTitle"
+  | "contactSubtitle"
+  | "contactName"
+  | "contactEmail"
+  | "contactMessage"
+  | "contactSend"
+  | "contactThanks"
+  | "retrySignTest"
+  | "sessionExpired"
+  | "homeCategories"
+  | "passNeed"
+  | "reviewWrongOnly"
+  | "reviewAll"
+  | "feeOfficialSources"
+  | "years"
+  | "ownedBy"
+  | "ownerContact"
+  | "speechSpeaker"
+  | "speechMic"
+  | "speechReplay"
+  | "speechMicHint"
+  | "speechListening"
+  | "speechUnsupported";
 
 const en: Record<TranslationKey, string> = {
   appName: "RaahPass",
   appTagline: "Pass your driving test",
   homeTitle: "Your Road to a Driving Licence",
   homeSubtitle:
-    "Master Pakistan's traffic rules and signs with 247+ practice questions. Free — no account needed.",
-  startPractice: "Start Practice Test",
+    "From OK Driving School, Islamabad. Practice Pakistan traffic signs and road rules — free, no account.",
+  startPractice: "Rules Practice",
   readGuidelines: "Driving Guidelines",
   language: "Language",
   english: "English",
@@ -136,9 +190,59 @@ const en: Record<TranslationKey, string> = {
   navHome: "Home",
   back: "Back",
   guidelinesNav: "Guidelines",
-  trustLine: "No account required · 20 questions · 10 minutes · Free practice",
+  trustLine: "No account required · Sign test + rules · Free practice",
   guidelinesTitle: "Driving Guidelines",
   guidelinesSubtitle: "Study official-style driving rules before your practice test.",
+  navSignTest: "Sign Test",
+  navSigns: "Signs",
+  navFees: "Fees",
+  navLearn: "Learn",
+  navAbout: "About",
+  navContact: "Contact",
+  startSignTest: "Start Sign Test",
+  learnSigns: "Learn Traffic Signs",
+  rulesPractice: "Rules Practice",
+  chooseLicense: "Choose license type",
+  signTestTitle: "Computerized Sign Test",
+  signTestSubtitle:
+    "Practice the e-sign test with real Pakistan traffic signs. Score is not saved — session only.",
+  startSignTestCta: "Start Sign Test — 20 Questions",
+  signsTitle: "Traffic Signs",
+  signsSubtitle: "Browse and search Pakistan road signs before your test.",
+  searchSigns: "Search signs…",
+  allCategories: "All",
+  noSignsFound: "No signs match your search.",
+  relatedPractice: "Practice this sign",
+  feesTitle: "License Fee Calculator",
+  feesSubtitle: "Estimate driving license fees by province and type.",
+  province: "Province / region",
+  purpose: "Purpose",
+  duration: "Duration (years)",
+  lateFee: "Include estimated late fee (15%)",
+  lateFeeAmount: "Late fee",
+  calculateFee: "Calculate",
+  estimatedTotal: "Estimated total",
+  baseFee: "Base fee",
+  aboutTitle: "About RaahPass",
+  aboutBody:
+    "RaahPass is owned by OK Driving School (Islamabad). Practice Pakistan traffic signs and road rules in English and Urdu — free, no account needed.",
+  contactTitle: "Contact",
+  contactSubtitle: "Questions or feedback? Send us a message.",
+  contactName: "Your name",
+  contactEmail: "Email",
+  contactMessage: "Message",
+  contactSend: "Send message",
+  contactThanks: "Thanks — WhatsApp will open with your message to OK Driving School.",
+  retrySignTest: "Retry Sign Test",
+  sessionExpired: "This sign test session expired. Start a new test.",
+  homeCategories: "Practice by license type",
+  passNeed: "You need {needed}/{total} correct (70%) to pass.",
+  reviewWrongOnly: "Wrong only",
+  reviewAll: "All answers",
+  feeOfficialSources: "Check official sources",
+  years: "years",
+  ownedBy: "Product of",
+  ownerContact: "OK Driving School contact",
   readArticle: "Read",
   prevArticle: "Previous",
   nextArticle: "Next",
@@ -155,6 +259,12 @@ const en: Record<TranslationKey, string> = {
   tryAgainAction: "Try again",
   lightMode: "Switch to light mode",
   darkMode: "Switch to dark mode",
+  speechSpeaker: "Speaker",
+  speechMic: "Mic",
+  speechReplay: "Read again",
+  speechMicHint: "Say A, B, C or the answer text",
+  speechListening: "Listening…",
+  speechUnsupported: "Voice not supported in this browser",
 };
 
 const ur: Record<TranslationKey, string> = {
@@ -162,8 +272,8 @@ const ur: Record<TranslationKey, string> = {
   appTagline: "ڈرائیونگ ٹیسٹ پاس کریں",
   homeTitle: "ڈرائیونگ لائسنس کا راستہ",
   homeSubtitle:
-    "247+ سوالات کے ساتھ پاکستان کے ٹریفک قوانین سیکھیں۔ مفت — اکاؤنٹ کی ضرورت نہیں۔",
-  startPractice: "موک ٹیسٹ شروع کریں",
+    "اوکے ڈرائیونگ اسکول، اسلام آباد کی پروڈکٹ۔ پاکستان ٹریفک سائنز اور قوانین کی مشق — مفت، بغیر اکاؤنٹ۔",
+  startPractice: "قوانین کی مشق",
   readGuidelines: "ڈرائیونگ ہدایات",
   language: "زبان",
   english: "English",
@@ -217,9 +327,59 @@ const ur: Record<TranslationKey, string> = {
   navHome: "ہوم",
   back: "واپس",
   guidelinesNav: "ہدایات",
-  trustLine: "اکاؤنٹ نہیں چاہیے · 20 سوالات · 10 منٹ · مفت مشق",
+  trustLine: "اکاؤنٹ نہیں چاہیے · سائن ٹیسٹ + قوانین · مفت مشق",
   guidelinesTitle: "ڈرائیونگ ہدایات",
   guidelinesSubtitle: "پریکٹس ٹیسٹ سے پہلے سرکاری انداز کے قوانین پڑھیں۔",
+  navSignTest: "سائن ٹیسٹ",
+  navSigns: "سائنز",
+  navFees: "فیس",
+  navLearn: "سیکھیں",
+  navAbout: "تعارف",
+  navContact: "رابطہ",
+  startSignTest: "سائن ٹیسٹ شروع کریں",
+  learnSigns: "ٹریفک سائنز سیکھیں",
+  rulesPractice: "قوانین کی مشق",
+  chooseLicense: "لائسنس کی قسم منتخب کریں",
+  signTestTitle: "کمپیوٹرائزڈ سائن ٹیسٹ",
+  signTestSubtitle:
+    "حقیقی پاکستان ٹریفک سائنز کے ساتھ ای سائن ٹیسٹ کی مشق۔ اسکور محفوظ نہیں ہوتا — صرف اس سیشن میں۔",
+  startSignTestCta: "سائن ٹیسٹ شروع کریں — 20 سوالات",
+  signsTitle: "ٹریفک سائنز",
+  signsSubtitle: "ٹیسٹ سے پہلے پاکستان روڈ سائنز تلاش کریں اور دیکھیں۔",
+  searchSigns: "سائنز تلاش کریں…",
+  allCategories: "تمام",
+  noSignsFound: "کوئی سائن نہیں ملی۔",
+  relatedPractice: "اس سائن کی مشق",
+  feesTitle: "لائسنس فیس کیلکولیٹر",
+  feesSubtitle: "صوبہ اور قسم کے مطابق ڈرائیونگ لائسنس فیس کا اندازہ۔",
+  province: "صوبہ / علاقہ",
+  purpose: "مقصد",
+  duration: "مدت (سال)",
+  lateFee: "اندازاً لیٹ فیس شامل کریں (15%)",
+  lateFeeAmount: "لیٹ فیس",
+  calculateFee: "حساب کریں",
+  estimatedTotal: "اندازاً کل",
+  baseFee: "بنیادی فیس",
+  aboutTitle: "راہ پاس کے بارے میں",
+  aboutBody:
+    "راہ پاس اوکے ڈرائیونگ اسکول (اسلام آباد) کی پروڈکٹ ہے۔ پاکستان ٹریفک سائنز اور قوانین کی دو زبانی مشق — مفت، بغیر اکاؤنٹ۔",
+  contactTitle: "رابطہ",
+  contactSubtitle: "سوال یا رائے؟ ہمیں پیغام بھیجیں۔",
+  contactName: "آپ کا نام",
+  contactEmail: "ای میل",
+  contactMessage: "پیغام",
+  contactSend: "پیغام بھیجیں",
+  contactThanks: "شکریہ — آپ کا پیغام واٹس ایپ پر اوکے ڈرائیونگ اسکول کو بھیجا جائے گا۔",
+  retrySignTest: "سائن ٹیسٹ دوبارہ کریں",
+  sessionExpired: "یہ سائن ٹیسٹ سیشن ختم ہو گیا۔ نیا ٹیسٹ شروع کریں۔",
+  homeCategories: "لائسنس کی قسم کے مطابق مشق",
+  passNeed: "پاس کے لیے {needed}/{total} درست جوابات (70%) درکار ہیں۔",
+  reviewWrongOnly: "صرف غلط",
+  reviewAll: "تمام جوابات",
+  feeOfficialSources: "سرکاری ذرائع دیکھیں",
+  years: "سال",
+  ownedBy: "پروڈکٹ از",
+  ownerContact: "اوکے ڈرائیونگ اسکول کا رابطہ",
   readArticle: "پڑھیں",
   prevArticle: "پچھلا",
   nextArticle: "اگلا",
@@ -236,6 +396,12 @@ const ur: Record<TranslationKey, string> = {
   tryAgainAction: "دوبارہ کوشش",
   lightMode: "روشن موڈ",
   darkMode: "ڈارک موڈ",
+  speechSpeaker: "اسپیکر",
+  speechMic: "مائیک",
+  speechReplay: "دوبارہ سنیں",
+  speechMicHint: "اے، بے، سین یا جواب بولیں",
+  speechListening: "سن رہا ہے…",
+  speechUnsupported: "اس براؤزر میں آواز دستیاب نہیں",
 };
 
 export function t(lang: Language, key: TranslationKey): string {

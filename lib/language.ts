@@ -6,6 +6,9 @@ export function parseLanguage(value: string | string[] | undefined | null): Lang
 }
 
 export function withLang(href: string, lang: Language): string {
-  const separator = href.includes("?") ? "&" : "?";
-  return `${href}${separator}lang=${lang}`;
+  const [path, query = ""] = href.split("?");
+  const params = new URLSearchParams(query);
+  params.set("lang", lang);
+  const next = params.toString();
+  return next ? `${path}?${next}` : path;
 }

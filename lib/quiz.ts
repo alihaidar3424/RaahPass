@@ -3,6 +3,7 @@
 import { CorrectOption, Language as PrismaLanguage } from "@/generated/prisma/client";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
+import { withLang } from "@/lib/language";
 import { prisma } from "@/lib/prisma";
 import { QUIZ_NOT_FOUND } from "@/lib/quiz-errors";
 import { calculateScore } from "@/lib/score";
@@ -164,7 +165,8 @@ export async function createAttempt(input: {
 export async function createAttemptAndRedirect(formData: FormData): Promise<void> {
   const result = await createAttemptFormAction(null, formData);
   if (result?.attemptId) {
-    redirect(`/quiz/${result.attemptId}`);
+    const language = String(formData.get("language") ?? "en") === "ur" ? "ur" : "en";
+    redirect(withLang(`/quiz/${result.attemptId}`, language));
   }
 }
 
@@ -189,7 +191,7 @@ export async function createAttemptFormAction(
 
   try {
     const { attemptId } = await createAttempt(parsed.data);
-    redirect(`/quiz/${attemptId}`);
+    redirect(withLang(`/quiz/${attemptId}`, parsed.data.language));
   } catch (error) {
     if (error instanceof Error && error.message === "INSUFFICIENT_QUESTIONS") {
       return { error: "INSUFFICIENT_QUESTIONS" };
@@ -326,7 +328,12 @@ export async function submitQuizAndRedirect(input: {
   answers: { attemptQuestionId: string; selectedOption?: CorrectOption }[];
 }): Promise<void> {
   await submitQuiz(input);
-  redirect(`/result/${input.attemptId}`);
+  const attempt = await prisma.attempt.findUnique({
+    where: { id: input.attemptId },
+    select: { language: true },
+  });
+  const language = (attempt?.language === "ur" ? "ur" : "en") as Language;
+  redirect(withLang(`/result/${input.attemptId}`, language));
 }
 
 export async function getResult(attemptId: string) {

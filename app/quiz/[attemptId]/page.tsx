@@ -2,6 +2,7 @@ import { redirect } from "next/navigation";
 import { AppShell } from "@/components/layout/AppShell";
 import { AttemptNotFound } from "@/components/quiz/AttemptNotFound";
 import { QuizClient } from "@/components/quiz/QuizClient";
+import { withLang } from "@/lib/language";
 import { resolveLanguage } from "@/lib/resolve-language";
 import { getQuizQuestions } from "@/lib/quiz";
 import { isQuizNotFound } from "@/lib/quiz-errors";
@@ -26,13 +27,18 @@ export default async function QuizPage({ params }: QuizPageProps) {
   }
 
   if (data.submitted) {
-    redirect(`/result/${attemptId}`);
+    redirect(withLang(`/result/${attemptId}`, data.language));
   }
 
   const rtl = dirForLanguage(data.language) === "rtl";
 
   return (
-    <AppShell lang={data.language} rtl={rtl} nav="none">
+    <AppShell
+      lang={data.language}
+      rtl={rtl}
+      nav="none"
+      langBasePath={`/quiz/${attemptId}`}
+    >
       <QuizClient
         attemptId={attemptId}
         language={data.language}

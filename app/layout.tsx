@@ -1,7 +1,10 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
+import { cookies } from "next/headers";
 import { Inter, Noto_Nastaliq_Urdu } from "next/font/google";
 import { BRAND } from "@/lib/brand";
+import { LANG_COOKIE } from "@/lib/constants";
+import { parseLanguage } from "@/lib/language";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import "./globals.css";
 
@@ -25,6 +28,18 @@ export const metadata: Metadata = {
   title: `${BRAND.nameEn} — ${BRAND.taglineEn}`,
   description: BRAND.descriptionEn,
   applicationName: BRAND.nameEn,
+  openGraph: {
+    title: `${BRAND.nameEn} — ${BRAND.taglineEn}`,
+    description: BRAND.descriptionEn,
+    type: "website",
+    images: [{ url: "/screenshots/desktop-home.png", width: 1280, height: 720 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${BRAND.nameEn} — ${BRAND.taglineEn}`,
+    description: BRAND.descriptionEn,
+    images: ["/screenshots/desktop-home.png"],
+  },
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
@@ -55,13 +70,16 @@ export const viewport: Viewport = {
   viewportFit: "cover",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const cookieStore = await cookies();
+  const lang = parseLanguage(cookieStore.get(LANG_COOKIE)?.value);
+
   return (
-    <html lang="en" suppressHydrationWarning className={`${inter.variable} ${notoNastaliq.variable} h-full`}>
+    <html lang={lang} suppressHydrationWarning className={`${inter.variable} ${notoNastaliq.variable} h-full`}>
       <body className="min-h-full bg-background font-sans text-foreground antialiased">
         {process.env.NODE_ENV === "production" ? (
           <Script id="sw-register" strategy="beforeInteractive">

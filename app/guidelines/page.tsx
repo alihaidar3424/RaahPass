@@ -23,11 +23,11 @@ export default async function GuidelinesPage({ searchParams }: GuidelinesPagePro
   }, {});
 
   return (
-    <AppShell lang={lang} rtl={rtl} nav="guidelines" showBottomNav langBasePath="/guidelines">
-      <PageContainer withBottomNav className="page-stack">
+    <AppShell lang={lang} rtl={rtl} nav="learn" showBottomNav langBasePath="/guidelines">
+      <PageContainer withBottomNav width="content" className="page-stack">
         <div>
-          <h1 className="text-2xl font-bold text-foreground">{t(lang, "guidelinesTitle")}</h1>
-          <p className={mutedTextClassName("mt-2")}>{t(lang, "guidelinesSubtitle")}</p>
+          <h1 className="text-2xl font-bold text-foreground md:text-3xl">{t(lang, "guidelinesTitle")}</h1>
+          <p className={mutedTextClassName("mt-2 md:text-base")}>{t(lang, "guidelinesSubtitle")}</p>
         </div>
 
         {Object.entries(grouped).map(([category, categoryItems]) => (
