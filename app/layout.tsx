@@ -79,7 +79,12 @@ export default async function RootLayout({
   const lang = parseLanguage(cookieStore.get(LANG_COOKIE)?.value);
 
   return (
-    <html lang={lang} suppressHydrationWarning className={`${inter.variable} ${notoNastaliq.variable} h-full`}>
+    <html
+      lang={lang}
+      suppressHydrationWarning
+      data-scroll-behavior="smooth"
+      className={`${inter.variable} ${notoNastaliq.variable} h-full`}
+    >
       <body className="min-h-full bg-background font-sans text-foreground antialiased">
         {process.env.NODE_ENV === "production" ? (
           <Script id="sw-register" strategy="beforeInteractive">
