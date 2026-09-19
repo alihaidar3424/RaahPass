@@ -16,10 +16,6 @@ export function isIos(): boolean {
   return /iphone|ipad|ipod/i.test(navigator.userAgent);
 }
 
-export function isMobileInstallPlatform(): boolean {
-  return isAndroid() || isIos();
-}
-
 /** Chrome needs an active service worker before WebAPK install can finish. */
 export async function waitForInstallReady(): Promise<boolean> {
   if (typeof window === "undefined" || !("serviceWorker" in navigator)) {

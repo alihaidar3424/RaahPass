@@ -162,14 +162,6 @@ export async function createAttempt(input: {
   return { attemptId: attempt.id };
 }
 
-export async function createAttemptAndRedirect(formData: FormData): Promise<void> {
-  const result = await createAttemptFormAction(null, formData);
-  if (result?.attemptId) {
-    const language = String(formData.get("language") ?? "en") === "ur" ? "ur" : "en";
-    redirect(withLang(`/quiz/${result.attemptId}`, language));
-  }
-}
-
 export type CreateAttemptState = {
   error?: string;
   attemptId?: string;

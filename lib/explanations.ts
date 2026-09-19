@@ -1,8 +1,6 @@
 import type { CorrectOption } from "@/generated/prisma/client";
 import type { Language } from "@/lib/validations";
 
-const OPTION_KEYS: CorrectOption[] = ["A", "B", "C", "D"];
-
 export function buildExplanation(
   language: Language,
   correctOption: CorrectOption,
@@ -40,8 +38,4 @@ export function buildSeedExplanation(
     return `درست جواب ${correctOption} ہے: ${label}۔`;
   }
   return `The correct answer is ${correctOption}: ${label}.`;
-}
-
-export function optionKeysFromRecord(options: Record<string, string>): CorrectOption[] {
-  return OPTION_KEYS.filter((key) => options[key]?.trim());
 }

@@ -8,42 +8,21 @@ import { cn } from "@/lib/utils";
 
 type OwnerCardProps = {
   lang: Language;
-  variant?: "full" | "compact";
   className?: string;
 };
 
-export function OwnerCard({ lang, variant = "full", className }: OwnerCardProps) {
+export function OwnerCard({ lang, className }: OwnerCardProps) {
   const name = lang === "ur" ? OWNER.nameUr : OWNER.nameEn;
   const address = lang === "ur" ? OWNER.addressUr : OWNER.addressEn;
   const tagline = lang === "ur" ? OWNER.taglineUr : OWNER.taglineEn;
 
-  if (variant === "compact") {
-    return (
-      <div
-        className={cn(
-          "flex items-center gap-3 rounded-xl border border-border bg-card px-3 py-2.5",
-          className,
-        )}
-      >
-        <Image
-          src={OWNER.logoSrc}
-          alt={OWNER.nameEn}
-          width={44}
-          height={44}
-          className="h-11 w-11 shrink-0 rounded-lg object-contain bg-white"
-        />
-        <div className="min-w-0">
-          <p className="text-[11px] font-medium uppercase tracking-wide text-muted-foreground">
-            {t(lang, "ownedBy")}
-          </p>
-          <p className="truncate text-sm font-semibold text-card-foreground">{name}</p>
-        </div>
-      </div>
-    );
-  }
-
   return (
-    <Card className={cn("space-y-4 md:grid md:grid-cols-[auto_1fr] md:items-start md:gap-8 md:space-y-0 md:p-6", className)}>
+    <Card
+      className={cn(
+        "space-y-4 md:grid md:grid-cols-[auto_1fr] md:items-start md:gap-8 md:space-y-0 md:p-6",
+        className,
+      )}
+    >
       <div className="flex items-start gap-4 md:contents">
         <Image
           src={OWNER.logoSrc}
@@ -80,44 +59,5 @@ export function OwnerCard({ lang, variant = "full", className }: OwnerCardProps)
         </div>
       </div>
     </Card>
-  );
-}
-
-type OwnerFooterProps = {
-  lang: Language;
-  withBottomNav?: boolean;
-};
-
-export function OwnerFooter({ lang, withBottomNav = false }: OwnerFooterProps) {
-  const name = lang === "ur" ? OWNER.nameUr : OWNER.nameEn;
-
-  return (
-    <footer
-      className={cn(
-        "border-t border-border px-4 py-4 text-center",
-        withBottomNav && "pb-[calc(4.5rem+env(safe-area-inset-bottom))]",
-      )}
-    >
-      <div className="mx-auto flex max-w-lg flex-col items-center gap-2">
-        <Image
-          src={OWNER.logoSrc}
-          alt={OWNER.nameEn}
-          width={40}
-          height={40}
-          className="h-10 w-10 rounded-lg bg-white object-contain"
-        />
-        <p className="text-xs text-muted-foreground">
-          {t(lang, "ownedBy")}{" "}
-          <span className="font-semibold text-foreground">{name}</span>
-        </p>
-        <a
-          href={`tel:${OWNER.phoneTel}`}
-          className="text-xs font-medium text-primary"
-          dir="ltr"
-        >
-          {OWNER.phone}
-        </a>
-      </div>
-    </footer>
   );
 }

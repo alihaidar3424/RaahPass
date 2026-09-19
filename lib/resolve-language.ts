@@ -3,8 +3,6 @@ import { LANG_COOKIE } from "@/lib/constants";
 import { parseLanguage } from "@/lib/language";
 import type { Language } from "@/lib/validations";
 
-export { LANG_COOKIE };
-
 export async function resolveLanguage(
   searchParam: string | string[] | undefined | null,
 ): Promise<Language> {

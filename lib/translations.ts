@@ -1,13 +1,8 @@
 import type { Language } from "@/lib/validations";
 
 type TranslationKey =
-  | "appName"
-  | "appTagline"
-  | "homeTitle"
   | "homeSubtitle"
-  | "startPractice"
   | "readGuidelines"
-  | "language"
   | "english"
   | "urdu"
   | "startTestTitle"
@@ -122,7 +117,6 @@ type TranslationKey =
   | "feeOfficialSources"
   | "years"
   | "ownedBy"
-  | "ownerContact"
   | "speechSpeaker"
   | "speechMic"
   | "speechReplay"
@@ -131,14 +125,9 @@ type TranslationKey =
   | "speechUnsupported";
 
 const en: Record<TranslationKey, string> = {
-  appName: "RaahPass",
-  appTagline: "Pass your driving test",
-  homeTitle: "Your Road to a Driving Licence",
   homeSubtitle:
     "From OK Driving School, Islamabad. Practice Pakistan traffic signs and road rules — free, no account.",
-  startPractice: "Rules Practice",
   readGuidelines: "Driving Guidelines",
-  language: "Language",
   english: "English",
   urdu: "Urdu",
   startTestTitle: "Start Practice Test",
@@ -242,7 +231,6 @@ const en: Record<TranslationKey, string> = {
   feeOfficialSources: "Check official sources",
   years: "years",
   ownedBy: "Product of",
-  ownerContact: "OK Driving School contact",
   readArticle: "Read",
   prevArticle: "Previous",
   nextArticle: "Next",
@@ -268,14 +256,9 @@ const en: Record<TranslationKey, string> = {
 };
 
 const ur: Record<TranslationKey, string> = {
-  appName: "راہ پاس",
-  appTagline: "ڈرائیونگ ٹیسٹ پاس کریں",
-  homeTitle: "ڈرائیونگ لائسنس کا راستہ",
   homeSubtitle:
     "اوکے ڈرائیونگ اسکول، اسلام آباد کی پروڈکٹ۔ پاکستان ٹریفک سائنز اور قوانین کی مشق — مفت، بغیر اکاؤنٹ۔",
-  startPractice: "قوانین کی مشق",
   readGuidelines: "ڈرائیونگ ہدایات",
-  language: "زبان",
   english: "English",
   urdu: "اردو",
   startTestTitle: "پریکٹس ٹیسٹ شروع کریں",
@@ -379,7 +362,6 @@ const ur: Record<TranslationKey, string> = {
   feeOfficialSources: "سرکاری ذرائع دیکھیں",
   years: "سال",
   ownedBy: "پروڈکٹ از",
-  ownerContact: "اوکے ڈرائیونگ اسکول کا رابطہ",
   readArticle: "پڑھیں",
   prevArticle: "پچھلا",
   nextArticle: "اگلا",

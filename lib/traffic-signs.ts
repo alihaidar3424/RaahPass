@@ -36,7 +36,8 @@ export function getSignBySlug(slug: string): TrafficSign | undefined {
 }
 
 export function getSignCategories(): SignCategory[] {
-  return bank.categories as SignCategory[];
+  const present = new Set(signs.map((sign) => sign.category));
+  return (bank.categories as SignCategory[]).filter((category) => present.has(category));
 }
 
 export function signName(sign: TrafficSign, lang: Language): string {

@@ -22,13 +22,18 @@ describe("traffic-signs", () => {
     expect(getSignBySlug("does-not-exist")).toBeUndefined();
   });
 
-  it("exposes categories including informatory", () => {
+  it("exposes only categories that have signs", () => {
     const cats = getSignCategories();
     expect(cats).toContain("regulatory");
     expect(cats).toContain("warning");
-    expect(cats).toContain("informatory");
+    expect(cats).not.toContain("informatory");
+    expect(cats).not.toContain("markings");
     expect(categoryLabel("warning", "en")).toBe("Warning");
-    expect(categoryLabel("informatory", "ur").length).toBeGreaterThan(0);
+    expect(categoryLabel("other", "ur").length).toBeGreaterThan(0);
+
+    for (const cat of cats) {
+      expect(filterSigns({ category: cat }).length).toBeGreaterThan(0);
+    }
   });
 
   it("filters by category", () => {
