@@ -1,7 +1,6 @@
 "use client";
 
 import { useMemo, useSyncExternalStore } from "react";
-import Link from "next/link";
 import { CheckCircle2, XCircle } from "lucide-react";
 import { AppShell } from "@/components/layout/AppShell";
 import { LinkButton } from "@/components/ui/Button";
@@ -116,20 +115,21 @@ export function SignTestResultClient({ fallbackLang = "en" }: SignTestResultClie
           </Card>
         </div>
 
-        <LinkButton href={withLang("/sign-test/review", lang)} fullWidth size="lg">
-          {t(lang, "viewReview")}
-        </LinkButton>
-        <LinkButton
-          href={withLang(`/sign-test/quiz?license=${result.licenseType}`, lang)}
-          fullWidth
-          size="lg"
-          variant="secondary"
-        >
-          {t(lang, "retrySignTest")}
-        </LinkButton>
-        <Link href={withLang("/", lang)} className="text-center text-sm text-primary underline">
-          {t(lang, "navHome")}
-        </Link>
+        <div className="section-stack">
+          <LinkButton href={withLang("/sign-test/review", lang)} fullWidth size="lg" variant="secondary">
+            {t(lang, "viewReview")}
+          </LinkButton>
+          <LinkButton
+            href={withLang(`/sign-test/quiz?license=${result.licenseType}`, lang)}
+            fullWidth
+            size="lg"
+          >
+            {t(lang, "retrySignTest")}
+          </LinkButton>
+          <LinkButton href={withLang("/", lang)} fullWidth size="lg" variant="secondary">
+            {t(lang, "navHome")}
+          </LinkButton>
+        </div>
       </PageContainer>
     </AppShell>
   );

@@ -41,12 +41,12 @@ export function SignsGallery({ lang }: SignsGalleryProps) {
         aria-label={t(lang, "searchSigns")}
       />
 
-      <div className="flex flex-wrap gap-2">
+      <div className="-mx-1 flex gap-2 overflow-x-auto px-1 pb-1">
         <button
           type="button"
           onClick={() => setCategory("all")}
           className={cn(
-            "min-h-9 rounded-lg border px-3 text-sm font-medium",
+            "min-h-9 shrink-0 rounded-lg border px-3 text-sm font-medium",
             category === "all"
               ? "border-primary bg-primary text-primary-foreground"
               : "border-border bg-card text-foreground",
@@ -60,7 +60,7 @@ export function SignsGallery({ lang }: SignsGalleryProps) {
             type="button"
             onClick={() => setCategory(cat)}
             className={cn(
-              "min-h-9 rounded-lg border px-3 text-sm font-medium",
+              "min-h-9 shrink-0 rounded-lg border px-3 text-sm font-medium",
               category === cat
                 ? "border-primary bg-primary text-primary-foreground"
                 : "border-border bg-card text-foreground",

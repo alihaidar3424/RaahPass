@@ -32,7 +32,7 @@ export function OptionButton({
           ? "border-primary bg-accent text-accent-foreground"
           : "border-border bg-card text-card-foreground hover:border-primary/40 hover:bg-muted/50",
         disabled && "pointer-events-none opacity-50",
-        rtl && "flex-row-reverse text-right",
+        rtl && "urdu-text",
       )}
     >
       <span

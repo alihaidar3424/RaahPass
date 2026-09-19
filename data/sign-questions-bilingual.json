@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "source": "NHMP / traffic police practice sheets (reference extract)",
-  "totalQuestions": 77,
+  "totalQuestions": 52,
   "licenseTypes": [
     "motorcycle",
     "motorcar",
@@ -82,29 +82,6 @@
       }
     },
     {
-      "id": "s-004",
-      "licenseTypes": [
-        "motorcar",
-        "ltv",
-        "htv"
-      ],
-      "image": "/signs/quiz/sign-q004.png",
-      "signSlug": "quiz-sign-q004",
-      "correct": "A",
-      "en": {
-        "question": "What does this sign mean?",
-        "A": "No entry for vehicles exceeding 8 Ton on Axle",
-        "B": "Height of the bridge is 8 feet",
-        "C": "No entry for Goods vehicles"
-      },
-      "ur": {
-        "question": "سامنے دیے گئے نشان سے کیا مراد ہے ؟",
-        "A": "ایک ایکسل پر آٹھ ٹن سے زائد گاڑیوں کا داخلہ ممنوع ہے",
-        "B": "پل کی اونچائی 8 فٹ",
-        "C": "مال بردار گاڑیوں کا داخلہ منع ہے"
-      }
-    },
-    {
       "id": "s-005",
       "licenseTypes": [
         "motorcar",
@@ -125,30 +102,6 @@
         "A": "مال بردار گاڑیوں کی اوور ٹیکنگ منع ہے",
         "B": "سڑک بند ہے",
         "C": "اوور ٹیکنگ منع ہے"
-      }
-    },
-    {
-      "id": "s-006",
-      "licenseTypes": [
-        "motorcycle",
-        "motorcar",
-        "ltv",
-        "htv"
-      ],
-      "image": "/signs/quiz/sign-q006.png",
-      "signSlug": "quiz-sign-q006",
-      "correct": "B",
-      "en": {
-        "question": "What does this sign mean?",
-        "A": "No entry for vehicles exceeding 10 meter in width",
-        "B": "No entry for vehicles exceeding 10 meter in length",
-        "C": "No entry for heavy vehicles"
-      },
-      "ur": {
-        "question": "سامنے دیے گئے نشان سے کیا مراد ہے ؟",
-        "A": "دس میٹر سے زائد چوڑی گاڑیوں کا داخلہ منع ہے",
-        "B": "دس میٹر سے زائد لمبی گاڑیوں کا داخلہ ممنوع ہے",
-        "C": "بڑی گاڑیوں کا داخلہ منع ہے"
       }
     },
     {
@@ -173,102 +126,6 @@
         "A": "سڑک پر دہرا موڑ",
         "B": "آگے سڑک خراب ہے",
         "C": "سڑک پر پھسلن ہے"
-      }
-    },
-    {
-      "id": "s-008",
-      "licenseTypes": [
-        "motorcycle",
-        "motorcar",
-        "ltv",
-        "htv"
-      ],
-      "image": "/signs/quiz/sign-q008.png",
-      "signSlug": "quiz-sign-q008",
-      "correct": "A",
-      "en": {
-        "question": "What does this sign mean?",
-        "A": "Filling station",
-        "B": "First Aid Station",
-        "C": "Telephone"
-      },
-      "ur": {
-        "question": "سامنے دیے گئے نشان سے کیا مراد ہے ؟",
-        "A": "پیٹرول پمپ",
-        "B": "طبی امداد",
-        "C": "ٹیلی فون"
-      }
-    },
-    {
-      "id": "s-009",
-      "licenseTypes": [
-        "motorcycle",
-        "motorcar",
-        "ltv",
-        "htv"
-      ],
-      "image": "/signs/quiz/sign-q009.png",
-      "signSlug": "quiz-sign-q009",
-      "correct": "A",
-      "en": {
-        "question": "What does this sign mean?",
-        "A": "Telephone facility",
-        "B": "First Aid Station",
-        "C": "Police Station"
-      },
-      "ur": {
-        "question": "سامنے دیے گئے نشان سے کیا مراد ہے ؟",
-        "A": "ٹیلی فون",
-        "B": "طبی امداد",
-        "C": "پولیس اسٹیشن"
-      }
-    },
-    {
-      "id": "s-011",
-      "licenseTypes": [
-        "motorcycle",
-        "motorcar",
-        "ltv",
-        "htv"
-      ],
-      "image": "/signs/quiz/sign-q011.png",
-      "signSlug": "quiz-sign-q011",
-      "correct": "C",
-      "en": {
-        "question": "What does this sign mean?",
-        "A": "Red cross",
-        "B": "Hospital",
-        "C": "First Aid Centre"
-      },
-      "ur": {
-        "question": "سامنے دیئے گئے نشان سے کیا مراد ہے؟",
-        "A": "ریڈ کراس",
-        "B": "ہسپتال",
-        "C": "طبی امداد"
-      }
-    },
-    {
-      "id": "s-012",
-      "licenseTypes": [
-        "motorcycle",
-        "motorcar",
-        "ltv",
-        "htv"
-      ],
-      "image": "/signs/quiz/sign-q012.png",
-      "signSlug": "quiz-sign-q012",
-      "correct": "C",
-      "en": {
-        "question": "What does this sign mean?",
-        "A": "Restaurant",
-        "B": "Hospital",
-        "C": "Bus stop"
-      },
-      "ur": {
-        "question": "سامنے دیئے گئے نشان سے کیا مراد ہے؟",
-        "A": "ریسٹورنٹ",
-        "B": "ہسپتال",
-        "C": "بس سٹاپ"
       }
     },
     {
@@ -343,53 +200,6 @@
       }
     },
     {
-      "id": "s-016",
-      "licenseTypes": [
-        "motorcycle",
-        "motorcar",
-        "ltv",
-        "htv"
-      ],
-      "image": "/signs/quiz/sign-q016.png",
-      "signSlug": "quiz-sign-q016",
-      "correct": "C",
-      "en": {
-        "question": "What does this sign mean?",
-        "A": "No entry for hand carts",
-        "B": "No entry",
-        "C": "No entry for animal drawn vehicle"
-      },
-      "ur": {
-        "question": "سامنے دیئے گئے نشان سے کیا مراد ہے؟",
-        "A": "ہاتھ ریڑھی کا داخلہ ممنوع ہے",
-        "B": "داخلہ ممنوع ہے",
-        "C": "جانوروں سے کھینچی جانے والی گاڑیوں کا داخلہ ممنوع ہے"
-      }
-    },
-    {
-      "id": "s-017",
-      "licenseTypes": [
-        "motorcar",
-        "ltv",
-        "htv"
-      ],
-      "image": "/signs/quiz/sign-q017.png",
-      "signSlug": "quiz-sign-q017",
-      "correct": "B",
-      "en": {
-        "question": "What does this sign mean?",
-        "A": "Road closed",
-        "B": "No entry for agricultural vehicle",
-        "C": "No entry for goods vehicles"
-      },
-      "ur": {
-        "question": "سامنے دیئے گئے نشان سے کیا مراد ہے؟",
-        "A": "سڑک بند ہے",
-        "B": "زرعی گاڑیوں کا داخلہ ممنوع ہے",
-        "C": "مال بردار گاڑیوں کا داخلہ ممنوع ہے"
-      }
-    },
-    {
       "id": "s-018",
       "licenseTypes": [
         "motorcycle",
@@ -438,78 +248,6 @@
       }
     },
     {
-      "id": "s-020",
-      "licenseTypes": [
-        "motorcycle",
-        "motorcar",
-        "ltv",
-        "htv"
-      ],
-      "image": "/signs/quiz/sign-q020.png",
-      "signSlug": "quiz-sign-q020",
-      "correct": "C",
-      "en": {
-        "question": "What does this sign mean?",
-        "A": "Centre line",
-        "B": "Overtaking Allowed",
-        "C": "Center line no overtaking zone"
-      },
-      "ur": {
-        "question": "سامنے دیئے گئے نشان سے کیا مراد ہے؟",
-        "A": "درمیانی لائن",
-        "B": "اوور ٹیکنگ کر سکتے ہیں",
-        "C": "درمیانی لائن، اوور ٹیکنگ ممنوع ہے"
-      }
-    },
-    {
-      "id": "s-021",
-      "licenseTypes": [
-        "motorcycle",
-        "motorcar",
-        "ltv",
-        "htv"
-      ],
-      "image": "/signs/quiz/sign-q021.png",
-      "signSlug": "quiz-sign-q021",
-      "correct": "A",
-      "en": {
-        "question": "What does this sign mean?",
-        "A": "Overtaking allow if no vehicle",
-        "B": "Can’t overtake",
-        "C": "Don’t know"
-      },
-      "ur": {
-        "question": "سامنے دیئے گئے نشان سے کیا مراد ہے؟",
-        "A": "اگر سامنے گاڑی نہ ہو تو اوور ٹیکنگ کی جا سکتی ہے",
-        "B": "اوور ٹیکنگ نہیں کی جا سکتی",
-        "C": "معلوم نہیں"
-      }
-    },
-    {
-      "id": "s-022",
-      "licenseTypes": [
-        "motorcycle",
-        "motorcar",
-        "ltv",
-        "htv"
-      ],
-      "image": "/signs/quiz/sign-q022.png",
-      "signSlug": "quiz-sign-q022",
-      "correct": "A",
-      "en": {
-        "question": "What does this sign mean?",
-        "A": "Overtaking allow if no vehicle",
-        "B": "Can’t overtake",
-        "C": "Don’t know"
-      },
-      "ur": {
-        "question": "سامنے دیے گئے نشان سے کیا مراد ہے ؟",
-        "A": "اگر سامنے گاڑی نہ ہو تو اوور ٹیکنگ کی جا سکتی ہے",
-        "B": "اوور ٹیکنگ نہیں کی جا سکتی",
-        "C": "معلوم نہیں"
-      }
-    },
-    {
       "id": "s-023",
       "licenseTypes": [
         "motorcycle",
@@ -531,54 +269,6 @@
         "A": "رکنے کی لکیر",
         "B": "گیو وے / راستہ دیں",
         "C": "بائیں مڑیں"
-      }
-    },
-    {
-      "id": "s-024",
-      "licenseTypes": [
-        "motorcycle",
-        "motorcar",
-        "ltv",
-        "htv"
-      ],
-      "image": "/signs/quiz/sign-q024.png",
-      "signSlug": "quiz-sign-q024",
-      "correct": "C",
-      "en": {
-        "question": "What does this sign mean?",
-        "A": "Zebra crossing",
-        "B": "Crossing",
-        "C": "Junction box"
-      },
-      "ur": {
-        "question": "سامنے دیے گئے نشان سے کیا مراد ہے ؟",
-        "A": "زیبرا کراسنگ",
-        "B": "چوک",
-        "C": "بکس چوک"
-      }
-    },
-    {
-      "id": "s-025",
-      "licenseTypes": [
-        "motorcycle",
-        "motorcar",
-        "ltv",
-        "htv"
-      ],
-      "image": "/signs/quiz/sign-q025.png",
-      "signSlug": "quiz-sign-q025",
-      "correct": "B",
-      "en": {
-        "question": "What does this sign mean?",
-        "A": "Crossing",
-        "B": "Stop line",
-        "C": "Lines"
-      },
-      "ur": {
-        "question": "سامنے دیے گئے نشان سے کیا مراد ہے ؟",
-        "A": "کراسنگ",
-        "B": "سٹاپ لائن",
-        "C": "لکیریں"
       }
     },
     {
@@ -1373,78 +1063,6 @@
       }
     },
     {
-      "id": "s-059",
-      "licenseTypes": [
-        "motorcycle",
-        "motorcar",
-        "ltv",
-        "htv"
-      ],
-      "image": "/signs/quiz/sign-q059.png",
-      "signSlug": "quiz-sign-q059",
-      "correct": "A",
-      "en": {
-        "question": "What does this sign mean?",
-        "A": "No horn",
-        "B": "Blow horn",
-        "C": "Press horn"
-      },
-      "ur": {
-        "question": "سامنے دیئے گئے نشان سے کیا مراد ہے؟",
-        "A": "ہارن بجانا منع ہے",
-        "B": "ہارن کا استعمال کریں",
-        "C": "ہارن بجائیں"
-      }
-    },
-    {
-      "id": "s-060",
-      "licenseTypes": [
-        "motorcycle",
-        "motorcar",
-        "ltv",
-        "htv"
-      ],
-      "image": "/signs/quiz/sign-q060.png",
-      "signSlug": "quiz-sign-q060",
-      "correct": "C",
-      "en": {
-        "question": "What does this sign mean?",
-        "A": "No parking",
-        "B": "Parking place on left",
-        "C": "Parking"
-      },
-      "ur": {
-        "question": "سامنے دیئے گئے نشان سے کیا مراد ہے؟",
-        "A": "پارکنگ منع ہے",
-        "B": "بائیں طرف پارکنگ کریں",
-        "C": "پارکنگ"
-      }
-    },
-    {
-      "id": "s-061",
-      "licenseTypes": [
-        "motorcycle",
-        "motorcar",
-        "ltv",
-        "htv"
-      ],
-      "image": "/signs/quiz/sign-q061.png",
-      "signSlug": "quiz-sign-q061",
-      "correct": "B",
-      "en": {
-        "question": "What does this sign mean?",
-        "A": "Hotel",
-        "B": "Hospital",
-        "C": "First aid"
-      },
-      "ur": {
-        "question": "سامنے دیئے گئے نشان سے کیا مراد ہے؟",
-        "A": "ہوٹل",
-        "B": "ہسپتال",
-        "C": "ابتدائی طبی امداد"
-      }
-    },
-    {
       "id": "s-062",
       "licenseTypes": [
         "motorcycle",
@@ -1493,30 +1111,6 @@
       }
     },
     {
-      "id": "s-064",
-      "licenseTypes": [
-        "motorcycle",
-        "motorcar",
-        "ltv",
-        "htv"
-      ],
-      "image": "/signs/quiz/sign-q064.png",
-      "signSlug": "quiz-sign-q064",
-      "correct": "C",
-      "en": {
-        "question": "What does this sign mean?",
-        "A": "Hotel or Motel",
-        "B": "Picnic site",
-        "C": "Restaurant"
-      },
-      "ur": {
-        "question": "سامنے دیئے گئے نشان سے کیا مراد ہے؟",
-        "A": "ہوٹل یا موٹل",
-        "B": "سیرگاہ",
-        "C": "ریستوران"
-      }
-    },
-    {
       "id": "s-065",
       "licenseTypes": [
         "motorcycle",
@@ -1562,198 +1156,6 @@
         "A": "بائیں رہیں",
         "B": "تیر کا نشان",
         "C": "سیدھا آگے جائیں"
-      }
-    },
-    {
-      "id": "s-067",
-      "licenseTypes": [
-        "motorcycle",
-        "motorcar",
-        "ltv",
-        "htv"
-      ],
-      "image": "/signs/quiz/sign-q067.png",
-      "signSlug": "quiz-sign-q067",
-      "correct": "A",
-      "en": {
-        "question": "What does this sign mean?",
-        "A": "Parking place indicated",
-        "B": "No parking",
-        "C": "Public place"
-      },
-      "ur": {
-        "question": "سامنے دیئے گئے نشان سے کیا مراد ہے؟",
-        "A": "پارکنگ کی جگہ بتائی گئی ہے",
-        "B": "پارکنگ نہیں ہے",
-        "C": "عوام کی جگہ"
-      }
-    },
-    {
-      "id": "s-068",
-      "licenseTypes": [
-        "motorcycle",
-        "motorcar",
-        "ltv",
-        "htv"
-      ],
-      "image": "/signs/quiz/sign-q068.png",
-      "signSlug": "quiz-sign-q068",
-      "correct": "B",
-      "en": {
-        "question": "What does this sign mean?",
-        "A": "Empty place",
-        "B": "Facility indicated",
-        "C": "Road closed on right"
-      },
-      "ur": {
-        "question": "سامنے دیئے گئے نشان سے کیا مراد ہے؟",
-        "A": "خالی جگہ",
-        "B": "سہولت موجود ہے",
-        "C": "دائیں سڑک بند ہے"
-      }
-    },
-    {
-      "id": "s-069",
-      "licenseTypes": [
-        "motorcycle",
-        "motorcar",
-        "ltv",
-        "htv"
-      ],
-      "image": "/signs/quiz/sign-q069.png",
-      "signSlug": "quiz-sign-q069",
-      "correct": "B",
-      "en": {
-        "question": "What does this sign mean?",
-        "A": "One line",
-        "B": "100 meters Motorway exit",
-        "C": "Single line between road"
-      },
-      "ur": {
-        "question": "سامنے دیئے گئے نشان سے کیا مراد ہے؟",
-        "A": "ایک لائن",
-        "B": "سو میٹر موٹروے خروج",
-        "C": "روڈ کے درمیان سنگل لائن"
-      }
-    },
-    {
-      "id": "s-070",
-      "licenseTypes": [
-        "motorcycle",
-        "motorcar",
-        "ltv",
-        "htv"
-      ],
-      "image": "/signs/quiz/sign-q070.png",
-      "signSlug": "quiz-sign-q070",
-      "correct": "A",
-      "en": {
-        "question": "What does this sign mean?",
-        "A": "200 meters Motorway exit",
-        "B": "Two lines",
-        "C": "Double line between road"
-      },
-      "ur": {
-        "question": "سامنے دیئے گئے نشان سے کیا مراد ہے؟",
-        "A": "موٹروے خروج دوسو میٹر",
-        "B": "دو لائنز",
-        "C": "سڑک کے درمیان دو لکیریں"
-      }
-    },
-    {
-      "id": "s-071",
-      "licenseTypes": [
-        "motorcycle",
-        "motorcar",
-        "ltv",
-        "htv"
-      ],
-      "image": "/signs/quiz/sign-q071.png",
-      "signSlug": "quiz-sign-q071",
-      "correct": "C",
-      "en": {
-        "question": "What does this sign mean?",
-        "A": "Three lines between road",
-        "B": "Three lines",
-        "C": "300 meters Motorway exit"
-      },
-      "ur": {
-        "question": "سامنے دیئے گئے نشان سے کیا مراد ہے؟",
-        "A": "روڈ کے درمیان تین لکیریں",
-        "B": "تین لکیریں",
-        "C": "موٹروے خروج تین سو میٹر"
-      }
-    },
-    {
-      "id": "s-072",
-      "licenseTypes": [
-        "motorcycle",
-        "motorcar",
-        "ltv",
-        "htv"
-      ],
-      "image": "/signs/quiz/sign-q072.png",
-      "signSlug": "quiz-sign-q072",
-      "correct": "B",
-      "en": {
-        "question": "What does this sign mean?",
-        "A": "Bridge",
-        "B": "Start of motorway",
-        "C": "Main double road"
-      },
-      "ur": {
-        "question": "سامنے دیئے گئے نشان سے کیا مراد ہے؟",
-        "A": "پل",
-        "B": "موٹر وے شروع",
-        "C": "مین ڈبل روڈ"
-      }
-    },
-    {
-      "id": "s-073",
-      "licenseTypes": [
-        "motorcycle",
-        "motorcar",
-        "ltv",
-        "htv"
-      ],
-      "image": "/signs/quiz/sign-q073.png",
-      "signSlug": "quiz-sign-q073",
-      "correct": "A",
-      "en": {
-        "question": "What does this sign mean?",
-        "A": "End of motorway",
-        "B": "Bridge end",
-        "C": "Road closed ahead"
-      },
-      "ur": {
-        "question": "سامنے دیئے گئے نشان سے کیا مراد ہے؟",
-        "A": "موٹروے ختم",
-        "B": "پل کا اختتام",
-        "C": "آگے روڈ بند ہے"
-      }
-    },
-    {
-      "id": "s-074",
-      "licenseTypes": [
-        "motorcycle",
-        "motorcar",
-        "ltv",
-        "htv"
-      ],
-      "image": "/signs/quiz/sign-q074.png",
-      "signSlug": "quiz-sign-q074",
-      "correct": "A",
-      "en": {
-        "question": "What does this sign mean?",
-        "A": "No horn",
-        "B": "Blow horn",
-        "C": "Press horn"
-      },
-      "ur": {
-        "question": "سامنے دیئے گئے نشان سے کیا مراد ہے؟",
-        "A": "ہارن بجانا منع ہے",
-        "B": "ہارن کا استعمال کریں۔",
-        "C": "ہارن بجائیں"
       }
     },
     {

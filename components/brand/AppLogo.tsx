@@ -38,7 +38,8 @@ export function AppLogo({
         width={mark}
         height={mark}
         className="shrink-0"
-        priority={size === "hero"}
+        priority
+        fetchPriority="high"
       />
       <div className="min-w-0 text-start">
         <p

@@ -63,7 +63,7 @@ export function AppShell({
           {showBottomNav && nav !== "none" ? <DesktopNav lang={lang} active={nav} /> : null}
 
           <div className="flex shrink-0 items-center gap-2">
-            {backHref ? (
+            {backHref && !(showBottomNav && nav !== "none") ? (
               <NavLink
                 href={backHref}
                 className="hidden h-10 items-center gap-1 rounded-lg px-3 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground md:inline-flex"

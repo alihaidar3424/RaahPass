@@ -19,7 +19,13 @@ export type TrafficSign = {
   questionIds: string[];
 };
 
-const signs = bank.signs as TrafficSign[];
+const signs = (bank.signs as TrafficSign[]).filter(
+  (sign) =>
+    Boolean(sign.image) &&
+    !sign.image.endsWith("/") &&
+    sign.image !== "/signs/quiz/" &&
+    !sign.image.startsWith("/signs/quiz/"),
+);
 
 export function getAllSigns(): TrafficSign[] {
   return signs;

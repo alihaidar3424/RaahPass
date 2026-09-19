@@ -11,9 +11,9 @@ export function Card({ children, className, accent = "none" }: CardProps) {
     <div
       className={cn(
         "rounded-xl border border-border bg-card p-4 shadow-[var(--shadow-card)] md:p-5",
-        accent === "primary" && "border-l-4 border-l-primary",
-        accent === "success" && "border-l-4 border-l-success",
-        accent === "danger" && "border-l-4 border-l-destructive",
+        accent === "primary" && "border-s-4 border-s-primary",
+        accent === "success" && "border-s-4 border-s-success",
+        accent === "danger" && "border-s-4 border-s-destructive",
         className,
       )}
     >

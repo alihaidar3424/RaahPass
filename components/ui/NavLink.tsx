@@ -8,12 +8,22 @@ import { Spinner } from "@/components/ui/Spinner";
 
 type NavLinkProps = ComponentProps<typeof Link> & {
   showSpinner?: boolean;
+  /** Stretch to parent width (cards / list rows). */
+  fullWidth?: boolean;
 };
 
-export function NavLink({ className, children, showSpinner = false, ...props }: NavLinkProps) {
+export function NavLink({
+  className,
+  children,
+  showSpinner = false,
+  fullWidth = false,
+  ...props
+}: NavLinkProps) {
   return (
-    <Link className={className} {...props}>
-      <NavLinkStatus showSpinner={showSpinner}>{children}</NavLinkStatus>
+    <Link className={cn(fullWidth && "block w-full", className)} {...props}>
+      <NavLinkStatus showSpinner={showSpinner} fullWidth={fullWidth}>
+        {children}
+      </NavLinkStatus>
     </Link>
   );
 }
@@ -21,16 +31,18 @@ export function NavLink({ className, children, showSpinner = false, ...props }: 
 function NavLinkStatus({
   children,
   showSpinner,
+  fullWidth,
 }: {
   children: ReactNode;
   showSpinner: boolean;
+  fullWidth: boolean;
 }) {
   const { pending } = useLinkStatus();
 
   return (
     <span
       className={cn(
-        "inline-flex items-center gap-1.5",
+        fullWidth ? "block w-full" : "inline-flex items-center gap-1.5",
         pending && "pointer-events-none opacity-60",
       )}
       aria-busy={pending || undefined}

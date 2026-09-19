@@ -58,6 +58,7 @@ describe("traffic-signs", () => {
       expect(sign.slug).not.toBe("quiz-");
       expect(sign.image.endsWith("/")).toBe(false);
       expect(sign.image).not.toBe("/signs/quiz/");
+      expect(sign.image.startsWith("/signs/quiz/")).toBe(false);
     }
   });
 });

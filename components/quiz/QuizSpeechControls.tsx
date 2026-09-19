@@ -35,10 +35,10 @@ export function QuizSpeechControls({
         onClick={onToggleSpeaker}
         disabled={!speakerSupported}
         className={cn(
-          "inline-flex min-h-10 items-center gap-1.5 rounded-lg border px-3 text-xs font-medium transition-colors",
+          "inline-flex min-h-11 items-center gap-1.5 rounded-xl border-2 px-3 text-sm font-semibold transition-colors",
           speakerOn
             ? "border-primary bg-primary text-primary-foreground"
-            : "border-border bg-card text-muted-foreground hover:text-foreground",
+            : "border-border bg-card text-muted-foreground hover:bg-muted hover:text-foreground",
           !speakerSupported && "opacity-50",
         )}
         aria-pressed={speakerOn}
@@ -49,11 +49,17 @@ export function QuizSpeechControls({
         <span>{t(language, "speechSpeaker")}</span>
       </button>
 
-      {speakerOn && onReplay ? (
+      {onReplay ? (
         <button
           type="button"
           onClick={onReplay}
-          className="inline-flex min-h-10 items-center rounded-lg border border-border bg-card px-3 text-xs font-medium text-foreground hover:bg-muted"
+          disabled={!speakerOn}
+          className={cn(
+            "inline-flex min-h-11 items-center rounded-xl border-2 border-border bg-card px-3 text-sm font-semibold text-foreground hover:bg-muted",
+            !speakerOn && "invisible pointer-events-none",
+          )}
+          aria-hidden={!speakerOn}
+          tabIndex={speakerOn ? 0 : -1}
         >
           {t(language, "speechReplay")}
         </button>
@@ -64,12 +70,12 @@ export function QuizSpeechControls({
         onClick={onToggleMic}
         disabled={!micSupported}
         className={cn(
-          "inline-flex min-h-10 items-center gap-1.5 rounded-lg border px-3 text-xs font-medium transition-colors",
+          "inline-flex min-h-11 items-center gap-1.5 rounded-xl border-2 px-3 text-sm font-semibold transition-colors",
           micOn
             ? listening
               ? "border-destructive bg-destructive text-destructive-foreground"
               : "border-primary bg-primary text-primary-foreground"
-            : "border-border bg-card text-muted-foreground hover:text-foreground",
+            : "border-border bg-card text-muted-foreground hover:bg-muted hover:text-foreground",
           !micSupported && "opacity-50",
         )}
         aria-pressed={micOn}

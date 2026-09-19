@@ -33,7 +33,7 @@ export default async function ReviewPage({ params }: ReviewPageProps) {
 
   return (
     <AppShell lang={lang} rtl={rtl} nav="none">
-      <PageContainer className="page-stack">
+      <PageContainer className="page-stack" width="shell">
         <h1 className="text-xl font-bold text-foreground">{t(lang, "answerReview")}</h1>
 
         <div className="section-stack">

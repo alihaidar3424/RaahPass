@@ -79,14 +79,14 @@ export function SignTestReviewClient({ fallbackLang = "en" }: SignTestReviewClie
       backLabel={t(lang, "backToResult")}
     >
       <PageContainer withBottomNav className="page-stack" width="shell">
-        <div className="flex flex-wrap items-center justify-between gap-3">
+        <div className="space-y-3">
           <h1 className="text-2xl font-bold">{t(lang, "answerReview")}</h1>
-          <div className="flex gap-2">
+          <div className="grid grid-cols-2 gap-2">
             <button
               type="button"
               onClick={() => setWrongOnly(true)}
               className={cn(
-                "min-h-9 rounded-lg border px-3 text-sm font-medium",
+                "min-h-11 rounded-xl border px-3 text-sm font-semibold",
                 wrongOnly
                   ? "border-primary bg-primary text-primary-foreground"
                   : "border-border bg-card text-foreground",
@@ -98,7 +98,7 @@ export function SignTestReviewClient({ fallbackLang = "en" }: SignTestReviewClie
               type="button"
               onClick={() => setWrongOnly(false)}
               className={cn(
-                "min-h-9 rounded-lg border px-3 text-sm font-medium",
+                "min-h-11 rounded-xl border px-3 text-sm font-semibold",
                 !wrongOnly
                   ? "border-primary bg-primary text-primary-foreground"
                   : "border-border bg-card text-foreground",
@@ -135,9 +135,9 @@ export function SignTestReviewClient({ fallbackLang = "en" }: SignTestReviewClie
                       <Image
                         src={q.image}
                         alt={q.questionText}
-                        width={120}
-                        height={120}
-                        className="max-h-24 w-auto object-contain"
+                        width={160}
+                        height={160}
+                        className="max-h-36 w-auto object-contain"
                       />
                     </div>
                     <p className="font-semibold text-card-foreground">{q.questionText}</p>

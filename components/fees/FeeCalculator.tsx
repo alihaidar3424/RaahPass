@@ -161,16 +161,16 @@ export function FeeCalculator({ lang }: FeeCalculatorProps) {
         </Card>
       ) : null}
 
-      <Card className="space-y-2">
+      <Card className="space-y-3">
         <p className="text-sm font-medium text-foreground">{t(lang, "feeOfficialSources")}</p>
-        <ul className="space-y-2 text-sm">
+        <ul className="space-y-2">
           {FEE_OFFICIAL_LINKS.map((link) => (
             <li key={link.url}>
               <a
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-primary underline"
+                className="inline-flex min-h-11 w-full items-center justify-center rounded-xl border-2 border-border bg-card px-4 text-sm font-semibold text-foreground transition-colors hover:bg-muted"
               >
                 {lang === "ur" ? link.labelUr : link.label}
               </a>

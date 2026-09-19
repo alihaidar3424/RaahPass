@@ -25,7 +25,7 @@ export default async function StartPage({ searchParams }: StartPageProps) {
       backHref={withLang("/", lang)}
       backLabel={t(lang, "navHome")}
     >
-      <PageContainer withBottomNav className="page-stack">
+      <PageContainer withBottomNav width="shell" className="page-stack">
         <div className="space-y-2">
           <h1 className="text-2xl font-bold text-foreground">{t(lang, "startTestTitle")}</h1>
           <p className={mutedTextClassName()}>{t(lang, "driverExam")}</p>

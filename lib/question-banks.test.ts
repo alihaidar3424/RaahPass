@@ -49,16 +49,18 @@ describe("sign-questions bank integrity", () => {
 
   it("references image files that exist on disk", () => {
     for (const q of questions) {
+      expect(q.image.startsWith("/signs/quiz/")).toBe(false);
       expect(existsSync(publicPath(q.image)), q.image).toBe(true);
     }
   });
 
   it("correct answer option exists in both languages", () => {
     for (const q of questions) {
-      const en = q.en[q.correct as "A" | "B" | "C" | "D"];
-      const ur = q.ur[q.correct as "A" | "B" | "C" | "D"];
-      expect(en?.trim().length, q.id).toBeGreaterThan(0);
-      expect(ur?.trim().length, q.id).toBeGreaterThan(0);
+      const key = q.correct as "A" | "B" | "C" | "D";
+      const enOpts = q.en as Record<string, string>;
+      const urOpts = q.ur as Record<string, string>;
+      expect(enOpts[key]?.trim().length).toBeGreaterThan(0);
+      expect(urOpts[key]?.trim().length).toBeGreaterThan(0);
     }
   });
 });
@@ -105,14 +107,15 @@ describe("text-questions bank integrity", () => {
       expect(q.english.question).not.toBe(q.urdu.question);
 
       for (const key of ["A", "B", "C"] as const) {
-        expect(q.english.options[key]?.trim().length, `${q.id} en ${key}`).toBeGreaterThan(0);
-        expect(q.urdu.options[key]?.trim().length, `${q.id} ur ${key}`).toBeGreaterThan(0);
+        expect(q.english.options[key]?.trim().length).toBeGreaterThan(0);
+        expect(q.urdu.options[key]?.trim().length).toBeGreaterThan(0);
       }
 
-      const enCorrect = q.english.options[q.correctAnswer as keyof typeof q.english.options];
-      const urCorrect = q.urdu.options[q.correctAnswer as keyof typeof q.urdu.options];
-      expect(enCorrect?.trim().length, q.id).toBeGreaterThan(0);
-      expect(urCorrect?.trim().length, q.id).toBeGreaterThan(0);
+      const answerKey = q.correctAnswer as keyof typeof q.english.options;
+      const enCorrect = q.english.options[answerKey];
+      const urCorrect = q.urdu.options[answerKey];
+      expect(enCorrect?.trim().length).toBeGreaterThan(0);
+      expect(urCorrect?.trim().length).toBeGreaterThan(0);
     }
   });
 });

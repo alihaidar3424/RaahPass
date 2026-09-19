@@ -34,7 +34,7 @@ export default async function ResultPage({ params }: ResultPageProps) {
 
   return (
     <AppShell lang={lang} rtl={rtl} nav="none">
-      <PageContainer className="page-stack">
+      <PageContainer className="page-stack" width="shell">
         <Card className="p-6 text-center">
           <div
             className={cn(
@@ -73,11 +73,14 @@ export default async function ResultPage({ params }: ResultPageProps) {
         </Card>
 
         <div className="section-stack">
-          <LinkButton href={withLang(`/review/${attemptId}`, lang)} fullWidth variant="secondary">
+          <LinkButton href={withLang(`/review/${attemptId}`, lang)} fullWidth size="lg" variant="secondary">
             {t(lang, "viewReview")}
           </LinkButton>
-          <LinkButton href={withLang("/start", lang)} fullWidth>
+          <LinkButton href={withLang("/start", lang)} fullWidth size="lg">
             {t(lang, "newTest")}
+          </LinkButton>
+          <LinkButton href={withLang("/", lang)} fullWidth size="lg" variant="secondary">
+            {t(lang, "navHome")}
           </LinkButton>
         </div>
       </PageContainer>

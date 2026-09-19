@@ -45,7 +45,7 @@ function renderBlockquote(text: string, key: string) {
 
 function renderList(items: string[], key: string) {
   return (
-    <ul key={key} className="list-disc space-y-2 pl-5 text-base leading-7 text-muted-foreground">
+    <ul key={key} className="list-disc space-y-2 ps-5 text-base leading-7 text-muted-foreground">
       {items.map((item, index) => (
         <li key={index}>{item.replace(/^-\s+/, "")}</li>
       ))}

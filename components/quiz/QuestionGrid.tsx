@@ -21,7 +21,12 @@ export function QuestionGrid({
   onJump,
 }: QuestionGridProps) {
   return (
-    <div className={cn("flex flex-wrap gap-2", disabled && "pointer-events-none opacity-50")}>
+    <div
+      className={cn(
+        "grid grid-cols-5 gap-2 sm:grid-cols-10",
+        disabled && "pointer-events-none opacity-50",
+      )}
+    >
       {Array.from({ length: total }, (_, index) => {
         const id = questionIds[index];
         const answered = id ? Boolean(answers[id]) : false;
@@ -34,7 +39,7 @@ export function QuestionGrid({
             disabled={disabled}
             onClick={() => onJump(index)}
             className={cn(
-              "flex h-9 w-9 items-center justify-center rounded-lg text-xs font-semibold transition-colors",
+              "flex h-9 w-full items-center justify-center rounded-lg text-xs font-semibold transition-colors",
               isCurrent && "ring-2 ring-primary ring-offset-2 ring-offset-background",
               answered
                 ? "bg-success-muted text-success"

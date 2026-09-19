@@ -25,7 +25,12 @@ export type SignQuizQuestion = {
 };
 
 function hasUsableImage(image: string): boolean {
-  return Boolean(image) && !image.endsWith("/") && image !== "/signs/quiz/";
+  return (
+    Boolean(image) &&
+    !image.endsWith("/") &&
+    image !== "/signs/quiz/" &&
+    !image.startsWith("/signs/quiz/")
+  );
 }
 
 const allQuestions = (bank.questions as SignQuestionRaw[]).filter((q) => hasUsableImage(q.image));

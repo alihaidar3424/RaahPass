@@ -88,9 +88,12 @@ export default async function SignDetailPage({ params, searchParams }: PageProps
                   : `${sign.questionIds.length} practice question(s) use this sign.`}
               </p>
             ) : null}
-            <div className="mt-6">
-              <LinkButton href={withLang("/sign-test", lang)} fullWidth size="lg" className="md:w-auto md:min-w-[14rem]">
+            <div className="mt-6 grid gap-3 sm:grid-cols-2">
+              <LinkButton href={withLang("/sign-test", lang)} fullWidth size="lg">
                 {t(lang, "relatedPractice")}
+              </LinkButton>
+              <LinkButton href={withLang("/signs", lang)} fullWidth size="lg" variant="secondary">
+                {t(lang, "signsTitle")}
               </LinkButton>
             </div>
           </div>

@@ -1,5 +1,6 @@
 import "dotenv/config";
 import { defineConfig, env } from "prisma/config";
+import { normalizePostgresUrl } from "./lib/postgres-url";
 
 /**
  * Prisma Migrate needs a direct Postgres connection (no PgBouncer pooler).
@@ -7,17 +8,17 @@ import { defineConfig, env } from "prisma/config";
  */
 export function migrationDatabaseUrl(): string {
   if (process.env.DIRECT_URL) {
-    return process.env.DIRECT_URL;
+    return normalizePostgresUrl(process.env.DIRECT_URL);
   }
 
   const databaseUrl = process.env.DATABASE_URL ?? env("DATABASE_URL");
 
   // Neon: ep-xxx-pooler.region.aws.neon.tech -> ep-xxx.region.aws.neon.tech
   if (databaseUrl.includes("-pooler.")) {
-    return databaseUrl.replace("-pooler.", ".");
+    return normalizePostgresUrl(databaseUrl.replace("-pooler.", "."));
   }
 
-  return databaseUrl;
+  return normalizePostgresUrl(databaseUrl);
 }
 
 export default defineConfig({

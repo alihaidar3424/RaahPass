@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { AppShell } from "@/components/layout/AppShell";
 import { GuidelineBody } from "@/components/guidelines/GuidelineBody";
 import { GuidelineSourceFooter } from "@/components/guidelines/GuidelineSourceFooter";
@@ -79,28 +80,33 @@ export default async function GuidelineArticlePage({
             {t(lang, "startFromGuideline")}
           </LinkButton>
 
-          <div className="flex gap-3">
-            {prev ? (
-              <LinkButton
-                href={withLang(`/guidelines/${prev.slug}`, lang)}
-                variant="secondary"
-                className="flex-1"
-              >
-                ← {t(lang, "prevArticle")}
-              </LinkButton>
-            ) : (
-              <span className="flex-1" />
-            )}
-            {next ? (
-              <LinkButton
-                href={withLang(`/guidelines/${next.slug}`, lang)}
-                variant="secondary"
-                className="flex-1"
-              >
-                {t(lang, "nextArticle")} →
-              </LinkButton>
-            ) : null}
-          </div>
+          {prev || next ? (
+            <div className="grid gap-3 sm:grid-cols-2">
+              {prev ? (
+                <LinkButton
+                  href={withLang(`/guidelines/${prev.slug}`, lang)}
+                  variant="secondary"
+                  fullWidth
+                >
+                  {rtl ? <ChevronRight className="h-4 w-4" /> : <ChevronLeft className="h-4 w-4" />}
+                  {t(lang, "prevArticle")}
+                </LinkButton>
+              ) : (
+                <span className="hidden sm:block" />
+              )}
+              {next ? (
+                <LinkButton
+                  href={withLang(`/guidelines/${next.slug}`, lang)}
+                  variant="secondary"
+                  fullWidth
+                  className={!prev ? "sm:col-start-2" : undefined}
+                >
+                  {t(lang, "nextArticle")}
+                  {rtl ? <ChevronLeft className="h-4 w-4" /> : <ChevronRight className="h-4 w-4" />}
+                </LinkButton>
+              ) : null}
+            </div>
+          ) : null}
         </div>
       </PageContainer>
     </AppShell>

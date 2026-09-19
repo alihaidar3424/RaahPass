@@ -35,7 +35,6 @@ export default async function AboutPage({ searchParams }: PageProps) {
     >
       <PageContainer withBottomNav width="content" className="page-stack">
         <h1 className="text-2xl font-bold md:text-3xl">{t(lang, "aboutTitle")}</h1>
-        <OwnerCard lang={lang} />
         <Card>
           <p className="leading-7 text-card-foreground">{t(lang, "aboutBody")}</p>
           <ul className={mutedTextClassName("mt-4 list-disc space-y-1 ps-5")}>
@@ -49,12 +48,15 @@ export default async function AboutPage({ searchParams }: PageProps) {
             <li>{BRAND.nameEn} / {BRAND.nameUr}</li>
           </ul>
         </Card>
-        <LinkButton href={withLang("/sign-test", lang)} fullWidth size="lg">
-          {t(lang, "startSignTest")}
-        </LinkButton>
-        <LinkButton href={withLang("/contact", lang)} fullWidth variant="secondary">
-          {t(lang, "navContact")}
-        </LinkButton>
+        <OwnerCard lang={lang} />
+        <div className="grid gap-3 sm:grid-cols-2">
+          <LinkButton href={withLang("/sign-test", lang)} fullWidth size="lg">
+            {t(lang, "startSignTest")}
+          </LinkButton>
+          <LinkButton href={withLang("/contact", lang)} fullWidth size="lg" variant="secondary">
+            {t(lang, "navContact")}
+          </LinkButton>
+        </div>
       </PageContainer>
     </AppShell>
   );

@@ -192,10 +192,10 @@ export function QuizClient({ attemptId, language, questions }: QuizClientProps) 
       ) : null}
 
       <PageContainer className={cn("section-stack", isPending && "pointer-events-none")} width="shell">
-        <div className="flex items-center justify-between gap-3 text-sm text-muted-foreground">
+        <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-2 text-sm text-muted-foreground">
           <span>{tf(language, "questionOf", { current: index + 1, total: QUIZ_SIZE })}</span>
           <QuizTimer remainingMs={remainingMs} language={language} />
-          <span>
+          <span className="ms-auto tabular-nums">
             {answeredCount}/{QUIZ_SIZE}
           </span>
         </div>

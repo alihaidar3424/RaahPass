@@ -1,4 +1,4 @@
-import { BookOpen, Calculator, PlayCircle, TrafficCone } from "lucide-react";
+import { BookOpen, Calculator, Info, Mail, PlayCircle, TrafficCone } from "lucide-react";
 import type { Metadata } from "next";
 import { AppLogo } from "@/components/brand/AppLogo";
 import { OwnerCard } from "@/components/brand/OwnerCard";
@@ -118,7 +118,7 @@ export default async function HomePage({ searchParams }: HomePageProps) {
           </div>
         </section>
 
-        <section className="grid gap-3 sm:grid-cols-2 lg:grid-cols-[1fr_1fr_auto]">
+        <section className="grid gap-3 sm:grid-cols-2">
           <LinkButton href={withLang("/start", lang)} fullWidth variant="secondary" size="lg">
             <BookOpen className="h-4 w-4" />
             {t(lang, "rulesPractice")}
@@ -127,14 +127,14 @@ export default async function HomePage({ searchParams }: HomePageProps) {
             <Calculator className="h-4 w-4" />
             {t(lang, "navFees")}
           </LinkButton>
-          <div className="flex items-center justify-center gap-5 text-sm sm:col-span-2 lg:col-span-1 lg:justify-end">
-            <NavLink href={withLang("/about", lang)} className="font-medium text-primary hover:underline">
-              {t(lang, "navAbout")}
-            </NavLink>
-            <NavLink href={withLang("/contact", lang)} className="font-medium text-primary hover:underline">
-              {t(lang, "navContact")}
-            </NavLink>
-          </div>
+          <LinkButton href={withLang("/about", lang)} fullWidth variant="secondary" size="lg">
+            <Info className="h-4 w-4" />
+            {t(lang, "navAbout")}
+          </LinkButton>
+          <LinkButton href={withLang("/contact", lang)} fullWidth variant="secondary" size="lg">
+            <Mail className="h-4 w-4" />
+            {t(lang, "navContact")}
+          </LinkButton>
         </section>
 
         <OwnerCard lang={lang} />

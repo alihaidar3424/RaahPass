@@ -1,7 +1,5 @@
 import { AppShell } from "@/components/layout/AppShell";
 import { SignQuizClient } from "@/components/quiz/SignQuizClient";
-import { LinkButton } from "@/components/ui/Button";
-import { PageContainer } from "@/components/ui/PageContainer";
 import { isLicenseType, type LicenseType } from "@/lib/license-types";
 import { withLang } from "@/lib/language";
 import { resolveLanguage } from "@/lib/resolve-language";
@@ -28,11 +26,6 @@ export default async function SignTestQuizPage({ searchParams }: PageProps) {
       backLabel={t(lang, "signTestTitle")}
     >
       <SignQuizClient language={lang} licenseType={license} />
-      <PageContainer className="pb-8">
-        <LinkButton href={withLang("/sign-test", lang)} variant="ghost" fullWidth>
-          {t(lang, "back")}
-        </LinkButton>
-      </PageContainer>
     </AppShell>
   );
 }

@@ -21,7 +21,7 @@ export default async function OfflinePage({ searchParams }: OfflinePageProps) {
         <WifiOff className="mb-4 h-12 w-12 text-muted-foreground" />
         <h1 className="text-2xl font-bold text-foreground">{t(lang, "offlineTitle")}</h1>
         <p className={mutedTextClassName("mt-3 max-w-sm")}>{t(lang, "offlineMessage")}</p>
-        <LinkButton href={`/?lang=${lang}`} className="mt-8" variant="secondary">
+        <LinkButton href={`/?lang=${lang}`} className="mt-8" fullWidth variant="secondary">
           {t(lang, "navHome")}
         </LinkButton>
       </PageContainer>

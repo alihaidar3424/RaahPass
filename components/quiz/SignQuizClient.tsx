@@ -296,12 +296,12 @@ export function SignQuizClient({ language, licenseType }: SignQuizClientProps) {
   return (
     <div dir={dirForLanguage(language)} className={cn(rtl && "urdu-text")}>
       <PageContainer className="section-stack" width="shell">
-        <div className="flex items-center justify-between gap-3 text-sm text-muted-foreground">
+        <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-2 text-sm text-muted-foreground">
           <span>
             {tf(language, "questionOf", { current: index + 1, total: questions.length })}
           </span>
           <QuizTimer remainingMs={remainingMs} language={language} />
-          <span>
+          <span className="ms-auto tabular-nums">
             {answeredCount}/{questions.length}
           </span>
         </div>
@@ -344,13 +344,13 @@ export function SignQuizClient({ language, licenseType }: SignQuizClientProps) {
         />
 
         <Card className="flex flex-col items-center gap-4">
-          <div className="relative flex h-44 w-full items-center justify-center rounded-lg bg-muted/40">
+          <div className="relative flex h-56 w-full items-center justify-center rounded-xl bg-muted/40 p-4 sm:h-64">
             <Image
               src={current.image}
               alt={current.questionText}
-              width={180}
-              height={180}
-              className="max-h-40 w-auto object-contain"
+              width={280}
+              height={280}
+              className="max-h-48 w-auto object-contain sm:max-h-56"
               priority
             />
           </div>
