@@ -60,6 +60,7 @@ export function SignQuizClient({ language, licenseType }: SignQuizClientProps) {
   const [micOn, setMicOn] = useState(true);
   const [listening, setListening] = useState(false);
   const bootKeyRef = useRef(sessionKey);
+  const bootGenerationRef = useRef(0);
   const listenerRef = useRef<ReturnType<typeof createSpeechListener>>(null);
   const currentRef = useRef<SignQuizQuestion | undefined>(undefined);
   const submittedRef = useRef(false);
@@ -95,8 +96,11 @@ export function SignQuizClient({ language, licenseType }: SignQuizClientProps) {
 
   useEffect(() => {
     let cancelled = false;
+    const generation = ++bootGenerationRef.current;
+    setHydrated(false);
+
     queueMicrotask(() => {
-      if (cancelled) return;
+      if (cancelled || generation !== bootGenerationRef.current) return;
       bootKeyRef.current = sessionKey;
       const now = Date.now();
       const saved = getSignSessionSnapshot();
@@ -111,10 +115,9 @@ export function SignQuizClient({ language, licenseType }: SignQuizClientProps) {
         now - saved.startedAt < QUIZ_DURATION_MS
       ) {
         const ids = saved.questions.map((q) => q.id);
-        const localized =
-          saved.language === language
-            ? saved.questions
-            : localizeSignQuestionsByIds(ids, language);
+        // Always re-localize from the bank — session may store the wrong language
+        // text after a lang switch race (persist before boot finishes).
+        const localized = localizeSignQuestionsByIds(ids, language);
 
         if (localized.length === saved.questions.length) {
           setQuestions(localized);
@@ -146,6 +149,7 @@ export function SignQuizClient({ language, licenseType }: SignQuizClientProps) {
 
   useEffect(() => {
     if (!hydrated || startedAt === null || questions.length === 0 || submitted) return;
+    if (bootKeyRef.current !== sessionKey) return;
     const payload: SignSessionPayload = {
       questions,
       answers,
@@ -155,7 +159,7 @@ export function SignQuizClient({ language, licenseType }: SignQuizClientProps) {
       licenseType,
     };
     writeSignSession(payload);
-  }, [answers, hydrated, index, language, licenseType, questions, startedAt, submitted]);
+  }, [answers, hydrated, index, language, licenseType, questions, sessionKey, startedAt, submitted]);
 
   useEffect(() => {
     if (!hydrated || startedAt === null) return;
