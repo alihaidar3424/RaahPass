@@ -1,10 +1,32 @@
 import { execSync } from "node:child_process";
-import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import sharp from "sharp";
 
 const ROOT = process.cwd();
-const markSvg = readFileSync(join(ROOT, "public", "brand", "logo-mark.svg"), "utf8");
+const markPath = join(ROOT, "public", "brand", "logo-mark.svg");
+const markSvg = readFileSync(markPath, "utf8");
+const markMtime = statSync(markPath).mtimeMs;
+
+const requiredOutputs = [
+  join(ROOT, "public", "icons", "icon-192.png"),
+  join(ROOT, "public", "icons", "icon-512.png"),
+  join(ROOT, "public", "screenshots", "mobile-home.png"),
+  join(ROOT, "public", "screenshots", "desktop-home.png"),
+  join(ROOT, "app", "icon.png"),
+];
+
+function outputsFresh() {
+  return requiredOutputs.every((file) => {
+    if (!existsSync(file)) return false;
+    return statSync(file).mtimeMs >= markMtime;
+  });
+}
+
+if (!process.env.FORCE_ICONS && outputsFresh()) {
+  console.log("Icons/screenshots up to date — skipping generate-icons");
+  process.exit(0);
+}
 
 /** Maskable icon: extra padding so the badge is not clipped on Android. */
 function maskableSvg(size) {
